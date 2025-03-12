@@ -8,6 +8,9 @@
 
 	allowed_races = RACES_TOLERATED_UP
 	allowed_sexes = list(MALE, FEMALE)
+	allowed_patrons = list(
+		/datum/patron/divine/noc
+	)
 	spells = list(SPELL_LEARNSPELL, SPELL_PRESTIDIGITATION)
 	display_order = JDO_MAGICIAN
 	tutorial = "Your creed is one dedicated to the conquering of the arcane arts and the constant thrill of knowledge. \
