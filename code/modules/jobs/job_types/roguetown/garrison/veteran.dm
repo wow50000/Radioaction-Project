@@ -8,6 +8,7 @@
 
 	allowed_sexes = list(MALE, FEMALE) //same as town guard
 	allowed_races = RACES_SHUNNED_UP // same as town guard
+	allowed_patrons = ALL_NON_INHUMEN_PATRONS
 	tutorial = "You've known combat your entire life. \
 	There isn't a way to kill a man you havent practiced in the tapestries of war itself. \
 	You wouldn't call yourself a hero, those belong to the men left rotting in the fields of where you practiced your ancient trade. \

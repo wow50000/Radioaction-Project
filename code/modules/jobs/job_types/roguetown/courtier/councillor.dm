@@ -9,6 +9,7 @@
 	allowed_races = RACES_TOLERATED_UP
 	allowed_sexes = list(MALE, FEMALE)
 	display_order = JDO_COUNCILLOR
+	allowed_patrons = ALL_NON_INHUMEN_PATRONS
 	tutorial = "You may have inherited this role, bought your way into it, or were appointed by the Duke themselves; \
 			Regardless of origin, you now serve as an assistant, planner, and juror for the Duke. \
 			You help him oversee the taxation, construction, and planning of new laws. \
