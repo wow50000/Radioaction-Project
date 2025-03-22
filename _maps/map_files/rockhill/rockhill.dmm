@@ -4323,6 +4323,10 @@
 	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/outdoors/rtfield)
+"ePc" = (
+/obj/effect/landmark/start/townwatchlate,
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/town/garrison)
 "ePf" = (
 /obj/structure/stairs{
 	dir = 1
@@ -13008,6 +13012,9 @@
 	dir = 3;
 	pixel_x = -10
 	},
+/obj/effect/landmark/start/squire{
+	dir = 4
+	},
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/manor)
 "oJO" = (
@@ -19705,6 +19712,11 @@
 	},
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/church)
+"wmv" = (
+/obj/structure/fluff/walldeco/wantedposter,
+/obj/effect/landmark/start/townwatch,
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/town/garrison)
 "wnv" = (
 /obj/structure/bars,
 /turf/open/floor/rogue/herringbone,
@@ -20541,6 +20553,10 @@
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors)
+"xnw" = (
+/obj/effect/landmark/start/townwatch,
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/town/garrison)
 "xoj" = (
 /obj/structure/glowshroom,
 /turf/open/floor/rogue/dirt/road,
@@ -21232,6 +21248,11 @@
 /obj/structure/bed/rogue/inn/wool,
 /turf/open/floor/rogue/churchbrick,
 /area/rogue/indoors/town/manor)
+"ydp" = (
+/obj/machinery/light/rogue/wallfire/candle,
+/obj/effect/landmark/start/bailiff,
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/town/garrison)
 "yei" = (
 /turf/closed/wall/mineral/rogue/roofwall/middle{
 	dir = 8
@@ -303629,7 +303650,7 @@ tNj
 oeu
 hpj
 tNj
-hpj
+xnw
 hpj
 tNj
 jWa
@@ -303638,7 +303659,7 @@ tNj
 mgx
 mgx
 tNj
-ohI
+wmv
 hpj
 aRV
 wbg
@@ -304031,7 +304052,7 @@ tNj
 abh
 hpj
 tNj
-hpj
+xnw
 hpj
 tNj
 ggk
@@ -304040,7 +304061,7 @@ tNj
 hpj
 hpj
 tNj
-hpj
+xnw
 hpj
 tNj
 wbg
@@ -306035,11 +306056,11 @@ xAt
 xAt
 tNj
 hpj
-hpj
-hpj
-hpj
-hpj
-hpj
+xnw
+xnw
+xnw
+xnw
+ePc
 tNj
 hpj
 hpj
@@ -306441,7 +306462,7 @@ hpj
 cwN
 hpj
 hpj
-cwN
+ydp
 drC
 hpj
 hpj
@@ -306839,11 +306860,11 @@ xAt
 xAt
 tNj
 hpj
-hpj
-hpj
-hpj
-hpj
-hpj
+xnw
+xnw
+xnw
+xnw
+ePc
 tNj
 bdH
 hpj

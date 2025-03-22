@@ -90,6 +90,12 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	jobspawn_override = list("Skeleton", "Refugee", "Migrant")
 	delete_after_roundstart = FALSE
 
+/obj/effect/landmark/start/townwatchlate
+	name = "townwatchlate"
+	icon_state = "arrow"
+	jobspawn_override = list("Town Watch", "Bailiff")
+	delete_after_roundstart = FALSE
+
 /obj/effect/landmark/start/banditlate
 	name = "Bandit"
 	icon_state = "arrow"
@@ -155,7 +161,6 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 /obj/effect/landmark/start/bailiff
 	name = "Bailiff"
 	icon_state = "arrow"
-	delete_after_roundstart = FALSE
 
 /obj/effect/landmark/start/guard_captain
 	name = "Retinue Captain"
@@ -220,7 +225,6 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 /obj/effect/landmark/start/townwatch
 	name = "Town Watch"
 	icon_state = "arrow"
-	delete_after_roundstart = FALSE
 
 /obj/effect/landmark/start/villager
 	name = "Towner"
