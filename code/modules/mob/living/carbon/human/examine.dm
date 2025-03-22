@@ -126,11 +126,6 @@
 					slop_lore_string = ", <span class='danger'>A TRAITOR!</span>"
 			. += span_info("[capitalize(m2)] [skin_tone_wording] is [skin_tone_seen][slop_lore_string]")
 
-		if(ishuman(user))
-			var/mob/living/carbon/human/H = user
-			if(H.marriedto == name)
-				. += span_love("It's my spouse.")
-
 		if(display_as_foreign && user != src)
 			if(are_mercenary && am_mercenary)
 				. += span_notice("A Mercenary")
