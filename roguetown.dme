@@ -583,6 +583,7 @@
 #include "code\datums\gods\patrons\curses.dm"
 #include "code\datums\gods\patrons\divine_pantheon.dm"
 #include "code\datums\gods\patrons\inhumen_pantheon.dm"
+#include "code\datums\gods\patrons\inhumenpowers.dm"
 #include "code\datums\gods\patrons\psydon.dm"
 #include "code\datums\gods\patrons\zizo.dm"
 #include "code\datums\helper_datums\events.dm"

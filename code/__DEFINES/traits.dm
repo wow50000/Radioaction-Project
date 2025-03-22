@@ -59,6 +59,9 @@
 #define TRAIT_ZIZO_MARKED "Blessing of Zizo" //basically just here so that they can avoid a negative moodlet
 #define TRAIT_CRACKHEAD "Blessing of Baotha" //will never overdose
 #define TRAIT_MATTHIOS_EYES "Matthios's Sight" //can see most expensive thing on a person
+#define TRAIT_GRAGGAR_CHOSEN "Graggar's Chosen" // grants Graggarite powers
+#define TRAIT_MATTHIOS_CHOSEN "Matthios's Chosen" // grants Matthios powers
+#define TRAIT_BAOTHA_CHOSEN "Baotha's Chosen" // grants Baothan powers
 #define TRAIT_CHOSEN "Consecrated Priest"
 #define TRAIT_NOCTURNAL "Noc's Moonlight" //Grants weak darkvision- lighting alpha 145, amplified for mages using the DV spell- alpha 200
 #define TRAIT_FORGEBLESSED "Malum's Devout" //Reduces the fatigue cost of smithing a bit.
