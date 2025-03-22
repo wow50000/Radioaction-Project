@@ -24,6 +24,8 @@ GLOBAL_LIST_EMPTY(preference_patrons)
 	var/list/confess_lines
 	/// Some patrons have related traits, why not?
 	var/list/mob_traits
+	/// Patron abilities/powers
+	var/list/patron_powers
 	/// Tier 0 spell
 	var/t0
 	/// Tier 1 spell
