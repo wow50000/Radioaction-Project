@@ -91,6 +91,7 @@
 #define TRAIT_COMMIE "CHILDREN OF PSYDON" //PSYDON trait
 #define TRAIT_DEATHBYSNUSNU "Bed Breaker" // double sex damage (requires strong intent)
 #define TRAIT_POISONBITE "Venomous Bite" // Adds tox damage on bites
+#define TRAIT_AMBUSHIMMUNITY "Ambush Immunity"
 
 // PATRON CURSE TRAITS
 #define TRAIT_CURSE "Curse" //source
@@ -112,6 +113,7 @@
 
 GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_LEPROSY = span_necrosis("I'm a disgusting leper..."),
+	TRAIT_AMBUSHIMMUNITY = span_info("With careful footing, I've learned how to avoid the attention of fauna."),
 	TRAIT_CHOSEN = "Appointed by the Church of the Successors, you hold authority over all spiritual matters in the City.",
 	TRAIT_BOGVULNERABLE = span_info("I am used to steady ground. The Terrorbog is unfamiliar terrain."),
 	TRAIT_WEBWALK = "I can move freely between webs.",

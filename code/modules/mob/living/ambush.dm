@@ -1,13 +1,20 @@
 
+
+
 /mob/living/proc/ambushable()
 	if(mob_timers["ambushlast"])
 		if(world.time < mob_timers["ambushlast"] + 300 SECONDS)
 			return FALSE
 	if(stat)
 		return FALSE
+	for(var/mob/living/carbon/user)
+		if(iscarbon(user))
+			var/mob/living/carbon/carbon_user = user
+			if(HAS_TRAIT(carbon_user, TRAIT_AMBUSHIMMUNITY))
+				return FALSE
 	return ambushable
 
-/mob/living/proc/consider_ambush()
+/mob/living/proc/consider_ambush()	
 	if(prob(95))
 		return
 	if(mob_timers["ambush_check"])
