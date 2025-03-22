@@ -8,6 +8,7 @@
 	domain = "Goddess of the Sun, Day, and Order"
 	desc = "The Firstborn of Psydon, twin of Noc, gifted man the Sun as her divine gift."
 	worshippers = "The Noble Hearted, Zealots and Farmers"
+	mob_traits = list(TRAIT_NOBLE, TRAIT_NOSTINK, TRAIT_RESISTHEAT)
 	t1 = /obj/effect/proc_holder/spell/invoked/sacred_flame_rogue
 	t2 = /obj/effect/proc_holder/spell/invoked/heal
 	t3 = /obj/effect/proc_holder/spell/invoked/revive
@@ -22,7 +23,7 @@
 	domain = "God of the Moon, Night, and Knowledge"
 	desc = "The Firstborn of Psydon, twin of Astrata, gifted man divine knowledge."
 	worshippers = "Wizards and Scholars"
-	mob_traits = list(TRAIT_NOCTURNAL) //lighting alpha 245. DV spell is 220, DV spell w/noc or DV special is 200
+	mob_traits = list(TRAIT_DARKVISION, TRAIT_ANTISCRYING, TRAIT_NIGHT_OWL)
 	t1 = /obj/effect/proc_holder/spell/invoked/blindness
 	t2 = /obj/effect/proc_holder/spell/invoked/invisibility
 	confess_lines = list(
@@ -36,7 +37,7 @@
 	domain = "God of the Earth and Nature"
 	desc = "The Primordial Son of Psydon, patron of beasts and the wood. Gone mad with time."
 	worshippers = "Druids, Beasts, Madmen"
-	mob_traits = list(TRAIT_VINE_WALKER)
+	mob_traits = list(TRAIT_VINE_WALKER, TRAIT_KNEESTINGER_IMMUNITY, TRAIT_BOG_TREKKING)
 	t1 = /obj/effect/proc_holder/spell/targeted/blesscrop
 	t2 = /obj/effect/proc_holder/spell/targeted/beasttame
 	t3 = /obj/effect/proc_holder/spell/targeted/conjure_vines
@@ -51,6 +52,7 @@
 	domain = "God of the Ocean, Storms and the Tide"
 	desc = "The Beloved Son, gifted primordial men food and water."
 	worshippers = "Men of the Sea, Primitive Aquatics"
+	mob_traits = list(TRAIT_WATERBREATHING, TRAIT_NORUN, TRAIT_BLOODLOSS_IMMUNE)
 	confess_lines = list(
 		"ABYSSOR COMMANDS THE WAVES!",
 		"THE OCEAN'S FURY IS ABYSSOR'S WILL!",
@@ -62,6 +64,7 @@
 	domain = "God of War, Justice and Strength"
 	desc = "The strongest of Psydon's children, he watches man from afar."
 	worshippers = "Warriors, Sellswords & those who seek Justice"
+	mob_traits = list(TRAIT_NOPAINSTUN, TRAIT_IGNOREDAMAGESLOWDOWN, TRAIT_BAD_MOOD)
 	t1 = /obj/effect/proc_holder/spell/invoked/burden
 	confess_lines = list(
 		"RAVOX IS JUSTICE!",
@@ -74,7 +77,7 @@
 	domain = "Goddess of Death and the Afterlife"
 	desc = "The Veiled Lady, a feared but respected God who leads the dead."
 	worshippers = "The Dead, Mourners, Gravekeepers"
-	mob_traits = list(TRAIT_SOUL_EXAMINE)
+	mob_traits = list(TRAIT_SOUL_EXAMINE, TRAIT_DARKLING, TRAIT_BREADY, TRAIT_SIXTHSENSE)
 	t1 = /obj/effect/proc_holder/spell/targeted/burialrite
 	t2 = /obj/effect/proc_holder/spell/targeted/churn
 	t3 = /obj/effect/proc_holder/spell/targeted/soulspeak
@@ -107,7 +110,7 @@
 	domain = "Goddess of Decay, Disease and Medicine"
 	desc = "The Loving Daughter of Psydon, gifted man medicine."
 	worshippers = "The Sick, Phyicians, Apothecaries"
-	mob_traits = list(TRAIT_EMPATH, TRAIT_ROT_EATER)
+	mob_traits = list(TRAIT_EMPATH, TRAIT_ROT_EATER, TRAIT_QUICKER_CARRY, TRAIT_ZOMBIE_IMMUNE, TRAIT_WILD_EATER)
 	t0 = list(/obj/effect/proc_holder/spell/invoked/diagnose, /obj/effect/proc_holder/spell/invoked/lesser_heal) // Combine both spells on t0
 	t1 = /obj/effect/proc_holder/spell/invoked/heal
 	t2 = /obj/effect/proc_holder/spell/invoked/attach_bodypart
@@ -123,7 +126,7 @@
 	domain = "God of Fire, Destruction and Rebirth"
 	desc = "The Opinionless God, his children hold no malice in their actions."
 	worshippers = "Smiths, Miners, Artists"
-	mob_traits = list(TRAIT_FORGEBLESSED)
+	mob_traits = list(TRAIT_FORGEBLESSED, TRAIT_CIVILIZEDBARBARIAN, TRAIT_SHOCKIMMUNE)
 	t1 = /obj/effect/proc_holder/spell/invoked/vigorousexchange
 	t2 = /obj/effect/proc_holder/spell/invoked/heatmetal
 	t3 = /obj/effect/proc_holder/spell/invoked/hammerfall
@@ -139,6 +142,7 @@
 	domain = "Goddess of Love, Life, and Beauty"
 	desc = "Eora's divine gift was family, and She taught man to make art and wine that he might live life to its fullest. She teaches love for family and beauty, and hates all that threaten them."
 	worshippers = "Lovers, Doting Grandparents, Harlots"
+	mob_traits = list(TRAIT_GOODLOVER, TRAIT_BEAUTIFUL, TRAIT_EMPATH, TRAIT_NUTCRACKER, TRAIT_DECEIVING_MEEKNESS)
 	t1 = /obj/effect/proc_holder/spell/invoked/eoracurse
 	t2 = /obj/effect/proc_holder/spell/invoked/bud
 	t3 = /obj/effect/proc_holder/spell/invoked/eoracharm

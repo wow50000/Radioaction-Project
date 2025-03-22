@@ -128,14 +128,8 @@
 
 		if(ishuman(user))
 			var/mob/living/carbon/human/H = user
-			if(H.isFamily(src))
-				var/datum/relation/R = H.getRelationship(src)
-				if(R)
-					. += "It's my [R.name]!"
-			else if(family)
-				var/datum/family/F = getFamily()
-				if(F)
-					. += "Ah, they belong to the [F.name] family!"
+			if(H.marriedto == name)
+				. += span_love("It's my spouse.")
 
 		if(display_as_foreign && user != src)
 			if(are_mercenary && am_mercenary)
@@ -162,9 +156,8 @@
 
 		var/commie_text
 		if(mind)
-			if(mind.special_role == "Bandit")
-				if(HAS_TRAIT(user, TRAIT_COMMIE))
-					commie_text = span_notice("Free man!")
+			if(HAS_TRAIT(user, TRAIT_COMMIE))
+				commie_text = span_notice("PSYDON!!")
 
 			if(HAS_TRAIT(src, TRAIT_WANTED))
 				. += span_userdanger("BANDIT!")

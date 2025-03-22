@@ -1328,56 +1328,63 @@ GLOBAL_LIST_EMPTY(vampire_objects)
 		if(L.cmode)
 			willroll += 10
 		var/found_psycross = FALSE
-		for(var/obj/item/clothing/neck/roguetown/psicross/silver/I in L.contents) //Subpath fix.
+
+		for(var/obj/item/clothing/neck/roguetown/psicross/silver/I in L.contents)
+			found_psycross = TRUE
+			break
+
+		for(var/obj/item/clothing/neck/roguetown/psicross/astrata/I in L.contents)
+			found_psycross = TRUE
+			break
+
+		for(var/obj/item/clothing/neck/roguetown/psicross/noc/I in L.contents)
+			found_psycross = TRUE
+			break
+
+		for(var/obj/item/clothing/neck/roguetown/psicross/dendor/I in L.contents)
+			found_psycross = TRUE
+			break
+
+		for(var/obj/item/clothing/neck/roguetown/psicross/abyssor/I in L.contents)
+			found_psycross = TRUE
+			break
+
+		for(var/obj/item/clothing/neck/roguetown/psicross/necra/I in L.contents)
+			found_psycross = TRUE
+			break
+
+		for(var/obj/item/clothing/neck/roguetown/psicross/pestra/I in L.contents)
+			found_psycross = TRUE
+			break
+
+		for(var/obj/item/clothing/neck/roguetown/psicross/ravox/I in L.contents)
+			found_psycross = TRUE
+			break
+
+		for(var/obj/item/clothing/neck/roguetown/psicross/malum/I in L.contents)
+			found_psycross = TRUE
+			break
+
+		for(var/obj/item/clothing/neck/roguetown/psicross/eora/I in L.contents)
 			found_psycross = TRUE
 			break
 			
 		if(bloodroll >= willroll)
 			if(found_psycross == TRUE)
-				to_chat(L, "<font color='white'>The silver psycross shines and protect me from the unholy magic.</font>")
-				to_chat(user, span_userdanger("[L] has my BANE!It causes me to fail to ensnare their mind!"))
+				to_chat(L, "<font color='white'>My amulet of the Divine shines and protect me from unholy magic! Zizo is at work here!</font>")
+				to_chat(user, span_userdanger("[L] has my BANE! It causes me to fail to ensnare their mind!"))
+				to_chat(L, "I feel like [user] is messing with my head. I should get out of here!")
 			else
-				L.drowsyness = min(L.drowsyness + 50, 150)
-				switch(L.drowsyness)
-					if(0 to 50)
-						to_chat(L, "You feel like a curtain is coming over your mind.")
-						to_chat(user, "Their mind gives way slightly.")
-						L.Slowdown(20)
-					if(50 to 100)
-						to_chat(L, "Your eyelids force themselves shut as you feel intense lethargy.")
-						L.Slowdown(50)
-						L.eyesclosed = TRUE
-						for(var/atom/movable/screen/eye_intent/eyet in L.hud_used.static_inventory)
-							eyet.update_icon(L)
-						L.become_blind("eyelids")
-						to_chat(user, "They will not be able to resist much more.")
-					if(100 to INFINITY)
-						to_chat(L, span_userdanger("You can't take it anymore. Your legs give out as you fall into the dreamworld."))
-						to_chat(user, "They're mine now.")
-						L.Slowdown(50)
-						L.eyesclosed = TRUE
-						for(var/atom/movable/screen/eye_intent/eyet in L.hud_used.static_inventory)
-							eyet.update_icon(L)
-						L.become_blind("eyelids")
-						sleep(50)
-						L.Sleeping(600)
+				to_chat(L, span_userdanger("You feel a curtain come over your mind. The work of Zizo is at play. Your legs give out as you fall into the dreamworld."))
+				to_chat(user, "They're mine now.")
+				L.Slowdown(50)
+				L.eyesclosed = TRUE
+				for(var/atom/movable/screen/eye_intent/eyet in L.hud_used.static_inventory)
+					eyet.update_icon(L)
+				L.become_blind("eyelids")
+				sleep(50)
+				L.Sleeping(600)
 
-		if(willroll >= bloodroll)
-			if(found_psycross == TRUE)
-				to_chat(L, "<font color='white'>The silver psycross shines and protect me from the unholy magic.</font>")
-				to_chat(user, span_userdanger("[L] has my BANE!It causes me to fail to ensnare their mind!"))
-			else
-				to_chat(user, "I fail to ensnare their mind.")
-			if(willroll - bloodroll >= 3)
-				if(found_psycross == TRUE)
-					to_chat(L, "<font color='white'> The silver psycross shines and protect me from the blood magic, the one who used blood magic was [user]!</font>")
-				else
-					to_chat(user, "I fail to ensnare their mind.")
-					to_chat(L, "I feel like someone or something unholy is messing with my head. I should get out of here!")
-					var/holyskill = L.mind.get_skill_level(/datum/skill/magic/holy)
-					var/arcaneskill = L.mind.get_skill_level(/datum/skill/magic/arcane)
-					if(holyskill + arcaneskill >= 1)
-						to_chat(L, "I feel like the unholy magic came from [user]. I should use my magic or miracles on them.")
 
 /obj/effect/proc_holder/spell/targeted/transfix/master
 	name = "Subjugate"

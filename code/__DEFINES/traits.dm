@@ -41,6 +41,7 @@
 #define TRAIT_GOODRUNNER "Good Runner"
 #define TRAIT_TINY "Tiny"
 #define TRAIT_STUDENT "Student"
+#define TRAIT_BOGVULNERABLE "Bog Vulnerable"
 // ROGUEspecialTRAITS (description when rmb skills button)
 #define TRAIT_CIVILIZEDBARBARIAN "Tavern Brawler"
 #define TRAIT_COMICSANS "Annoying Face"
@@ -87,7 +88,7 @@
 #define TRAIT_LEPROSY "Leprosy"
 #define TRAIT_NUDE_SLEEPER "Nude Sleeper"
 #define TRAIT_WANTED "Wanted Brigand"
-#define TRAIT_COMMIE "Eye of a Brigand" //bandit trait
+#define TRAIT_COMMIE "CHILDREN OF PSYDON" //PSYDON trait
 #define TRAIT_DEATHBYSNUSNU "Bed Breaker" // double sex damage (requires strong intent)
 #define TRAIT_POISONBITE "Venomous Bite" // Adds tox damage on bites
 
@@ -112,6 +113,7 @@
 GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_LEPROSY = span_necrosis("I'm a disgusting leper..."),
 	TRAIT_CHOSEN = "Appointed by the Church of the Successors, you hold authority over all spiritual matters in the City.",
+	TRAIT_BOGVULNERABLE = span_info("I am used to steady ground. The Terrorbog is unfamiliar terrain."),
 	TRAIT_WEBWALK = "I can move freely between webs.",
 	TRAIT_NOSTINK = span_dead("My nose is numb to the smell of decay."),
 	TRAIT_ZJUMP = "Time to reach a new high.",
@@ -158,7 +160,7 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_SOUL_EXAMINE = span_deadsay("I know when someone's soul has departed."),
 	TRAIT_CRACKHEAD = span_love("I can use drugs as much as I want!"),
 	TRAIT_ZIZO_MARKED = span_info("Zizo is steering me to evil and chaos, it feels amazing"),
-	TRAIT_COMMIE = span_bloody("I can recognize other free men, and they can recognize me too."),
+	TRAIT_COMMIE = span_bloody("I can recognize other children of PSYDON, and they can recognize me too."),
 	TRAIT_NORUN = span_warning("My body has atrophied in my state of decay; my leg joints just don't have the strength or durability for running anymore"),
 	TRAIT_GOODLOVER = span_love("It's a lucky thing to share my bed."),
 	TRAIT_SEEDKNOW = span_info("I know which seeds grow which crops."),
