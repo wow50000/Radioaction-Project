@@ -6,7 +6,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	selection_color = JCOLOR_SOLDIER
-	allowed_races = RACES_TOLERATED_UP
+	allowed_races = RACES_RESPECTED
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_ages = list(AGE_MIDDLEAGED, AGE_OLD)
 	allowed_patrons = ALL_NON_INHUMEN_PATRONS

@@ -11,7 +11,7 @@
 	allowed_races = RACES_VERY_SHUNNED_UP
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
 
-	tutorial = "Selling your body like a piece of meat in a butcher's shop, stripped of dignity and treated as a commodity, you remain obedient to the nightmaster. Every day you fight to survive in a world that offers you nothing but contempt and cock."
+	tutorial = "Selling your body like a piece of meat in a butcher's shop, stripped of dignity and treated as a commodity, you remain an obedient slave to the nightmaster. Every day you fight to survive in a world that offers you nothing but contempt and cock."
 
 	outfit = /datum/outfit/job/roguetown/nightmaiden
 	display_order = JDO_WENCH
@@ -23,7 +23,7 @@
 /datum/outfit/job/roguetown/nightmaiden/pre_equip(mob/living/carbon/human/H)
 	..()
 	shoes = /obj/item/clothing/shoes/roguetown/shortboots
-	neck = /obj/item/storage/belt/rogue/pouch/coins/poor
+	neck = /obj/item/clothing/neck/roguetown/collar/leather/cursed
 	r_hand = /obj/item/soap/bath
 	l_hand = /obj/item/rogue/instrument/harp
 	if(H.gender == MALE)

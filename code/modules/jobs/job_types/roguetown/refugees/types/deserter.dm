@@ -4,8 +4,9 @@
 				after having witnessed first hand the horrors of war and the disastrous campaigns against the deadite hordes of the south.\
 				You now seek refuge in a place where your past allegiance wont be recognized, hoping that the rot hasn't followed you.\ "
 
-	allowed_sexes = list(MALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_sexes = list(MALE, FEMALE)
+	allowed_races = RACES_TOLERATED_UP
+
 	category_tags = list(CTAG_REFUGEE)
 
 	maximum_possible_slots = 10

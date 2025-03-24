@@ -5,8 +5,8 @@
 	faction = "Station"
 	total_positions = 3
 	spawn_positions = 3
-	allowed_races = RACES_SHUNNED_UP
-	allowed_sexes = list(MALE, FEMALE)
+	allowed_races = RACES_RESPECTED
+	allowed_sexes = list(MALE)
 	allowed_ages = list(AGE_ADULT)
 	subclass_cat_rolls = list(CTAG_SQUIRE = 20)
 

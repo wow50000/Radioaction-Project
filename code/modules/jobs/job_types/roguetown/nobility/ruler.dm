@@ -10,9 +10,9 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	total_positions = 0
 	spawn_positions = 1
 	selection_color = JCOLOR_NOBLE
-	allowed_races = RACES_TOLERATED_UP
+	allowed_races = RACES_RESPECTED
 	allowed_patrons = ALL_NON_INHUMEN_PATRONS
-	allowed_sexes = list(MALE, FEMALE)
+	allowed_sexes = list(MALE)
 
 	spells = list(
 		SPELL_GRANT_TITLE,

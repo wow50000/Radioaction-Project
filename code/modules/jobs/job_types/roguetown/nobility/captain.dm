@@ -7,7 +7,7 @@
 	total_positions = 1
 	spawn_positions = 1
 
-	allowed_races = RACES_TOLERATED_UP
+	allowed_races = RACES_RESPECTED
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_ages = list(AGE_MIDDLEAGED, AGE_OLD)
 	tutorial = "You served your time gracefully as a Knight of the crown, and now you've grown into a role which many men dream to become. \

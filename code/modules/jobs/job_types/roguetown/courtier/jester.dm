@@ -6,7 +6,7 @@
 	total_positions = 1
 	spawn_positions = 1
 
-	allowed_races = RACES_NEARLY_ALL_PLUS_SEELIE
+	allowed_races = RACES_VERY_SHUNNED_UP
 	allowed_patrons = ALL_NON_INHUMEN_PATRONS
 
 	tutorial = "The Grenzelhofts were known for their Jesters, wisemen with a tongue just as sharp as their wit. \

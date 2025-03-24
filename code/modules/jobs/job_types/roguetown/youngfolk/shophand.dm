@@ -6,7 +6,7 @@
 	total_positions = 1
 	spawn_positions = 1
 
-	allowed_races = RACES_SHUNNED_UP
+	allowed_races = RACES_TOLERATED_UP
 	allowed_sexes = list(MALE, FEMALE)
 
 	tutorial = "The Merchant has taken you under his wing to learn the arcane arts of mercantilism, numeracy, literacy, and the joy of organizing the shelves. \

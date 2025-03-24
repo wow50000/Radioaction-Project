@@ -2,7 +2,7 @@
 	name = "Hedge Knight"
 	tutorial = "A wanted noble fallen from grace, your tarnished armor sits upon your shoulders as a heavy reminder of the life you've lost. Take back what is rightfully yours. But watch out, the duke have made you wanted, as he knows about you."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = RACES_VERY_SHUNNED_UP
 	outfit = /datum/outfit/job/roguetown/bandit/hedgeknight
 	category_tags = list(CTAG_BANDIT)
 	cmode_music = 'sound/music/combat_bandit2.ogg'

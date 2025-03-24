@@ -8,7 +8,7 @@
 	total_positions = 1
 	spawn_positions = 1
 
-	allowed_races = RACES_SHUNNED_UP
+	allowed_races = RACES_RESPECTED
 	allowed_ages = list(AGE_MIDDLEAGED, AGE_OLD)
 	allowed_patrons = ALL_NON_INHUMEN_PATRONS
 

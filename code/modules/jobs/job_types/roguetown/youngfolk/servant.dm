@@ -7,11 +7,11 @@
 	total_positions = 6
 	spawn_positions = 6
 
-	allowed_races = RACES_SHUNNED_UP_PLUS_SEELIE
+	allowed_races = RACES_VERY_SHUNNED_UP
 	allowed_ages = ALL_AGES_LIST
 	subclass_cat_rolls = list(CTAG_SERVANT = 20)
 
-	tutorial = "Granted a life of comfortable servitute in the Duke's manor, you follow the Head Butler/Maid's commands and spend your day performing necessary but menial tasks."
+	tutorial = "Granted a life of comfortable slavery in the Duke's manor, you follow the Head Butler/Maid's commands and spend your day performing necessary but menial tasks."
 
 	outfit = /datum/outfit/job/roguetown/servant
 	display_order = JDO_SERVANT
@@ -38,6 +38,7 @@
 		armor = /obj/item/clothing/suit/roguetown/shirt/dress/gen/black
 		shoes = /obj/item/clothing/shoes/roguetown/simpleshoes
 		cloak = /obj/item/clothing/cloak/apron/waist
+	neck = /obj/item/clothing/neck/roguetown/collar/leather/cursed
 	belt = /obj/item/storage/belt/rogue/leather
 	beltr = /obj/item/storage/keyring/servant
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
@@ -49,7 +50,7 @@
 	It is within your responsibility to make sure the keep stays in decent condition."
 	outfit = /datum/outfit/job/roguetown/servant/groundkeeper
 	category_tags = list(CTAG_SERVANT)
-	allowed_races = RACES_SHUNNED_UP_PLUS_SEELIE
+	allowed_races = RACES_VERY_SHUNNED_UP
 	maximum_possible_slots = 3
 
 /datum/outfit/job/roguetown/servant/groundkeeper/pre_equip(mob/living/carbon/human/H)
@@ -89,7 +90,7 @@
 	Why wouldnt you brew a barrel full of wine or something else as well? And remember... Do NOT put bad berries into your meals."
 	outfit = /datum/outfit/job/roguetown/servant/chef
 	category_tags = list(CTAG_SERVANT)
-	allowed_races = RACES_SHUNNED_UP_PLUS_SEELIE
+	allowed_races = RACES_VERY_SHUNNED_UP
 	maximum_possible_slots = 3
 
 /datum/outfit/job/roguetown/servant/chef/pre_equip(mob/living/carbon/human/H)
@@ -129,7 +130,7 @@
 	Now you must find your way back into the high society, as well as hide your shame of lowlife work."
 	outfit = /datum/outfit/job/roguetown/servant/bankrupt
 	category_tags = list(CTAG_SERVANT)
-	allowed_races = RACES_SHUNNED_UP
+	allowed_races = RACES_VERY_SHUNNED_UP
 	maximum_possible_slots = 1
 
 /datum/outfit/job/roguetown/servant/bankrupt/pre_equip(mob/living/carbon/human/H)
