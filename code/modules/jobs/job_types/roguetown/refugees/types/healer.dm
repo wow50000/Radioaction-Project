@@ -55,7 +55,7 @@
 			H.mind.adjust_skillrank(/datum/skill/misc/sewing, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/athletics, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/swimming, 1, TRUE)
 			H.mind.AddSpell(new SPELL_DIAGNOSE_SECULAR)
 			H.mind.AddSpell(new SPELL_DOCHEAL)
 			H.mind.AddSpell(new SPELL_STABLE)
