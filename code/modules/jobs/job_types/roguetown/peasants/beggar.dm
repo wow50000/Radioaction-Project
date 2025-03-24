@@ -62,7 +62,7 @@
 		if(H.mind)
 			H.mind.adjust_skillrank(/datum/skill/misc/sneaking, rand(2,5), TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/stealing, 5, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/misc/climbing, rand(2,5), TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/climbing, rand(3,5), TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/reading, 4, TRUE) //very good reading he is wise
 			H.mind.adjust_skillrank(/datum/skill/combat/polearms, rand(2,5), TRUE) // dog beating staff
 			H.mind.adjust_skillrank(/datum/skill/misc/lockpicking, 3, TRUE)
@@ -110,7 +110,7 @@
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/misc/sneaking, rand(1,5), TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/stealing, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/climbing, rand(1,5), TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/climbing, rand(3,5), TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/lockpicking, 2, TRUE)
 		H.STALUC = rand(1, 20)
 	if(prob(5))
@@ -123,8 +123,8 @@
 		l_hand = null
 	H.change_stat("strength", -1)
 	H.change_stat("intelligence", -4)
-	H.change_stat("constitution", -3)
-	H.change_stat("endurance", -3)
+	H.change_stat("constitution", -2)
+	H.change_stat("endurance", -2)
 
 /datum/outfit/job/roguetown/vagrant
 	name = "Beggar"
