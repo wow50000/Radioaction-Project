@@ -13,7 +13,7 @@
 /datum/outfit/job/roguetown/mercenary/sellsword/pre_equip(mob/living/carbon/human/H)
 	..()
 	H.adjust_blindness(-3)
-	var/classes = list("Swordsman","Fencer", "Cutthroat")
+	var/classes = list("Swordsman","Fencer", "Cutthroat") //stats are VERY slightly higher than the baseline because they're nearly completely unarmored
 	var/classchoice = input("Choose your archetypes", "Available archetypes") as anything in classes
 	shoes = /obj/item/clothing/shoes/roguetown/armor/leather
 	pants = /obj/item/clothing/under/roguetown/trou/leather
@@ -55,7 +55,7 @@
 
 			if(H.mind)
 				H.mind.adjust_skillrank(/datum/skill/misc/swimming, 1, TRUE)
-				H.mind.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
+				H.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
 				H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
 				H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 1, TRUE)
 				H.mind.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)
@@ -63,7 +63,7 @@
 				H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
 				H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
 				H.mind.adjust_skillrank(/datum/skill/combat/maces, 3, TRUE)
-				H.mind.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
+				H.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
 				H.mind.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
 				H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 				H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
@@ -93,7 +93,7 @@
 
 			if(H.mind)
 				H.mind.adjust_skillrank(/datum/skill/misc/swimming, 1, TRUE)
-				H.mind.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
+				H.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
 				H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
 				H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 1, TRUE)
 				H.mind.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)
@@ -130,7 +130,7 @@
 
 			if(H.mind)
 				H.mind.adjust_skillrank(/datum/skill/misc/swimming, 1, TRUE)
-				H.mind.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
+				H.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
 				H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
 				H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 1, TRUE)
 				H.mind.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)
