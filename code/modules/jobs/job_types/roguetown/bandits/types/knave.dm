@@ -27,7 +27,7 @@
 	H.mind.adjust_skillrank(/datum/skill/misc/treatment, 1, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 4, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/stealing, 4, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/lockpicking, 3, TRUE)
 	belt = /obj/item/storage/belt/rogue/leather
 	pants = /obj/item/clothing/under/roguetown/trou/leather
@@ -39,7 +39,7 @@
 	H.change_stat("constitution", 1)
 	H.change_stat("intelligence", -3)
 	H.change_stat("perception", 2)
-	H.change_stat("speed", 2) //It's all about speed and perception
+	H.change_stat("speed", 3) //It's all about speed and perception
 	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC) //gets dodge expert but no medium armor training - gotta stay light
 	ADD_TRAIT(H, TRAIT_DEATHBYSNUSNU, TRAIT_GENERIC)
 	H.adjust_blindness(-3)

@@ -63,5 +63,5 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/riding, 1, TRUE)
 		H.change_stat("perception", 4)
 		H.change_stat("endurance", 2)
-		H.change_stat("speed", -3)
+		H.change_stat("speed", -2)
 		H.change_stat("intelligence", 5)
