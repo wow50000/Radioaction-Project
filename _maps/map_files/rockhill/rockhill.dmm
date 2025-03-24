@@ -191,7 +191,7 @@
 "aiG" = (
 /obj/item/reagent_containers/powder/salt,
 /obj/effect/decal/cleanable/cobweb,
-/turf/open/floor/rogue/dirt/road,
+/turf/open/floor/rogue/blocks,
 /area/rogue/under/town/basement)
 "aiV" = (
 /obj/structure/closet/crate/chest{
@@ -3912,7 +3912,7 @@
 "ewU" = (
 /obj/structure/bed/rogue/shit,
 /obj/effect/landmark/start/prisonerr,
-/turf/open/floor/rogue/dirt/road,
+/turf/open/floor/rogue/blocks,
 /area/rogue/under/town/basement)
 "exa" = (
 /obj/structure/stairs/d,
@@ -6236,7 +6236,8 @@
 /area/rogue/indoors/town/manor)
 "hec" = (
 /obj/structure/fluff/walldeco/chains,
-/turf/open/floor/rogue/dirt/road,
+/obj/machinery/light/rogue/wallfire/candle/l,
+/turf/open/floor/rogue/blocks,
 /area/rogue/under/town/basement)
 "hew" = (
 /turf/open/floor/rogue/woodturned,
@@ -11440,8 +11441,9 @@
 /turf/open/floor/rogue/church,
 /area/rogue/indoors/town/church/chapel)
 "nvW" = (
-/obj/structure/table/wood,
-/turf/open/floor/rogue/dirt/road,
+/obj/structure/fluff/walldeco/chains,
+/obj/structure/bed/rogue/shit,
+/turf/open/floor/rogue/cobble,
 /area/rogue/under/town/basement)
 "nwp" = (
 /obj/structure/roguewindow/openclose{
@@ -12394,11 +12396,12 @@
 /turf/open/transparent/openspace,
 /area/rogue/under/cavewet/bogcaves)
 "ovv" = (
-/obj/structure/bed/rogue/shit,
-/obj/effect/landmark/start/prisonerr{
-	dir = 1
+/obj/structure/mineral_door/bars{
+	locked = 1;
+	lockid = "keep_barracks";
+	name = "Holding Cell"
 	},
-/turf/open/floor/rogue/dirt/road,
+/turf/open/floor/rogue/blocks,
 /area/rogue/under/town/basement)
 "owa" = (
 /obj/structure/stairs{
@@ -12545,8 +12548,9 @@
 /turf/open/floor/rogue/hexstone,
 /area/rogue/indoors/town/manor)
 "oDW" = (
-/obj/item/reagent_containers/food/snacks/smallrat,
-/turf/open/floor/rogue/dirt/road,
+/obj/effect/decal/cleanable/blood/old,
+/obj/structure/bed/rogue/shit,
+/turf/open/floor/rogue/blocks,
 /area/rogue/under/town/basement)
 "oDY" = (
 /obj/item/reagent_containers/glass/cup/wooden,
@@ -13291,10 +13295,6 @@
 	dir = 1
 	},
 /turf/open/floor/rogue/cobble,
-/area/rogue/under/town/basement)
-"pvI" = (
-/obj/structure/toilet,
-/turf/open/floor/rogue/dirt/road,
 /area/rogue/under/town/basement)
 "pvV" = (
 /obj/structure/closet/crate/roguecloset,
@@ -20573,7 +20573,7 @@
 /obj/effect/landmark/start/prisonerr{
 	dir = 4
 	},
-/turf/open/floor/rogue/dirt/road,
+/turf/open/floor/rogue/blocks,
 /area/rogue/under/town/basement)
 "xQs" = (
 /obj/structure/mineral_door/wood/donjon/stone{
@@ -189363,7 +189363,7 @@ iTw
 vup
 cBf
 cBf
-syh
+nvW
 txa
 vRu
 vRu
@@ -199425,13 +199425,13 @@ pOf
 rSC
 rSC
 cTA
-cEK
+cBf
 hec
 xQr
-jyI
-cEK
-pSj
 cBf
+cBf
+oDW
+rjZ
 jGw
 cTA
 hks
@@ -199828,12 +199828,12 @@ vRu
 cTA
 cTA
 ewU
-cEK
-cEK
-cTA
-pvI
 iTw
-cBf
+iTw
+iTw
+iTw
+iTw
+iTw
 ghV
 cTA
 aNc
@@ -200229,13 +200229,13 @@ vRu
 vRu
 jyI
 aiG
-cEK
-nvW
-oDW
-jyI
-iTw
-iTw
 cBf
+edI
+wbq
+iTw
+iTw
+iTw
+iTw
 hfI
 cTA
 iTw
@@ -200630,15 +200630,15 @@ rSC
 vRu
 vRu
 cTA
-hec
-cEK
-jMl
-cEK
-cTA
+jGw
+iTw
+iTw
+iTw
+iTw
 syh
 iTw
-jMl
-cEK
+iTw
+cBf
 cTA
 iTw
 jMl
@@ -201032,15 +201032,15 @@ rSC
 vRu
 vRu
 cTA
-cEK
-cEK
-cEK
-cEK
-jyI
+mWE
+iTw
+iTw
+iTw
+iTw
 edI
 iTw
-cEK
-ovv
+iTw
+ghV
 jyI
 iTw
 jMl
@@ -201434,15 +201434,15 @@ rSC
 vRu
 vRu
 cTA
-pvI
-cEK
-cEK
-cEK
-cTA
-kDm
-iTw
-cEK
-cEK
+cBf
+cBf
+cBf
+cBf
+cBf
+cBf
+cBf
+cBf
+cBf
 cTA
 iTw
 jMl
@@ -201836,15 +201836,15 @@ rSC
 vRu
 vRu
 cTA
-cTA
-cTA
-uiu
-cTA
-cTA
-cTA
-cTA
-uiu
-cTA
+ida
+ovv
+ida
+ida
+ida
+ida
+ida
+ovv
+ida
 cTA
 uiu
 jMl
