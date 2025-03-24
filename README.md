@@ -1,25 +1,13 @@
 
 <p align="center">
- <img width="450px" src="https://res.cloudinary.com/dxckdses2/image/upload/v1730145846/ydfd9atasnhj9jn3r5jw.png" align="center" alt="Ratwood Stats" />
- <h1 align="center">RATWOOD</h1>
- <h2 align="center">Anthros Allowed Medieval Roleplay</h2>
+ <img width="322px" src="https://i.postimg.cc/gJ3yV0Jv/ageofpsydon.png" align="center" alt="Ratwood Stats" />
+ <h1 align="center">AGE OF PSYDON</h1>
+ <h2 align="center">Grim-Dark Medieval Roleplay<br>Anthros Allowed</h2>
 </p>
 
 <p align="center">
-    <a href="https://github.com/Rotwood-Vale/Ratwood-Keep/graphs/contributors">
-      <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/Rotwood-Vale/Ratwood-Keep" />
-    </a>
-    <a href="https://github.com/Rotwood-Vale/Ratwood-Keep/issues">
-      <img alt="Issues" src="https://img.shields.io/github/issues/Rotwood-Vale/Ratwood-Keep?color=0088ff" />
-    </a>
-    <a href="https://github.com/Rotwood-Vale/Ratwood-Keep/pulls">
-      <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/Rotwood-Vale/Ratwood-Keep?color=0088ff" />
-    </a>
-</p>
-
-<p align="center">
-	<a href="https://github.com/Rotwood-Vale/Ratwood-Keep/actions/workflows/ci_suite.yml">
-      <img alt="BYOND Build" src="https://github.com/Rotwood-Vale/Ratwood-Keep/actions/workflows/ci_suite.yml/badge.svg" />
+	<a href="https://github.com/Radioaction-Cyber/Age-of-Psydon/actions/workflows/ci_suite.yml">
+      <img alt="BYOND Build" src="https://github.com/Radioaction-Cyber/Age-of-Psydon/actions/workflows/ci_suite.yml/badge.svg" />
     </a>
 </p>
 
@@ -27,14 +15,14 @@
 
 | Website                   | Link                                           |
 |---------------------------|------------------------------------------------|
-| Discord          | [discord.gg/nQDetK6ktR](https://discord.gg/nQDetK6ktR) |
-| Wiki                      | [wiki.ratwood.rip](https://wiki.ratwood.rip/index.php/Main_Page) |
+| Discord          | [discord.gg/6pW3uT3aaX](https://discord.gg/6pW3uT3aaX) |
+| Wiki                      | [TBA]() |
 
 </div>
 
 
 <h1>
-	<a href="https://github.com/Rotwood-Vale/Ratwood-Keep/blob/main/CONTRIBUTING.md">
+	<a href="https://github.com/Radioaction-Cyber/Age-of-Psydon/blob/main/CONTRIBUTING.md">
 		Contribution Guidelines
 	</a>
 </h1>
@@ -42,18 +30,18 @@
 
 # LICENSE
 
-## Ratwood
+## AGE OF PSYDON
 
 All original code and assets of this repository are under the [GNU Affero General Public License v3.0](https://www.gnu.org/licenses/agpl-3.0.en.html) unless otherwise indicated.
 
-## Ratwood - Proprietary
+## AGE OF PSYDON - Proprietary
 
 The following code and assets are under a custom proprietary license as per author or client's wishes.
 
 | Reference                                           | Author   |   License  |
 |-----------------------------------------------------|----------|------------|
 | sprite.dmi                                          | John Doe | license.txt|
-| [Assets](https://github.com/Rotwood-Vale/Ratwood-Keep/blob/main/icons/roguetown/clothing/licensed-infraredbaron)                                        | Infrared Baron | [LICENSE.md](https://github.com/Rotwood-Vale/Ratwood-Keep/blob/main/icons/roguetown/clothing/licensed-infraredbaron/LICENSE.md)|
+| [Assets](https://github.com/Radioaction-Cyber/Age-of-Psydon/blob/main/icons/roguetown/clothing/licensed-infraredbaron)                                        | Infrared Baron | [LICENSE.md](https://github.com/Radioaction-Cyber/Age-of-Psydon/blob/main/icons/roguetown/clothing/licensed-infraredbaron/LICENSE.md)|
 
 
 ## TG
