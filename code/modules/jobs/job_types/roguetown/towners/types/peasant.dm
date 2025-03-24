@@ -39,7 +39,7 @@
 	H.change_stat("strength", 1)
 	H.change_stat("endurance", 1)
 	H.change_stat("intelligence", -2)
-	H.change_stat("speed", -1)
+	H.change_stat("speed", 0)
 	if(H.age == AGE_MIDDLEAGED)
 		H.mind.adjust_skillrank(/datum/skill/labor/farming, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE)
