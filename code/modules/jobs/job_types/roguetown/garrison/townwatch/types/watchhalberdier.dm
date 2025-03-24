@@ -10,7 +10,7 @@
 
 /datum/outfit/job/roguetown/townwatch/watchhalberdier/pre_equip(mob/living/carbon/human/H)
 	..()
-	r_hand = /obj/item/rogueweapon/halberd // should probably be changed to an iron spear for balance's sake
+	r_hand = /obj/item/rogueweapon/spear
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE)
 		H.change_stat("strength", 2)
