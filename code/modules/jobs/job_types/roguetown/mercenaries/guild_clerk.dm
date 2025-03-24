@@ -10,7 +10,7 @@
 	allowed_races = RACES_VERY_SHUNNED_UP
 	allowed_ages = ALL_AGES_LIST
 	outfit = /datum/outfit/job/roguetown/mercenary/guild_clerk
-	display_order = JDO_MERC_CLERK
+//	display_order = JDO_MERC_CLERK
 	selection_color = JCOLOR_MERCENARY
 	faction = "Station"
 	total_positions = 1

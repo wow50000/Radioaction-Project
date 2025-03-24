@@ -105,9 +105,9 @@
 #define MARSHAL		(1<<6)
 #define HOSTAGE		(1<<7)
 
-#define GARRISON		(1<<1)
+#define GARRISON		(1<<8)
 
-#define GUARDSMAN	(1<<0)
+#define GUARDSMAN	(1<<8)
 #define MANATARMS	(1<<1)
 #define DUNGEONEER	(1<<2)
 #define GATEMASTER	(1<<3)
@@ -285,10 +285,6 @@
 #define JDO_GRABBER 28.1
 #define JDO_WENCH 28.2
 
-
-#define JDO_HARBORMASTER 29
-#define JDO_LONGSHOREMAN 29.1
-
 #define JDO_VILLAGER 30
 
 #define JDO_MERC_CLERK 31
@@ -383,7 +379,6 @@
 
 #define WANDERER_ROLES \
 	/datum/job/roguetown/guild_clerk,\
-	/datum/job/roguetown/mercenary,\
 	/datum/job/roguetown/seelie,\
 	/datum/job/roguetown/grabber,\
 
@@ -394,7 +389,7 @@
 	/datum/job/roguetown/gatemaster,\
 	/datum/job/roguetown/manorguard,\
 	/datum/job/roguetown/sheriff,\
-	/datum/job/roguetown/citywatch
+	/datum/job/roguetown/citywatch \
 
 #define GOBLIN_ROLES \
 	/datum/job/roguetown/goblinchief,\
@@ -402,9 +397,9 @@
 	/datum/job/roguetown/goblinguard,\
 	/datum/job/roguetown/goblinrabble,\
 	/datum/job/roguetown/goblinshaman,\
-	/datum/job/roguetown/goblinsmith
+	/datum/job/roguetown/goblinsmith \
 
 #define FOREIGNER_ROLES \
 	/datum/job/roguetown/refugee,\
 	/datum/job/roguetown/migrant,\
-	/datum/job/roguetown/bandit,
+	/datum/job/roguetown/bandit \
