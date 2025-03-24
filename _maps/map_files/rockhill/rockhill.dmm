@@ -1940,10 +1940,6 @@
 /obj/machinery/light/rogue/forge,
 /turf/open/floor/rogue/blocks/stonered,
 /area/rogue/indoors/town)
-"coM" = (
-/obj/structure/roguemachine/mail,
-/turf/open/floor/carpet/royalblack,
-/area/rogue/indoors/town/church)
 "cpf" = (
 /turf/closed/wall/mineral/rogue/wood,
 /area/rogue/indoors/town/manor)
@@ -5930,13 +5926,6 @@
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors)
-"gLF" = (
-/obj/structure/roguemachine/withdraw{
-	pixel_x = 32;
-	pixel_y = 0
-	},
-/turf/open/floor/rogue/herringbone,
-/area/rogue/indoors/town/church)
 "gLS" = (
 /obj/machinery/light/rogue/wallfire/candle/r{
 	pixel_x = -32
@@ -12164,10 +12153,6 @@
 	icon_state = "vertw"
 	},
 /area/rogue/indoors/town/shop)
-"ofY" = (
-/obj/structure/roguemachine/mail,
-/turf/open/floor/rogue/church,
-/area/rogue/indoors/town/church/chapel)
 "oga" = (
 /obj/structure/rack/rogue,
 /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve,
@@ -413350,7 +413335,7 @@ fZJ
 fZJ
 fZJ
 hcx
-ofY
+ntK
 ntK
 ntK
 ntK
@@ -420995,7 +420980,7 @@ eZD
 eBN
 eBN
 lHU
-gLF
+eBN
 eBN
 uaS
 eBN
@@ -522708,7 +522693,7 @@ vIa
 vIa
 vIa
 teW
-coM
+qrN
 qrN
 qrN
 iMA
