@@ -25,7 +25,7 @@
 	H.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/sewing, 1, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/treatment, 1, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/swimming, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/lockpicking, 1, TRUE)
 	belt = /obj/item/storage/belt/rogue/leather
@@ -39,10 +39,11 @@
 	head = /obj/item/clothing/head/roguetown/helmet/leather/volfhelm
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/hide
 	H.change_stat("strength", 3)
-	H.change_stat("endurance", 2)
+	H.change_stat("endurance", 1)
 	H.change_stat("constitution", 2)
 	H.change_stat("perception", 1)
 	H.change_stat("intelligence", -2)
+	H.change_stat("speed", 1)
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_DEATHBYSNUSNU, TRAIT_GENERIC)
 	H.adjust_blindness(-3)

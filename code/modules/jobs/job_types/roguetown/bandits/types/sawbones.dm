@@ -21,7 +21,7 @@
 	backl = /obj/item/storage/backpack/rogue/backpack
 	backpack_contents = list(/obj/item/storage/fancy/skit = 1, /obj/item/storage/fancy/ifak = 1, /obj/item/reagent_containers/glass/alembic = 1,)
 	H.mind.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/craft/crafting, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/craft/carpentry, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/labor/lumberjacking, 1, TRUE)
@@ -39,7 +39,7 @@
 	ADD_TRAIT(H, TRAIT_DEATHBYSNUSNU, TRAIT_GENERIC)
 	H.change_stat("strength", 2)
 	H.change_stat("intelligence", 3)
-	H.change_stat("speed", 1)
+	H.change_stat("speed", 2)
 	H.change_stat("fortune", 1)
 	if(H.age == AGE_OLD)
 		H.change_stat("speed", -1)
