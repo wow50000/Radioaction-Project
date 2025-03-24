@@ -7,7 +7,7 @@
 	spawn_positions = 1
 	selection_color = JCOLOR_YEOMAN
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_TOLERATED_UP
+	allowed_races = RACES_RESPECTED
 	allowed_ages = list(AGE_MIDDLEAGED, AGE_OLD)
 	allowed_patrons = ALL_NON_INHUMEN_PATRONS
 	tutorial = "Whether you are a crooked politician or a true benefactor, the cityfolk now turn to you for guidance on smaller matters. \

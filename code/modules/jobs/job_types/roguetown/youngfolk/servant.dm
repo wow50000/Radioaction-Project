@@ -7,11 +7,11 @@
 	total_positions = 6
 	spawn_positions = 6
 
-	allowed_races = RACES_SHUNNED_UP_PLUS_SEELIE
+	allowed_races = RACES_VERY_SHUNNED_UP
 	allowed_ages = ALL_AGES_LIST
 	subclass_cat_rolls = list(CTAG_SERVANT = 20)
 
-	tutorial = "Granted a life of comfortable servitute in the Duke's manor, you follow the Head Butler/Maid's commands and spend your day performing necessary but menial tasks."
+	tutorial = "Granted a life of comfortable slavery in the Duke's manor, you follow the Head Butler/Maid's commands and spend your day performing necessary but menial tasks."
 
 	outfit = /datum/outfit/job/roguetown/servant
 	display_order = JDO_SERVANT
@@ -38,6 +38,7 @@
 		armor = /obj/item/clothing/suit/roguetown/shirt/dress/gen/black
 		shoes = /obj/item/clothing/shoes/roguetown/simpleshoes
 		cloak = /obj/item/clothing/cloak/apron/waist
+	neck = /obj/item/clothing/neck/roguetown/collar/leather/cursed/Initialize(mapload)
 	belt = /obj/item/storage/belt/rogue/leather
 	beltr = /obj/item/storage/keyring/servant
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
