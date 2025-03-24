@@ -67,10 +67,10 @@
 		H.mind.adjust_skillrank(/datum/skill/craft/hunting, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/labor/lumberjacking, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/swimming, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/craft/crafting, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/craft/carpentry, 2, TRUE)
@@ -80,6 +80,6 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/treatment, 1, TRUE)
 		H.change_stat("strength", 1)
 		H.change_stat("endurance", 2)
-		H.change_stat("speed", 3)
+		H.change_stat("speed", 2) // 3 speed is fucking goofy for something that hits so hard
 		H.change_stat("perception", 2)
 		H.change_stat("constitution", 1) // 9 Points with no armor skill.
