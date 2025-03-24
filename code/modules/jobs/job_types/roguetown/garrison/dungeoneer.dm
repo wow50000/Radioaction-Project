@@ -42,13 +42,12 @@
 	beltl = /obj/item/storage/keyring/dungeoneer
 	backr = /obj/item/storage/backpack/rogue/satchel/black
 	if(H.mind)
-		H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 4, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/swords, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/sewing, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/treatment, 2, TRUE)
@@ -57,6 +56,7 @@
 	H.change_stat("intelligence", -2)
 	H.change_stat("endurance", 2)
 	H.change_stat("constitution", 2)
+	H.change_stat("speed", -1)
 	H.dna.species.soundpack_m = new /datum/voicepack/male/warrior()
 	H.verbs |= /mob/living/carbon/human/proc/torture_victim
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)

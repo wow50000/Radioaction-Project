@@ -55,17 +55,17 @@
 	backl = /obj/item/rogueweapon/shield/tower
 	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1, /obj/item/signal_horn = 1)
 	if(H.mind)
-		H.mind.adjust_skillrank(/datum/skill/combat/axes, 4, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/maces, 4, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 5, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 4, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/axes, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/maces, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/swimming, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
@@ -86,7 +86,7 @@
 	overlay_state = "recruit_bog"
 	recruitment_faction = "Vanguard"
 	recruitment_message = "Serve the vanguard, %RECRUIT!"
-	accept_message = "FOR THE VANGUARDs!"
+	accept_message = "FOR THE BOG!"
 	refuse_message = "I refuse."
 
 /obj/effect/proc_holder/spell/self/convertrole/bog/convert(mob/living/carbon/human/recruit, mob/living/carbon/human/recruiter)

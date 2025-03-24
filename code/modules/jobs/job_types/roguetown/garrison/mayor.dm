@@ -58,7 +58,6 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 4, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/swimming, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/treatment, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/riding, 1, TRUE)
 		H.change_stat("perception", 4)
