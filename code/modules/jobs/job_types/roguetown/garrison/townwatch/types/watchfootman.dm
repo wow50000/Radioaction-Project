@@ -10,11 +10,10 @@
 
 /datum/outfit/job/roguetown/manorguard/watchfootman/pre_equip(mob/living/carbon/human/H)
 	..()
-	r_hand = /obj/item/rogueweapon/mace/steel
-	l_hand = /obj/item/rogueweapon/shield/tower
+	r_hand = /obj/item/rogueweapon/mace/iron
 	beltr = /obj/item/rogueweapon/stoneaxe/woodcut
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/maces, 1, TRUE)
-		H.change_stat("strength", 3)
-		H.change_stat("constitution", 3)
+		H.change_stat("strength", 2)
+		H.change_stat("constitution", 1)
 		H.change_stat("endurance", 2)
