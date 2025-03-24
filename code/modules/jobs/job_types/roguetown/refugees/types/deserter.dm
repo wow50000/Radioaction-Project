@@ -6,6 +6,7 @@
 
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_TOLERATED_UP
+
 	category_tags = list(CTAG_REFUGEE)
 
 	maximum_possible_slots = 10
@@ -79,8 +80,8 @@
 			H.change_stat("constitution", 1)
 			H.change_stat("speed", 1)
 			ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
-		
-		if("Pikeman")	
+
+		if("Pikeman")
 			H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
@@ -101,11 +102,11 @@
 			backl = /obj/item/storage/backpack/rogue/satchel
 			beltl = /obj/item/rogueweapon/huntingknife
 			H.change_stat("strength", 2)
-			H.change_stat("endurance", 2)
+			H.change_stat("endurance", 1)
 			H.change_stat("constitution", 1)
 			H.change_stat("speed", 1)
 			ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
-		
+
 		if("Handgonner")
 			H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/firearms, 3, TRUE)
@@ -133,6 +134,6 @@
 			H.change_stat("endurance", 1)
 			H.change_stat("constitution", 1)
 			H.change_stat("speed", 2)
-			H.change_stat("intelligence", 2)
+			H.change_stat("intelligence", 1)
 
 	H.set_blindness(0)

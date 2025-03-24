@@ -14,7 +14,7 @@
 	backl = /obj/item/gun/ballistic/revolver/grenadelauncher/bow
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)
-		H.change_stat("perception", 3)
+		H.change_stat("perception", 1)
 		H.change_stat("constitution", 1)
 		H.change_stat("endurance", 1)
 		H.change_stat("speed", 2)

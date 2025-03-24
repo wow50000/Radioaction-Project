@@ -36,6 +36,7 @@
 	backpack_contents = list(/obj/item/needle/thorn = 1, /obj/item/natural/cloth = 1)
 	mask = /obj/item/clothing/mask/rogue/facemask/steel
 	neck = /obj/item/clothing/neck/roguetown/gorget
+	head = /obj/item/clothing/head/roguetown/menacing/bandit
 	H.change_stat("strength", 2) //less buffs than brigand but less int debuff also somewhat faster
 	H.change_stat("endurance", 2)
 	H.change_stat("constitution", 2)
@@ -50,11 +51,9 @@
 	switch(weapon_choice)
 		if("Spear") //Deserter watchman. Maybe should be shield and spear? plenty of shields at the bandit hideout though.
 			r_hand = /obj/item/rogueweapon/spear
-			head = /obj/item/clothing/head/roguetown/helmet/skullcap
 		if("Sword & Shield") //Mercenary on the wrong side of the law
 			backl= /obj/item/rogueweapon/shield/wood
-			beltr = /obj/item/rogueweapon/sword/iron //iron sword like literally every refugee gets
-			head = /obj/item/clothing/head/roguetown/helmet/leather/volfhelm
+			beltr = /obj/item/rogueweapon/sword/iron //iron sword like literally every refugee gets	
 	var/wanted = list("Not wanted", "Wanted")
 	var/wanted_choice = input("Are you wanted by the kingdom", "You will be more skilled from your experience") as anything in wanted
 	switch(wanted_choice)

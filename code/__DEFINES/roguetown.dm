@@ -28,27 +28,29 @@
 	/datum/species/elf/wood,\
 	/datum/species/human/halfelf,\
 	/datum/species/dwarf/mountain,\
-	/datum/species/aasimar,\
-	/datum/species/lupian,\
-	/datum/species/vulpkanin,\
-	/datum/species/moth,\
-	/datum/species/dracon,
+	/datum/species/aasimar,
+	
 
 #define RACES_TOLERATED \
-	/datum/species/lizardfolk,\
-	/datum/species/tabaxi,\
-	/datum/species/axian,\
-	/datum/species/anthromorph,\
-	/datum/species/demihuman
+	/datum/species/lupian,\
+	/datum/species/vulpkanin,\
+	/datum/species/axian,
+	
 
 #define RACES_SHUNNED \
-	/datum/species/elf/dark,\
+	/datum/species/tabaxi,\
+	/datum/species/lizardfolk,\
 	/datum/species/tieberian,\
 	/datum/species/anthromorphsmall,\
-	/datum/species/kobold
+	/datum/species/demihuman,
+	
 
 #define RACES_VERY_SHUNNED \
-	/datum/species/halforc
+	/datum/species/elf/dark,\
+	/datum/species/halforc,\
+	/datum/species/moth,\
+	/datum/species/kobold,\
+	/datum/species/seelie,
 
 #define RACES_GOBLIN \
 	/datum/species/goblinp

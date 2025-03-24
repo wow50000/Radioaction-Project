@@ -189,7 +189,7 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 5, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/swimming, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 1, TRUE)
@@ -201,11 +201,11 @@
 		H.mind.adjust_skillrank(/datum/skill/craft/crafting, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/sewing, 1, TRUE)
-		H.change_stat("fortune", 2) // Xylix blessed you with great luck bro trust me
+		H.change_stat("fortune", 3) // Xylix blessed you with great luck bro trust me AKA retard strength
 		H.change_stat("perception", -2)
 		H.change_stat("intelligence", -2)
 		H.change_stat("constitution", -2)
-		H.change_stat("strength", -2)
+		H.change_stat("strength", 1)
 		H.change_stat("endurance", -2)
 	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_CRITICAL_WEAKNESS, TRAIT_GENERIC)
