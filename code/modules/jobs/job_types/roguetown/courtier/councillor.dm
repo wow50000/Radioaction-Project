@@ -16,9 +16,9 @@
 			You only answer to the Duke, Duchess, Heir, or Heiress. However, your main focus is to assist the Duke with their duties and whatever you are assigned."
 	whitelist_req = FALSE
 	outfit = /datum/outfit/job/roguetown/councillor
-	
+
 	give_bank_account = 40
-	min_pq = 2
+	min_pq = 12
 	max_pq = null
 
 /datum/job/roguetown/councillor/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
@@ -50,7 +50,7 @@
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/rich
 	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel = 1)
 	if(H.mind)
-		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 1, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/swimming, 1, TRUE)
@@ -62,7 +62,7 @@
 		H.change_stat("intelligence", 3)
 		H.change_stat("constitution", 1)
 		H.change_stat("fortune", 1)
-	
+
 	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
 	H.verbs |= list(/mob/living/carbon/human/proc/request_outlaw, /mob/living/carbon/human/proc/request_law, /mob/living/carbon/human/proc/request_law_removal)
 

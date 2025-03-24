@@ -20,7 +20,7 @@
 		/datum/species/elf/dark,
 	)
 	outfit = /datum/outfit/job/roguetown/mercenary/grenzelhoft_jager
-	maximum_possible_slots = 4
+	maximum_possible_slots = 0
 	min_pq = 18
 	torch = FALSE
 	cmode_music = 'sound/music/combat_grenzelhoft.ogg'
@@ -80,6 +80,6 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/treatment, 1, TRUE)
 		H.change_stat("strength", 1)
 		H.change_stat("endurance", 2)
-		H.change_stat("speed", 3)
+		H.change_stat("speed", 1)
 		H.change_stat("perception", 2)
 		H.change_stat("constitution", 1) // 9 Points with no armor skill.

@@ -9,7 +9,7 @@
 		/datum/species/tieberian
 	)
 	outfit = /datum/outfit/job/roguetown/mercenary/newmoon
-	maximum_possible_slots = 10
+	maximum_possible_slots = 0
 	min_pq = 4
 	torch = FALSE
 	cmode_music = 'sound/music/combat_desertrider.ogg'
@@ -47,7 +47,7 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/swimming, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/knives, 1, TRUE)
@@ -63,7 +63,7 @@
 		H.change_stat("intelligence", 3)
 		H.change_stat("constitution", -2)
 		H.change_stat("endurance", 2)
-		H.change_stat("speed", 2)
+		H.change_stat("speed", -1)
 		H.mind.AddSpell(new SPELL_LEARNSPELL)
 		H.mind.AddSpell(new SPELL_SUMMON_WEAPON)
 	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)

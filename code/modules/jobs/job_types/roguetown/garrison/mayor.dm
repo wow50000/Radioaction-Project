@@ -1,4 +1,4 @@
-/datum/job/roguetown/mayor
+/* /datum/job/roguetown/mayor
 	title = "Mayor"
 	flag = ELDER
 	department_flag = YEOMEN

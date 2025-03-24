@@ -19,7 +19,7 @@
 	outfit = /datum/outfit/job/roguetown/magician
 	whitelist_req = TRUE
 	give_bank_account = 47
-	min_pq = 2
+	min_pq = 12
 	max_pq = null
 
 /datum/outfit/job/roguetown/magician
@@ -59,7 +59,7 @@
 	ADD_TRAIT(H, TRAIT_NOBLE, "[type]")
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 6, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/magic/arcane, 5, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/magic/arcane, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/riding, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/polearms, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 1, TRUE)
@@ -73,14 +73,15 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/treatment, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/riding, 1, TRUE)
 		H.change_stat("strength", -1)
-		H.change_stat("constitution", -1)
+		H.change_stat("constitution", -3)
 		H.change_stat("intelligence", 4)
+		H.change_stat("speed", -2)
 		H.mind.adjust_spellpoints(10)
 		if(H.age == AGE_OLD) //old wizards are wise and experienced they should not get arcane 1 for being old
 			belt = /obj/item/storage/belt/rogue/leather/plaquegold //golden belt to show how valuable they are to the duke
 			H.change_stat("speed", -1)
-			H.change_stat("intelligence", 1)
-			H.change_stat("perception", 1)
+			H.change_stat("intelligence", 2)
+			H.change_stat("perception", -1)
 
 		if(H.gender == MALE)
 			H.dna.species.soundpack_m = new /datum/voicepack/male/wizard()

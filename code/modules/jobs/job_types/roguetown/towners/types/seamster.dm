@@ -1,6 +1,6 @@
 /datum/subclass/seamstress
-	name = "Seamster"
-	allowed_sexes = list(MALE, FEMALE)
+	name = "Seamstress"
+	allowed_sexes = list(FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/towner/seamstress
 	category_tags = list(CTAG_TOWNER)
@@ -30,7 +30,7 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/stealing, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 		H.change_stat("intelligence", 1)
-		H.change_stat("speed", 3)  
+		H.change_stat("speed", 3)
 		H.change_stat("strength", 2)
 		if(H.age == AGE_MIDDLEAGED)
 			H.mind.adjust_skillrank(/datum/skill/misc/sewing, 1, TRUE)

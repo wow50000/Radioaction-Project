@@ -4,9 +4,9 @@
 	flag = PRINCE
 	department_flag = YOUNGFOLK
 	faction = "Station"
-	total_positions = 2
-	spawn_positions = 2
-	allowed_races = RACES_TOLERATED_UP 
+	total_positions = 3
+	spawn_positions = 3
+	allowed_races = RACES_TOLERATED_UP
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_ages = list(AGE_ADULT)
 	subclass_cat_rolls = list(CTAG_HEIR = 20)
@@ -201,7 +201,7 @@
 		H.mind.adjust_skillrank(/datum/skill/craft/crafting, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/sewing, 1, TRUE)
-		H.change_stat("fortune", 2) // Xylix blessed you with great luck bro trust me
+		H.change_stat("fortune", 8) // Xylix blessed you with great luck bro trust me
 		H.change_stat("perception", -2)
 		H.change_stat("intelligence", -2)
 		H.change_stat("constitution", -2)
@@ -209,4 +209,3 @@
 		H.change_stat("endurance", -2)
 	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_CRITICAL_WEAKNESS, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_NORUN, TRAIT_GENERIC) // no running is enough, dont change their speed
