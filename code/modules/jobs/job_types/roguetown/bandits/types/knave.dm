@@ -52,13 +52,14 @@
 			beltl = /obj/item/rogueweapon/huntingknife/idagger
 			beltr = /obj/item/rogueweapon/huntingknife/idagger
 			backr = /obj/item/storage/backpack/rogue/satchel
+			head = /obj/item/clothing/head/roguetown/menacing/bandit
 			backpack_contents = list(/obj/item/needle/thorn = 1, /obj/item/natural/cloth = 1)
 			H.mind.adjust_skillrank(/datum/skill/combat/knives, 1, TRUE)
 			H.change_stat("speed", 2)
 		if("Bow & Sword") //Poacher
 			backl= /obj/item/gun/ballistic/revolver/grenadelauncher/bow
 			beltr = /obj/item/rogueweapon/sword/iron // sword like literally every refugee gets
-			head = /obj/item/clothing/head/roguetown/helmet/leather/volfhelm //cool hat
+			head = /obj/item/clothing/head/roguetown/menacing/bandit //better hat
 			backr = /obj/item/storage/backpack/rogue/satchel
 			beltl = /obj/item/ammo_holder/quiver/arrows
 			backpack_contents = list(/obj/item/needle/thorn = 1, /obj/item/natural/cloth = 1, /obj/item/restraints/legcuffs/beartrap = 2) //poacher gets mantraps
