@@ -10888,10 +10888,6 @@
 	},
 /turf/open/floor/rogue/church,
 /area/rogue/indoors/town/church/chapel)
-"mDB" = (
-/obj/structure/roguemachine/mail/l,
-/turf/open/floor/rogue/ruinedwood,
-/area/rogue/indoors/town/magician)
 "mDU" = (
 /obj/structure/fluff/railing/wood{
 	dir = 1;
@@ -299760,7 +299756,7 @@ fkC
 mfK
 mfK
 gkJ
-mDB
+rDv
 rDv
 rDv
 rAz
