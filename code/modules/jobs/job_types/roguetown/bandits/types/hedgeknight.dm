@@ -1,7 +1,7 @@
 /datum/subclass/hedgeknight //heavy knight class - just like black knight refugee class. starts with heavy armor training and plate, but less weapon skills than brigand, sellsword and knave
 	name = "Hedge Knight"
 	tutorial = "A wanted noble fallen from grace, your tarnished armor sits upon your shoulders as a heavy reminder of the life you've lost. Take back what is rightfully yours. But watch out, the duke have made you wanted, as he knows about you."
-	allowed_sexes = list(MALE)
+	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/bandit/hedgeknight
 	category_tags = list(CTAG_BANDIT)

@@ -6,17 +6,17 @@
 	total_positions = 2
 	spawn_positions = 2
 	allowed_races = RACES_TOLERATED_UP
-	allowed_sexes = list(MALE)
+	allowed_sexes = list(MALE, FEMALE)
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
 	allowed_patrons = ALL_NON_INHUMEN_PATRONS
 	tutorial = "A Knight with expert training; \
-	Born into petty nobility and raised as a squire from a young age, now you Guard the Duke, answer to their commands, and protect the court's honor. \
-	You're wholly dedicated to the standing Regent and their safety. Do not fail nor leave their side."
+	Born into petty nobility and raised as a squire from a young age, now you Guard the Duke or Duchess, answer to their commands, and protect the court's honor. \
+	You're wholly dedicated to the standing Regent and their safety. Do not fail."
 	display_order = JDO_KNIGHT
 	whitelist_req = TRUE
 	outfit = /datum/outfit/job/roguetown/knight
 	give_bank_account = 22
-	min_pq = 20
+	min_pq = 8
 	max_pq = null
 
 	cmode_music = 'sound/music/combat_guard2.ogg'
@@ -63,17 +63,17 @@
 		r_hand = /obj/item/rogueweapon/mace/goden/steel
 
 	if(H.mind)
-		H.mind.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/polearms, 5, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/swords, 5, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 5, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/maces, 4, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 4, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 1, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/bows, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 0, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/swimming, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/riding, 4, TRUE)

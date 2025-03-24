@@ -5,15 +5,15 @@
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	allowed_races = RACES_SHUNNED_UP
+	allowed_races = RACES_SHUNNED_UP_PLUS_SEELIE
 	allowed_patrons = ALL_NON_INHUMEN_PATRONS
-	allowed_sexes = list(MALE)
+	allowed_sexes = list(MALE, FEMALE)
 	outfit = /datum/outfit/job/roguetown/hand
 	display_order = JDO_HAND
 	tutorial = "You owe everything to your liege. Once, you were just a humble friend- now you are one of the most important men within the realm itself. You have played spymaster and confidant to the Noble-Family for so long that you are a vault of intrigue, something you exploit with potent conviction. Let no man ever forget whose ear you whisper into. You've killed more men with those lips than any blademaster could ever claim to."
 	whitelist_req = TRUE
 	give_bank_account = 44
-	min_pq = 9
+	min_pq = 3
 	max_pq = null
 
 /datum/job/roguetown/hand/after_spawn(mob/living/L, mob/M, latejoin = TRUE)

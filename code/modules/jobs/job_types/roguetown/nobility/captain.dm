@@ -8,7 +8,7 @@
 	spawn_positions = 1
 
 	allowed_races = RACES_TOLERATED_UP
-	allowed_sexes = list(MALE)
+	allowed_sexes = list(MALE, FEMALE)
 	allowed_ages = list(AGE_MIDDLEAGED, AGE_OLD)
 	tutorial = "You served your time gracefully as a Knight of the crown, and now you've grown into a role which many men dream to become. \
 				You are the Marshal's chosen, a Banneret, elevated to command His Highness' personal retinue. \
@@ -64,17 +64,17 @@
 	backpack_contents = list(/obj/item/storage/keyring/captain = 1, /obj/item/rogueweapon/huntingknife/idagger/steel/special = 1, /obj/item/signal_horn = 1, /obj/item/natural/feather = 1)
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/swords, 5, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/polearms, 5, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 5, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/firearms, 4, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/maces, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 1, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/riding, 3, TRUE)
@@ -83,8 +83,8 @@
 		H.change_stat("intelligence", 3)
 		H.change_stat("constitution", 2)
 		H.change_stat("endurance", 2)
-		H.change_stat("speed", -1)
-		H.change_stat("fortune", 1)
+		H.change_stat("speed", 1)
+		H.change_stat("fortune", 2)
 	H.dna.species.soundpack_m = new /datum/voicepack/male/knight()
 	if(H.gender == FEMALE)
 		var/acceptable = list("Tomboy", "Bob", "Curly Short")

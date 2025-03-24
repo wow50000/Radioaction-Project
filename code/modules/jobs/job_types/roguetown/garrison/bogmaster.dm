@@ -1,5 +1,5 @@
 /datum/job/roguetown/bogmaster
-	title = "Bog Master"
+	title = "Warden"
 	flag = BOGMASTER
 	department_flag = GARRISON
 	faction = "Station"
@@ -9,7 +9,7 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_VERY_SHUNNED_UP
 	allowed_ages = list(AGE_MIDDLEAGED, AGE_OLD)
-	tutorial = "The Master of the rabble, the boss of the bath houses, you have been tasked with keeping the Bog Guard in line. \
+	tutorial = "An experienced soldier of the Duke's retinue, you have been tasked with overseeing the newly constructed Bastion. \
 				You report to the Royal Marshal and their Councillors, \
 				and your job is to keep the vanguard in line and to ensure the routes to the town remain safe.\
 				The Bastion must not fall."
@@ -19,8 +19,8 @@
 	spells = list(SPELL_CONVERT_ROLE_BOG)
 	outfit = /datum/outfit/job/roguetown/bogmaster
 
-	give_bank_account = 69
-	min_pq = 7
+	give_bank_account = 35
+	min_pq = 8
 	max_pq = null
 	cmode_music = 'sound/music/combat_bog.ogg'
 
@@ -28,14 +28,14 @@
 	. = ..()
 	if(ishuman(L))
 		var/mob/living/carbon/human/H = L
-		if(istype(H.cloak, /obj/item/clothing/cloak/stabard/bog))
+		if(istype(H.cloak, /obj/item/clothing/cloak/shadow))
 			var/obj/item/clothing/S = H.cloak
 			var/index = findtext(H.real_name, " ")
 			if(index)
 				index = copytext(H.real_name, 1,index)
 			if(!index)
 				index = H.real_name
-			S.name = "bogmaster tabard ([index])"
+			S.name = "warden cloak ([index])"
 
 /datum/outfit/job/roguetown/bogmaster/pre_equip(mob/living/carbon/human/H)
 	. = ..()
@@ -55,11 +55,11 @@
 	backl = /obj/item/rogueweapon/shield/tower
 	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1, /obj/item/signal_horn = 1)
 	if(H.mind)
-		H.mind.adjust_skillrank(/datum/skill/combat/axes, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/maces, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/axes, 4, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/maces, 4, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 5, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)
@@ -67,11 +67,11 @@
 		H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/treatment, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/riding, 4, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/firearms, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/firearms, 4, TRUE)
 		H.change_stat("strength", 3)
 		H.change_stat("constitution", 2)
 		H.change_stat("perception", 2)
@@ -81,12 +81,12 @@
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 
 /obj/effect/proc_holder/spell/self/convertrole/bog
-	name = "Recruit Bog Guard"
+	name = "Recruit Vanguard"
 	new_role = "Vanguard"
 	overlay_state = "recruit_bog"
 	recruitment_faction = "Vanguard"
-	recruitment_message = "Serve the Bog, %RECRUIT!"
-	accept_message = "FOR THE BOG!"
+	recruitment_message = "Serve the vanguard, %RECRUIT!"
+	accept_message = "FOR THE VANGUARDs!"
 	refuse_message = "I refuse."
 
 /obj/effect/proc_holder/spell/self/convertrole/bog/convert(mob/living/carbon/human/recruit, mob/living/carbon/human/recruiter)

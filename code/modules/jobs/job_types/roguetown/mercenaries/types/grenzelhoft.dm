@@ -15,7 +15,7 @@
 		/datum/species/tabaxi
 	)
 	outfit = /datum/outfit/job/roguetown/mercenary/grenzelhoft
-	maximum_possible_slots = 0
+	maximum_possible_slots = 9
 	min_pq = 15
 	torch = FALSE
 	cmode_music = 'sound/music/combat_grenzelhoft.ogg'
@@ -84,5 +84,5 @@
 		H.change_stat("endurance", 1)
 		H.change_stat("constitution", 2)
 		H.change_stat("perception", 2)
-		H.change_stat("speed", 0)
+		H.change_stat("speed", 1)
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)

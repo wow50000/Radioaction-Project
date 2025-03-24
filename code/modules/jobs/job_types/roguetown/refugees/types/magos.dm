@@ -6,7 +6,7 @@
 	allowed_races = RACES_ALL_KINDS
 	category_tags = list(CTAG_REFUGEE)
 
-	maximum_possible_slots = 1
+	maximum_possible_slots = 5
 
 	outfit = /datum/outfit/job/roguetown/refugee/magos
 
@@ -48,7 +48,7 @@
 			H.change_stat("intelligence", 2)
 			H.change_stat("endurance", 2)
 			H.change_stat("constitution", 1)
-			H.change_stat("speed", -1)
+			H.change_stat("speed", 1)
 			H.mind.AddSpell(new SPELL_LEARNSPELL)
 			H.mind.AddSpell(new SPELL_PRESTIDIGITATION)
 			ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
@@ -118,7 +118,6 @@
 			H.change_stat("intelligence", 2)
 			H.change_stat("constitution", -2)
 			H.change_stat("endurance", -1)
-			H.change_stat("speed", -1)
 			H.mind.AddSpell(new SPELL_LEARNSPELL)
 			H.mind.AddSpell(new SPELL_PRESTIDIGITATION)
 			H.set_patron(/datum/patron/divine/noc)

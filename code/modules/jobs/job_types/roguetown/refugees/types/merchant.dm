@@ -60,7 +60,7 @@
 				if(20)
 					backpack_contents = list(/obj/item/clothing/ring/active/nomag = 1, /obj/item/roguestatue/silver = 2, /obj/item/riddleofsteel = 1, /obj/item/listenstone = 1, /obj/item/roguegem/diamond = 2)
 					to_chat(H, span_info("I got out with quite the haul."))
-
+				
 		if("Spicer")
 			H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)

@@ -1,18 +1,18 @@
 /datum/job/roguetown/bogguardsman
-	title = "Bog Guard"
+	title = "Vanguard"
 	flag = BOGGUARD
 	department_flag = GARRISON
 	faction = "Station"
-	total_positions = 12
-	spawn_positions = 12
+	total_positions = 10
+	spawn_positions = 10
 	selection_color = JCOLOR_SOLDIER
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_VERY_SHUNNED_UP
 	allowed_ages = ALL_AGES_LIST
 	allowed_patrons = ALL_NON_INHUMEN_PATRONS
-	tutorial = "Either a fresh lowborn recruit or a literal criminal now conscripted, you have been assigned to protect the realm from the horrors of the Bog.. \
+	tutorial = "Either a fresh lowborn recruit or a veteran of the now defunct bog guard, you have been assigned to the newly established Vanguard. \
 	You have a roof over your head, coin in your pocket, and a thankless job protecting the outskirts of town against what lurks beyond.\
-	The Gate must not fall."
+	The Bastion must not fall."
 	display_order = JDO_BOGGUARD
 	whitelist_req = TRUE
 	outfit = /datum/outfit/job/roguetown/bog
@@ -37,22 +37,22 @@
 	. = ..()
 	if(ishuman(L))
 		var/mob/living/carbon/human/H = L
-		if(istype(H.cloak, /obj/item/clothing/cloak/stabard/bog))
+		if(istype(H.cloak, /obj/item/clothing/cloak/shadow))
 			var/obj/item/clothing/S = H.cloak
 			var/index = findtext(H.real_name, " ")
 			if(index)
 				index = copytext(H.real_name, 1,index)
 			if(!index)
 				index = H.real_name
-			S.name = "bog guard tabard ([index])"
+			S.name = "vanguard cloak ([index])"
 /datum/outfit/job/roguetown/bogguardsman
-	name = "Bog Guard footman"
+	name = "Vanguard footman"
 
 /datum/outfit/job/roguetown/ranger
-	name = "Bog Guard archer"
+	name = "Vanguard archer"
 
 /datum/subclass/bogguard
-	name = "Bog Guard footman"
+	name = "Vanguard footman"
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_VERY_SHUNNED_UP
 	outfit = /datum/outfit/job/roguetown/bogguardsman
@@ -61,7 +61,7 @@
 	category_tags = list(CTAG_BOG)
 
 /datum/subclass/bogranger
-	name = "Bog Guard archer"
+	name = "Vanguard archer"
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_VERY_SHUNNED_UP
 	outfit = /datum/outfit/job/roguetown/ranger
@@ -105,42 +105,45 @@
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 
 /datum/outfit/job/roguetown/bogguardsman/proc/assign_skills(mob/living/carbon/human/bogger)
-	bogger.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
-	bogger.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
-	bogger.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
-	bogger.mind.adjust_skillrank(/datum/skill/combat/swords, 2, TRUE)
-	bogger.mind.adjust_skillrank(/datum/skill/combat/polearms, 2, TRUE)
-	bogger.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 2, TRUE)
+	bogger.mind.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE)
+	bogger.mind.adjust_skillrank(/datum/skill/combat/unarmed, 4, TRUE)
+	bogger.mind.adjust_skillrank(/datum/skill/combat/maces, 3, TRUE)
+	bogger.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
+	bogger.mind.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
+	bogger.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 3, TRUE)
 	bogger.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 	bogger.mind.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)
-	bogger.mind.adjust_skillrank(/datum/skill/combat/crossbows, 1, TRUE)
-	bogger.mind.adjust_skillrank(/datum/skill/misc/athletics, 1, TRUE)
-	bogger.mind.adjust_skillrank(/datum/skill/misc/climbing, 1, TRUE)
+	bogger.mind.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE)
+	bogger.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
+	bogger.mind.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
 	bogger.mind.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
 	bogger.mind.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
 	bogger.mind.adjust_skillrank(/datum/skill/misc/treatment, 1, TRUE)
+	bogger.mind.adjust_skillrank(/datum/skill/misc/riding, 4, TRUE)
 	bogger.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 	bogger.change_stat("strength", 2)
 	bogger.change_stat("constitution", 1)
-	bogger.change_stat("endurance", 1)
+	bogger.change_stat("endurance", 2)
 	bogger.change_stat("speed", 1)
 
 /datum/outfit/job/roguetown/ranger
 	name = "Bog Ranger"
 
 /datum/outfit/job/roguetown/ranger/proc/assign_skills(mob/living/carbon/human/bogger)
-	bogger.mind.adjust_skillrank(/datum/skill/combat/crossbows, 1, TRUE)
-	bogger.mind.adjust_skillrank(/datum/skill/combat/bows, 3, TRUE)
+	bogger.mind.adjust_skillrank(/datum/skill/combat/crossbows, 4, TRUE)
+	bogger.mind.adjust_skillrank(/datum/skill/combat/bows, 4, TRUE)
 	bogger.mind.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
-	bogger.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
+	bogger.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
 	bogger.mind.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
 	bogger.mind.adjust_skillrank(/datum/skill/combat/swords, 2, TRUE)
 	bogger.mind.adjust_skillrank(/datum/skill/combat/maces, 1, TRUE)
-	bogger.mind.adjust_skillrank(/datum/skill/misc/sneaking, 1, TRUE)
-	bogger.mind.adjust_skillrank(/datum/skill/misc/athletics, 1, TRUE)
+	bogger.mind.adjust_skillrank(/datum/skill/misc/sneaking, 4, TRUE)
+	bogger.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
 	bogger.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
+	bogger.mind.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
 	bogger.mind.adjust_skillrank(/datum/skill/misc/treatment, 1, TRUE)
+	bogger.mind.adjust_skillrank(/datum/skill/misc/riding, 4, TRUE)
 	bogger.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
-	bogger.change_stat("perception", 2)
+	bogger.change_stat("perception", 3)
 	bogger.change_stat("speed", 2)
-	bogger.change_stat("endurance", 1)
+	bogger.change_stat("endurance", 2)

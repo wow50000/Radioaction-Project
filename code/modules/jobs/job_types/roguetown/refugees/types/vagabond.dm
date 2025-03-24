@@ -26,7 +26,7 @@
 		if("Charlatan")
 			H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/swimming, 1, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/climbing, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/athletics, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 1, TRUE)
@@ -62,7 +62,7 @@
 			H.change_stat("perception", 1)
 			H.change_stat("endurance", 1)
 			H.change_stat("speed", 1)
-			H.change_stat("fortune", 3)
+			H.change_stat("fortune", -1)
 
 		if("Drunkard")
 			pants = /obj/item/clothing/under/roguetown/tights/vagrant
@@ -76,29 +76,29 @@
 			beltr = /obj/item/clothing/mask/cigarette/rollie/cannabis
 			beltl = /obj/item/flint
 			backpack_contents = list(/obj/item/storage/pill_bottle/dice = 1, /obj/item/toy/cards/deck = 1, /obj/item/reagent_containers/glass/bottle/rogue/wine = 1, /obj/item/storage/belt/rogue/pouch/coins/poor = 1)
-
+			
 			H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/stealing, 2, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE) //Climbing into windows to steal drugs or booze.
+			H.mind.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE) //Climbing into windows to steal drugs or booze.
 			H.mind.adjust_skillrank(/datum/skill/combat/knives, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/lockpicking, 1, TRUE)
 			H.change_stat("intelligence", -2)
 			H.change_stat("constitution", 1)
 			H.change_stat("strength", 1)
-			H.change_stat("fortune", 4)
+			H.change_stat("fortune", 2)
 
 		if("Gravedigger")
 			H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/swords, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/craft/crafting, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
@@ -119,8 +119,8 @@
 			head = /obj/item/clothing/head/roguetown/puritan
 			H.change_stat("strength", 2)
 			H.change_stat("perception", 1)
-			H.change_stat("speed", 1)
+			H.change_stat("speed", 2) 
 			H.change_stat("endurance", 1)
-			H.change_stat("fortune", 4)
+			H.change_stat("fortune", 1)
 
 	H.set_blindness(0)

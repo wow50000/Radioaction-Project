@@ -9,7 +9,6 @@
 
 	allowed_races = RACES_SHUNNED_UP_PLUS_SEELIE
 	allowed_ages = ALL_AGES_LIST
-	allowed_sexes = list(FEMALE)
 	subclass_cat_rolls = list(CTAG_SERVANT = 20)
 
 	tutorial = "Granted a life of comfortable servitute in the Duke's manor, you follow the Head Butler/Maid's commands and spend your day performing necessary but menial tasks."

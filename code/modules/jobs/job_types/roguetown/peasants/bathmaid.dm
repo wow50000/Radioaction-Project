@@ -1,6 +1,6 @@
 /datum/job/roguetown/nightmaiden
-	title = "Bath Swain"
-	f_title = "Bath Wench"
+	title = "Prostitute"
+	f_title = "Prostitute"
 	flag = WENCH
 	department_flag = PEASANTS
 	faction = "Station"
@@ -11,7 +11,7 @@
 	allowed_races = RACES_VERY_SHUNNED_UP
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
 
-	tutorial = "Selling your body like a piece of meat in a butcher's shop, stripped of dignity and treated as a commodity, you remain obedient to the nightmaster. Every day you fight to survive in a world that offers you nothing but contempt and cock."
+	tutorial = "Selling your body like a piece of meat in a butcher's shop, stripped of dignity and treated as a commodity, you remain obedient to the nightmaster. Every day you fight to survive in a world that offers you nothing but contempt."
 
 	outfit = /datum/outfit/job/roguetown/nightmaiden
 	display_order = JDO_WENCH

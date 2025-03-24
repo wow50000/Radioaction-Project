@@ -17,7 +17,7 @@
 	outfit = /datum/outfit/job/roguetown/butler
 	display_order = JDO_BUTLER
 	give_bank_account = 30
-	min_pq = 6
+	min_pq = 0
 	max_pq = null
 
 /datum/outfit/job/roguetown/butler/pre_equip(mob/living/carbon/human/H)
