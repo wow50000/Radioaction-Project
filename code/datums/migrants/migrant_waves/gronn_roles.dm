@@ -229,7 +229,7 @@
 	greet_text = "An unlucky soul. Perhaps caught in a pillaging raid, or alone in the wilderness. You have been enslaved by the tribe. Work hard to appease your new masters."
 	outfit = /datum/outfit/job/roguetown/gronn/slave
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = RACES_VERY_SHUNNED_UP
 	show_wanderer_examine = FALSE
 	show_foreign_examine = TRUE
 

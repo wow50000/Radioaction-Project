@@ -9,7 +9,7 @@
 	max_pq = null
 
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = RACES_VERY_SHUNNED_UP
 	tutorial = ""
 
 	spells = list(SPELL_LIGHTNINGBOLT, SPELL_FETCH)

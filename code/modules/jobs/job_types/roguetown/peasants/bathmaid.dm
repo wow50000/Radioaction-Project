@@ -23,7 +23,7 @@
 /datum/outfit/job/roguetown/nightmaiden/pre_equip(mob/living/carbon/human/H)
 	..()
 	shoes = /obj/item/clothing/shoes/roguetown/shortboots
-	neck = /obj/item/clothing/neck/roguetown/collar/leather/cursed/Initialize(mapload)
+	neck = /obj/item/clothing/neck/roguetown/collar/leather/cursed
 	r_hand = /obj/item/soap/bath
 	l_hand = /obj/item/rogue/instrument/harp
 	if(H.gender == MALE)
