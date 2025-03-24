@@ -32,7 +32,7 @@
 	beltl = /obj/item/ammo_holder/bomb/smokebombs
 	head = /obj/item/clothing/head/roguetown/jester
 	neck = /obj/item/clothing/neck/roguetown/coif
-	//Desc says grenzelhoft has great jesters so 50% change to raceswap because slop lore
+	//Desc says grenzelhoft has great jesters so 50% change to raceswap because slop lore DOGSHIT, BUT NOT TOUCHING RN
 	if(ishumannorthern(H) && prob(50))
 		H.skin_tone = SKIN_COLOR_GRENZELHOFT
 		H.update_body()
@@ -44,7 +44,7 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/music, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/lockpicking, 2, TRUE)
-		if(!isseelie(H))	
+		if(!isseelie(H))
 			H.STASTR = clamp(roll("4d6-4"), 1, 20)
 			H.STAINT = clamp(roll("4d6-4"), 1, 20)
 			H.STALUC = clamp(roll("4d6-4"), 1, 20)
