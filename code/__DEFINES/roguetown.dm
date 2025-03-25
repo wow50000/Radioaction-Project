@@ -39,17 +39,17 @@
 
 #define RACES_SHUNNED \
 	/datum/species/tabaxi,\
-	/datum/species/lizardfolk,\
-	/datum/species/tieberian,\
 	/datum/species/anthromorphsmall,\
-	/datum/species/demihuman,
+	/datum/species/lizardfolk,\
+	/datum/species/demihuman,\
+	/datum/species/kobold,
 	
 
 #define RACES_VERY_SHUNNED \
 	/datum/species/elf/dark,\
 	/datum/species/halforc,\
 	/datum/species/moth,\
-	/datum/species/kobold,\
+	/datum/species/tieberian,\
 	/datum/species/seelie,
 
 #define RACES_GOBLIN \
