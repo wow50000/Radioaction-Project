@@ -6,14 +6,11 @@
 	/datum/species/elf/wood,\
 	/datum/species/dwarf/mountain,\
 	/datum/species/tieberian,\
-	/datum/species/aasimar,\
 	/datum/species/lizardfolk,\
 	/datum/species/lupian,\
 	/datum/species/tabaxi,\
-	/datum/species/vulpkanin,\
 	/datum/species/axian,\
 	/datum/species/moth,\
-	/datum/species/dracon,\
 	/datum/species/anthromorphsmall,\
 	/datum/species/demihuman,\
 	/datum/species/halforc,\
@@ -26,13 +23,11 @@
 	/datum/species/human/northern,\
 	/datum/species/elf/wood,\
 	/datum/species/human/halfelf,\
-	/datum/species/dwarf/mountain,\
-	/datum/species/aasimar,
+	/datum/species/dwarf/mountain
 	
 
 #define RACES_TOLERATED \
 	/datum/species/lupian,\
-	/datum/species/vulpkanin,\
 	/datum/species/axian,
 	
 
