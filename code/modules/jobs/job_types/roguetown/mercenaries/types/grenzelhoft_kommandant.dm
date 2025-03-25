@@ -14,7 +14,6 @@
 		/datum/species/dwarf/mountain,
 		/datum/species/human/northern,
 		/datum/species/demihuman,
-		/datum/species/anthromorph,
 		/datum/species/tabaxi
 	)
 	outfit = /datum/outfit/job/roguetown/mercenary/grenzelhoft_kommandant

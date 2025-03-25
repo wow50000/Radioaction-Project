@@ -1,4 +1,4 @@
-/mob/living/carbon/human/species/anthromorph
+/* /mob/living/carbon/human/species/anthromorph
 	race = /datum/species/anthromorph
 
 /datum/species/anthromorph
@@ -191,3 +191,4 @@
 	returned["mcolor3"] = third_color
 	return returned
 
+ */

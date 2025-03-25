@@ -14,7 +14,6 @@
 	/datum/species/axian,\
 	/datum/species/moth,\
 	/datum/species/dracon,\
-	/datum/species/anthromorph,\
 	/datum/species/anthromorphsmall,\
 	/datum/species/demihuman,\
 	/datum/species/halforc,\
@@ -85,7 +84,6 @@
 	/datum/species/axian,\
 	/datum/species/moth,\
 	/datum/species/dracon,\
-	/datum/species/anthromorph,\
 	/datum/species/anthromorphsmall,\
 	/datum/species/demihuman,\
 	/datum/species/kobold,\
@@ -108,7 +106,6 @@
 	/datum/species/axian,\
 	/datum/species/moth,\
 	/datum/species/dracon,\
-	/datum/species/anthromorph,\
 	/datum/species/anthromorphsmall,\
 	/datum/species/demihuman,\
 	/datum/species/halforc,\
@@ -131,7 +128,6 @@
 	/datum/species/axian,\
 	/datum/species/moth,\
 	/datum/species/dracon,\
-	/datum/species/anthromorph,\
 	/datum/species/demihuman,\
 	/datum/species/halforc,\
 	/datum/species/seelie,\
@@ -148,7 +144,6 @@
 	/datum/species/axian,\
 	/datum/species/moth,\
 	/datum/species/dracon,\
-	/datum/species/anthromorph,\
 	/datum/species/demihuman,\
 )
 // For their armour sets. Shouldn't need to define the sub species, but oh well.
