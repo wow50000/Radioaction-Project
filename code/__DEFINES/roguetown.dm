@@ -28,14 +28,14 @@
 
 #define RACES_TOLERATED \
 	/datum/species/lupian,\
-	/datum/species/axian,
+	/datum/species/axian,\
+	/datum/species/demihuman,\
+	/datum/species/tabaxi,
 	
 
 #define RACES_SHUNNED \
-	/datum/species/tabaxi,\
 	/datum/species/anthromorphsmall,\
 	/datum/species/lizardfolk,\
-	/datum/species/demihuman,\
 	/datum/species/kobold,
 	
 
@@ -71,14 +71,11 @@
 	/datum/species/elf/wood,\
 	/datum/species/dwarf/mountain,\
 	/datum/species/tieberian,\
-	/datum/species/aasimar,\
 	/datum/species/lizardfolk,\
 	/datum/species/lupian,\
 	/datum/species/tabaxi,\
-	/datum/species/vulpkanin,\
 	/datum/species/axian,\
 	/datum/species/moth,\
-	/datum/species/dracon,\
 	/datum/species/anthromorphsmall,\
 	/datum/species/demihuman,\
 	/datum/species/kobold,\
@@ -93,14 +90,11 @@
 	/datum/species/elf/wood,\
 	/datum/species/dwarf/mountain,\
 	/datum/species/tieberian,\
-	/datum/species/aasimar,\
 	/datum/species/lizardfolk,\
 	/datum/species/lupian,\
 	/datum/species/tabaxi,\
-	/datum/species/vulpkanin,\
 	/datum/species/axian,\
 	/datum/species/moth,\
-	/datum/species/dracon,\
 	/datum/species/anthromorphsmall,\
 	/datum/species/demihuman,\
 	/datum/species/halforc,\
@@ -115,14 +109,11 @@
 	/datum/species/elf/dark,\
 	/datum/species/elf/wood,\
 	/datum/species/tieberian,\
-	/datum/species/aasimar,\
 	/datum/species/lizardfolk,\
 	/datum/species/lupian,\
 	/datum/species/tabaxi,\
-	/datum/species/vulpkanin,\
 	/datum/species/axian,\
 	/datum/species/moth,\
-	/datum/species/dracon,\
 	/datum/species/demihuman,\
 	/datum/species/halforc,\
 	/datum/species/seelie,\
@@ -131,14 +122,11 @@
 #define HUMANLIKE_RACE_TYPES list(\
 	/datum/species/human/northern,\
 	/datum/species/tieberian,\
-	/datum/species/aasimar,\
 	/datum/species/lizardfolk,\
 	/datum/species/lupian,\
 	/datum/species/tabaxi,\
-	/datum/species/vulpkanin,\
 	/datum/species/axian,\
 	/datum/species/moth,\
-	/datum/species/dracon,\
 	/datum/species/demihuman,\
 )
 // For their armour sets. Shouldn't need to define the sub species, but oh well.

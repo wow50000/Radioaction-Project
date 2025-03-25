@@ -1,4 +1,4 @@
-/mob/living/carbon/human/species/dracon
+/* /mob/living/carbon/human/species/dracon
 	race = /datum/species/dracon
 
 /datum/species/dracon
@@ -189,3 +189,4 @@
 	returned["mcolor2"] = second_color
 	returned["mcolor3"] = second_color
 	return returned
+ */

@@ -1,4 +1,4 @@
-/mob/living/carbon/human/species/aasimar
+/* /mob/living/carbon/human/species/aasimar
 	race = /datum/species/aasimar
 
 /datum/species/aasimar
@@ -134,3 +134,4 @@
 
 /datum/species/aasimar/random_surname()
 	return
+ */
