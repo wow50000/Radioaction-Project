@@ -207,6 +207,7 @@
 #define REFUGEE	(1<<0)
 #define MIGRANT		(1<<1)
 #define BANDIT		(1<<2)
+#define BANDIT2		(1<<3)
 
 #define JCOLOR_NOBLE "#aa83b9"
 #define JCOLOR_COURTIER "#81adc8"
@@ -310,6 +311,7 @@
 #define JDO_REFUGEE 42.1
 #define JDO_MIGRANT 42.2
 #define JDO_BANDIT 42.3
+#define JDO_BANDIT2 42.4
 
 
 #define MANOR_ROLES \
@@ -402,4 +404,5 @@
 #define FOREIGNER_ROLES \
 	/datum/job/roguetown/refugee,\
 	/datum/job/roguetown/migrant,\
+	/datum/job/roguetown/bandit2,\
 	/datum/job/roguetown/bandit \
