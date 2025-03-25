@@ -7,9 +7,7 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = list(
 		/datum/species/axian,
-		/datum/species/vulpkanin,
 		/datum/species/lupian,
-		/datum/species/dracon,
 		/datum/species/moth, //grenzelmoft?
 		/datum/species/dwarf/mountain,
 		/datum/species/human/northern,
