@@ -220,12 +220,12 @@
 	set_light(0)
 	return ..()
 
-/obj/structure/roguemachine/vendor/centcom
-	name = "LANDLORD"
-	desc = "Give this thing money, and you will immediately buy a neat property in the capital."
+/obj/structure/roguemachine/vendor/soilson
+	name = "FARMER"
+	desc = "Give this thing money, and you might buy some food."
 	max_integrity = 0
 	icon_state = "streetvendor1"
-	lockid = "dhjlashfdg"
+	lockid = "farm"
 	var/list/cachey = list()
 
 /obj/structure/roguemachine/vendor/centcom/attack_hand(mob/living/user)
