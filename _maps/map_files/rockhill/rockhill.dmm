@@ -968,14 +968,6 @@
 /obj/item/grown/log/tree/stick,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/dwarfin)
-"bgI" = (
-/obj/structure/mineral_door/wood{
-	icon_state = "wcr";
-	locked = 1;
-	lockid = "town_barracks"
-	},
-/turf/closed/wall/mineral/rogue/craftstone,
-/area/rogue/indoors/town/garrison)
 "bhp" = (
 /obj/machinery/light/rogue/torchholder/r,
 /turf/open/floor/rogue/ruinedwood,
@@ -4124,9 +4116,11 @@
 /turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town/tavern)
 "eIR" = (
-/obj/structure/fluff/railing/wood,
-/obj/structure/roguemachine/vendor/street_shop01,
-/turf/closed/wall/mineral/rogue/wooddark/slitted,
+/obj/structure/table/wood{
+	dir = 10;
+	icon_state = "largetable"
+	},
+/turf/open/floor/rogue/blocks,
 /area/rogue/outdoors/town)
 "eIZ" = (
 /obj/structure/gravemarker,
@@ -4547,9 +4541,9 @@
 	},
 /area/rogue/outdoors/beach)
 "fgP" = (
-/obj/structure/mineral_door/wood/window{
-	lockid = "velder";
-	locked = 1
+/obj/structure/mineral_door/wood/towner{
+	lockid = "farm";
+	name = "Farmhouse"
 	},
 /turf/open/floor/rogue/tile,
 /area/rogue/indoors)
@@ -4882,7 +4876,10 @@
 /turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town/church)
 "fCT" = (
-/obj/structure/mineral_door/wood/red,
+/obj/structure/mineral_door/wood/towner{
+	lockid = "farm";
+	name = "Farmhouse"
+	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors)
 "fDe" = (
@@ -5554,9 +5551,9 @@
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/rtfield)
 "goY" = (
-/obj/structure/mineral_door/wood/window{
-	lockid = "velder";
-	locked = 1
+/obj/structure/mineral_door/wood/towner{
+	lockid = "farm";
+	name = "Farmhouse"
 	},
 /turf/open/floor/rogue/blocks/stonered/tiny,
 /area/rogue/indoors)
@@ -8755,8 +8752,11 @@
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/dwarfin)
 "khg" = (
-/obj/structure/mineral_door/wood/towner/farmer,
-/turf/open/floor/rogue/blocks,
+/obj/structure/mineral_door/wood/towner{
+	lockid = "farm";
+	name = "Farmhouse"
+	},
+/turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/town)
 "khm" = (
 /obj/structure/bars/pipe{
@@ -10581,9 +10581,9 @@
 /turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town/manor)
 "mqp" = (
-/obj/structure/table/wood,
-/obj/structure/bars{
-	icon_state = "barsbent"
+/obj/structure/table/wood{
+	dir = 6;
+	icon_state = "largetable"
 	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/outdoors/town)
@@ -14240,12 +14240,6 @@
 	dir = 4
 	},
 /area/rogue/indoors/town/manor)
-"qxB" = (
-/obj/structure/roguemachine/vendor{
-	keycontrol = "butcher"
-	},
-/turf/closed/wall/mineral/rogue/wooddark/slitted,
-/area/rogue/outdoors/town)
 "qxN" = (
 /turf/closed/wall/mineral/rogue/decostone/mossy/blue,
 /area/rogue/indoors/town/manor)
@@ -14386,14 +14380,6 @@
 /obj/structure/fluff/railing/border,
 /turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town/church)
-"qJx" = (
-/obj/structure/mineral_door/wood/fancywood{
-	lockid = "velder";
-	name = "Elder's Home";
-	locked = 1
-	},
-/turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/indoors)
 "qJC" = (
 /obj/structure/mineral_door/wood/donjon{
 	dir = 8;
@@ -15024,7 +15010,12 @@
 	},
 /area/rogue/indoors/shelter/mountains)
 "rsy" = (
-/turf/closed/wall/mineral/rogue/wooddark/slitted,
+/obj/structure/table/wood,
+/obj/structure/bars{
+	icon_state = "barsbent";
+	layer = 2.81
+	},
+/turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/town)
 "rsH" = (
 /obj/structure/stairs{
@@ -15127,9 +15118,9 @@
 /turf/open/floor/rogue/blocks,
 /area/rogue/outdoors/rtfield)
 "rxT" = (
-/obj/structure/mineral_door/wood/window{
-	lockid = "velder";
-	locked = 1
+/obj/structure/mineral_door/wood/towner{
+	lockid = "farm";
+	name = "Farmhouse"
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors)
@@ -17803,10 +17794,6 @@
 	},
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/church/chapel)
-"uAH" = (
-/obj/structure/roguemachine/vendor/street_shop01,
-/turf/closed/wall/mineral/rogue/wooddark/slitted,
-/area/rogue/outdoors/town)
 "uAL" = (
 /obj/machinery/light/rogue/torchholder,
 /turf/closed/wall/mineral/rogue/stonebrick,
@@ -20613,12 +20600,8 @@
 /turf/open/floor/rogue/blocks/paving,
 /area/rogue/under/town/basement)
 "xSN" = (
-/obj/structure/mineral_door/wood/fancywood{
-	lockid = "velder";
-	locked = 1
-	},
-/turf/open/floor/rogue/blocks,
-/area/rogue/indoors)
+/turf/closed/wall/mineral/rogue/wooddark/end,
+/area/rogue/outdoors/town)
 "xTv" = (
 /obj/structure/closet/crate/coffin,
 /obj/machinery/light/rogue/wallfire/candle/r,
@@ -20830,13 +20813,6 @@
 	icon_state = "vertw"
 	},
 /area/rogue/indoors/town)
-"yhS" = (
-/obj/structure/mineral_door/wood/fancywood{
-	lockid = "velder";
-	locked = 1
-	},
-/turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/indoors)
 "yhT" = (
 /obj/structure/table/wood{
 	dir = 1;
@@ -258268,7 +258244,7 @@ ubh
 xou
 xou
 xou
-xSN
+fCT
 ddv
 kor
 jjZ
@@ -259071,7 +259047,7 @@ lVe
 xou
 uGb
 lVe
-qJx
+rxT
 lVe
 jjZ
 jjZ
@@ -259470,7 +259446,7 @@ qbG
 qbG
 lVe
 lVe
-xSN
+fCT
 lVe
 lVe
 xXH
@@ -287493,8 +287469,8 @@ wbg
 wbg
 kDH
 wVI
-kDH
 wVI
+aOE
 kDH
 wVI
 wVI
@@ -287896,22 +287872,22 @@ wbg
 kDH
 qdn
 eIR
-wVI
-kDH
-uAH
-qdn
 aOE
 kDH
-uAH
 qdn
+eIR
+aOE
+kDH
+qdn
+eIR
 riP
 wbg
-vzm
+xSN
 fHS
+jOc
+jOc
 fHS
-fHS
-fHS
-vzm
+xSN
 wVI
 kDH
 xAt
@@ -288308,7 +288284,7 @@ tJT
 tJT
 wbg
 wbg
-mqp
+fJp
 sXz
 sXz
 lpN
@@ -288710,7 +288686,7 @@ wVI
 wVI
 wbg
 wbg
-qxB
+rsy
 sXz
 sXz
 sXz
@@ -289113,7 +289089,7 @@ wVI
 wbg
 wbg
 rsy
-rsy
+sXz
 sXz
 sXz
 sXz
@@ -289514,7 +289490,7 @@ jLP
 jLP
 wbg
 wbg
-qxB
+rsy
 sXz
 sXz
 sXz
@@ -289905,18 +289881,18 @@ wbg
 wbg
 kDH
 tbY
-eIR
-wVI
-kDH
-uAH
-tbY
+mqp
 aOE
 kDH
-uAH
 tbY
+mqp
+aOE
+kDH
+tbY
+mqp
 riP
 wbg
-mqp
+fJp
 sXz
 sXz
 lpN
@@ -290307,8 +290283,8 @@ wbg
 wbg
 kDH
 wVI
-kDH
 wVI
+aOE
 kDH
 wVI
 wVI
@@ -290318,12 +290294,12 @@ wVI
 wVI
 riP
 wbg
-vzm
+xSN
 fHS
 jOc
+jOc
 fHS
-fHS
-vzm
+xSN
 wVI
 kDH
 xAt
@@ -303547,7 +303523,7 @@ cwN
 hpj
 hpj
 cwN
-bgI
+drC
 hpj
 hpj
 tNj
@@ -304356,7 +304332,7 @@ kZF
 hpj
 hpj
 hpj
-hpj
+drC
 hpj
 hpj
 hpj
@@ -360779,7 +360755,7 @@ jCh
 rLq
 xou
 xou
-yhS
+rxT
 gAc
 gAc
 bZV
@@ -361981,7 +361957,7 @@ qbG
 qbG
 lVe
 lVe
-yhS
+rxT
 lVe
 lVe
 qbG
