@@ -836,12 +836,9 @@
 				/obj/item/natural/silk = 1)
 	skill_level = 3
 
-/datum/crafting_recipe/roguetown/sewing/shadowcloak
-	name = "vanguard cloak - (cloth, 3 silk; LOOM, JOURNEYMAN)"
-	result = list(/obj/item/clothing/cloak/shadow)
-	reqs = list(/obj/item/natural/cloth = 2,
-				/obj/item/natural/silk = 3)
-	skill_level = 4
+/datum/crafting_recipe/roguetown/sewing/stabard/bog
+	name = "tabard (bog) - (2 cloths, 1 fiber)"
+	result = list(/obj/item/clothing/cloak/stabard/bog)
 
 /datum/crafting_recipe/roguetown/sewing/shadowrobe
 	name = "vanguard uniform - (2 cloths, 3 silk; LOOM, JOURNEYMAN)"

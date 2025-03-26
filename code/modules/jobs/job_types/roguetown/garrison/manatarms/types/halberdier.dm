@@ -1,5 +1,5 @@
-/datum/subclass/manorguard/halberdier
-	name = "Retinue Halberdier"
+/* /datum/subclass/manorguard/halberdier
+	name = "Manor Halberdier"
 	tutorial = "You are a member of the Ducal Retinue. Ensure the safety of the Duchy and their people, defend the powers that be from the horrors of the outside world, and keep the Duchy of Rockhill alive."
 	outfit = /datum/outfit/job/roguetown/manorguard/halberdier
 	category_tags = list(CTAG_MAA)
@@ -29,3 +29,4 @@
 		H.change_stat("endurance", 2)
 		H.change_stat("perception", 1)
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
+ */

@@ -1,5 +1,5 @@
 /datum/job/roguetown/bogguardsman
-	title = "Vanguard"
+	title = "Boggard"
 	flag = BOGGUARD
 	department_flag = GARRISON
 	faction = "Station"
@@ -37,22 +37,22 @@
 	. = ..()
 	if(ishuman(L))
 		var/mob/living/carbon/human/H = L
-		if(istype(H.cloak, /obj/item/clothing/cloak/shadow))
+		if(istype(H.cloak, /obj/item/clothing/cloak/stabard/bog))
 			var/obj/item/clothing/S = H.cloak
 			var/index = findtext(H.real_name, " ")
 			if(index)
 				index = copytext(H.real_name, 1,index)
 			if(!index)
 				index = H.real_name
-			S.name = "vanguard cloak ([index])"
+			S.name = "boggard tabard ([index])"
 /datum/outfit/job/roguetown/bogguardsman
-	name = "Vanguard footman"
+	name = "Boggard Footman"
 
 /datum/outfit/job/roguetown/ranger
-	name = "Vanguard archer"
+	name = "Boggard Archer"
 
 /datum/subclass/bogguard
-	name = "Vanguard footman"
+	name = "Boggard Footman"
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_VERY_SHUNNED_UP
 	outfit = /datum/outfit/job/roguetown/bogguardsman
@@ -61,7 +61,7 @@
 	category_tags = list(CTAG_BOG)
 
 /datum/subclass/bogranger
-	name = "Vanguard archer"
+	name = "Boggard Archer"
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_VERY_SHUNNED_UP
 	outfit = /datum/outfit/job/roguetown/ranger
@@ -73,7 +73,7 @@
 /datum/outfit/job/roguetown/bog/pre_equip(mob/living/carbon/human/H)
 	head = /obj/item/clothing/head/roguetown/helmet/skullcap
 	armor = /obj/item/clothing/suit/roguetown/shirt/shadow
-	cloak = /obj/item/clothing/cloak/shadow
+	cloak = /obj/item/clothing/cloak/stabard/bog
 	neck = /obj/item/clothing/neck/roguetown/chaincoif
 	gloves = /obj/item/clothing/gloves/roguetown/leather/black
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
@@ -124,9 +124,6 @@
 	bogger.change_stat("constitution", 1)
 	bogger.change_stat("endurance", 2)
 	bogger.change_stat("speed", 1)
-
-/datum/outfit/job/roguetown/ranger
-	name = "Bog Ranger"
 
 /datum/outfit/job/roguetown/ranger/proc/assign_skills(mob/living/carbon/human/bogger)
 	bogger.mind.adjust_skillrank(/datum/skill/combat/crossbows, 1, TRUE)
