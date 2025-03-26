@@ -268,14 +268,14 @@
 
 /obj/item/clothing/head/roguetown/menacing/bandit
 	icon_state = "bandithood"
-	desc = "A hood worn by the freemen of the wood. It is lined with extra padding, offering modest protection."
+	desc = "A hood worn over a sturdy helmet, used by the freemen of the wood. A very overt way of showing who you are."
 	body_parts_covered = HEAD|HAIR|EARS|NECK|EYES|NOSE|MOUTH
-	slot_flags = ITEM_SLOT_HEAD|ITEM_SLOT_NECK
-	armor = list("blunt" = 50, "slash" = 30, "stab" = 40, "bullet" = 20, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
-	prevent_crits = list(BCLASS_BLUNT, BCLASS_CUT)
+	slot_flags = ITEM_SLOT_HEAD
+	armor = list("blunt" = 90, "slash" = 100, "stab" = 80, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
 	anvilrepair = null
 	max_integrity = 200
-	blocksound = SOFTHIT
+	blocksound = PLATEHIT
 
 /obj/item/clothing/head/roguetown/jester
 	name = "jester's hat"

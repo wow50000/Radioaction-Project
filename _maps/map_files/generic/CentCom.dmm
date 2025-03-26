@@ -1745,6 +1745,12 @@
 /obj/structure/roguemachine/hoardbarrier,
 /turf/open/floor/rogue/carpet,
 /area/rogue/indoors/banditcamp)
+"kU" = (
+/obj/structure/rack/rogue,
+/obj/item/clothing/head/roguetown/menacing/bandit,
+/obj/item/clothing/head/roguetown/menacing/bandit,
+/turf/open/floor/rogue/herringbone,
+/area/rogue/indoors/banditcamp)
 "la" = (
 /obj/effect/landmark/start/bandit{
 	dir = 8
@@ -2191,6 +2197,7 @@
 	dir = 1;
 	icon_state = "largetable"
 	},
+/obj/item/reagent_containers/glass/cup/skull,
 /turf/open/floor/rogue/hexstone,
 /area/rogue/indoors/banditcamp)
 "sO" = (
@@ -2682,6 +2689,7 @@
 /obj/item/flashlight/flare/torch/metal,
 /obj/item/flashlight/flare/torch/metal,
 /obj/item/flashlight/flare/torch/metal,
+/obj/item/flashlight/flare/torch/metal,
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/banditcamp)
 "FA" = (
@@ -2960,10 +2968,7 @@
 /area/rogue)
 "Ll" = (
 /obj/structure/rack/rogue,
-/obj/item/clothing/head/roguetown/helmet/leather/volfhelm,
-/obj/item/clothing/head/roguetown/helmet/leather/volfhelm,
-/obj/item/clothing/head/roguetown/helmet/leather/volfhelm,
-/obj/item/clothing/head/roguetown/helmet/leather/volfhelm,
+/obj/item/clothing/head/roguetown/menacing/bandit,
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/banditcamp)
 "Lm" = (
@@ -3255,6 +3260,13 @@
 /obj/structure/rack/rogue,
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/banditcamp)
+"Rp" = (
+/obj/structure/pillory,
+/turf/open/floor/rogue/ruinedwood{
+	dir = 1;
+	icon_state = "vertw"
+	},
+/area/rogue/indoors/banditcamp)
 "Rq" = (
 /obj/structure/bars/passage{
 	redstone_id = "goblingate"
@@ -3272,6 +3284,7 @@
 	},
 /area/rogue/indoors/banditcamp)
 "Rw" = (
+/obj/structure/fluff/statue/evil,
 /obj/structure/fluff/statue/evil,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/banditcamp)
@@ -3470,6 +3483,8 @@
 	lockid = "bandit";
 	name = "old key"
 	},
+/obj/item/storage/roguebag,
+/obj/item/storage/roguebag,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/woods)
 "UI" = (
@@ -3642,6 +3657,14 @@
 /obj/machinery/light/rogue/firebowl/stump,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/woods)
+"Yz" = (
+/obj/structure/table/wood{
+	dir = 1;
+	icon_state = "largetable_mid"
+	},
+/obj/item/reagent_containers/glass/cup/skull,
+/turf/open/floor/rogue/hexstone,
+/area/rogue/indoors/banditcamp)
 "YB" = (
 /obj/structure/table/wood{
 	icon_state = "tablewood3"
@@ -4765,8 +4788,8 @@ kB
 bz
 bz
 bz
-bz
-bz
+Te
+Te
 Cm
 Cm
 Cm
@@ -4994,9 +5017,9 @@ rQ
 kB
 bz
 bz
-bz
-bz
-bz
+Te
+Te
+Te
 Cm
 Cm
 Cm
@@ -5223,8 +5246,8 @@ bX
 rQ
 kB
 bz
-bz
-bz
+Te
+Te
 TG
 TG
 TG
@@ -5453,11 +5476,11 @@ bX
 rQ
 kB
 bz
-bz
-bz
+Te
+Te
 TG
 QG
-Rd
+kU
 Ll
 Pu
 TG
@@ -5683,8 +5706,8 @@ bX
 rQ
 kB
 bz
-bz
-bz
+Te
+Te
 TG
 qB
 xS
@@ -5913,8 +5936,8 @@ bX
 rQ
 kB
 bz
-bz
-bz
+Te
+Te
 TG
 kR
 xS
@@ -5927,7 +5950,7 @@ RB
 RB
 sN
 eb
-eb
+Yz
 jd
 TG
 xy
@@ -6143,8 +6166,8 @@ bX
 rQ
 kB
 bz
-bz
-bz
+Te
+Te
 TG
 kR
 xS
@@ -6373,11 +6396,11 @@ bX
 rQ
 kB
 bz
-bz
+Te
 Te
 TG
 QG
-Rd
+kU
 Rd
 Pu
 TG
@@ -6603,8 +6626,8 @@ bX
 rQ
 kB
 bz
-bz
-bz
+Te
+Te
 TG
 TG
 TG
@@ -6833,8 +6856,8 @@ bX
 rQ
 kB
 bz
-UI
-UI
+Cm
+Cm
 Cm
 Cm
 Cm
@@ -7064,7 +7087,7 @@ rQ
 kB
 bz
 UI
-UI
+Cm
 Cm
 Cm
 Cm
@@ -10987,12 +11010,12 @@ Es
 Es
 pg
 pb
-pb
+Rp
 pg
 Cm
 pg
 pb
-pb
+Rp
 pg
 nX
 nX
