@@ -29,11 +29,11 @@
 	specstats = list(
 		"strength" = -2, 
 		"perception" = 0, 
-		"intelligence" = 1, 
-		"constitution" = 0, 
+		"intelligence" = 2, 
+		"constitution" = -3, 
 		"endurance" = 0, 
 		"speed" = 2,
-		"fortune" = 0
+		"fortune" = 1
 		)
 	enflamed_icon = "widefire"
 	attack_verb = "slash"
