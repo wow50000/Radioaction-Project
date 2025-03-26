@@ -1,5 +1,5 @@
 /datum/job/roguetown/bogmaster
-	title = "Warden"
+	title = "Bog Master"
 	flag = BOGMASTER
 	department_flag = GARRISON
 	faction = "Station"
@@ -28,14 +28,14 @@
 	. = ..()
 	if(ishuman(L))
 		var/mob/living/carbon/human/H = L
-		if(istype(H.cloak, /obj/item/clothing/cloak/shadow))
+		if(istype(H.cloak, /obj/item/clothing/cloak/stabard/bog))
 			var/obj/item/clothing/S = H.cloak
 			var/index = findtext(H.real_name, " ")
 			if(index)
 				index = copytext(H.real_name, 1,index)
 			if(!index)
 				index = H.real_name
-			S.name = "warden cloak ([index])"
+			S.name = "bog master's tabard ([index])"
 
 /datum/outfit/job/roguetown/bogmaster/pre_equip(mob/living/carbon/human/H)
 	. = ..()
@@ -81,11 +81,11 @@
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 
 /obj/effect/proc_holder/spell/self/convertrole/bog
-	name = "Recruit Vanguard"
-	new_role = "Vanguard"
+	name = "Recruit Bogman"
+	new_role = "Boggard"
 	overlay_state = "recruit_bog"
-	recruitment_faction = "Vanguard"
-	recruitment_message = "Serve the vanguard, %RECRUIT!"
+	recruitment_faction = "Boggard"
+	recruitment_message = "Serve the boggard, %RECRUIT!"
 	accept_message = "FOR THE BOG!"
 	refuse_message = "I refuse."
 

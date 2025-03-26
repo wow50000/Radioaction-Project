@@ -433,6 +433,14 @@
 	GLOB.lordcolor -= src
 	return ..()
 
+
+/obj/item/clothing/cloak/stabard/bog
+	name = "bogman tabard"
+	desc = "A tabard worn by those that protect the citizenry from the horrors of the Terrorbog" // THE BOG DESERVES A BETTER DESCRIPTION!
+	color = CLOTHING_GREEN
+	detail_color = CLOTHING_DARK_GREEN
+
+
 /obj/item/clothing/cloak/raincloak/vanguard
 	name = "vanguard cloak"
 	desc = "A nightly cloak worn by those that protect the citizenry from what lurks beyond" // THE BOG DESERVES A BETTER DESCRIPTION!
