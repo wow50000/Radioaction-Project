@@ -20,7 +20,6 @@
 	give_bank_account = 22
 	min_pq = 6
 	max_pq = null
-	subclass_cat_rolls = list(CTAG_MAA = 6)
 
 	cmode_music = 'sound/music/combat_guard2.ogg'
 
@@ -36,9 +35,6 @@
 			if(!index)
 				index = H.real_name
 			S.name = "manor guard jupon ([index])"
-		H.advsetup = 1
-		H.invisibility = INVISIBILITY_MAXIMUM
-		H.become_blind("advsetup")
 
 /datum/outfit/job/roguetown/manorguard/pre_equip(mob/living/carbon/human/H)
 	..()
