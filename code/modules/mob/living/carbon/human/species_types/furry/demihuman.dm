@@ -38,9 +38,9 @@
 		"perception" = 0,
 		"intelligence" = 1,
 		"constitution" = 0,
-		"endurance" = 0,
+		"endurance" = 1,
 		"speed" = 0,
-		"fortune" = 0
+		"fortune" = -1
 		)
 	enflamed_icon = "widefire"
 	bodypart_features = list(
