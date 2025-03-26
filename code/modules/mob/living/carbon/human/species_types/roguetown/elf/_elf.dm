@@ -4,7 +4,7 @@
 /datum/species/elf
 	name = "Elfb"
 	id = "elf"
-	max_age = 850
+	max_age = 60
 	organs = list(
 		ORGAN_SLOT_BRAIN = /obj/item/organ/brain,
 		ORGAN_SLOT_HEART = /obj/item/organ/heart,
