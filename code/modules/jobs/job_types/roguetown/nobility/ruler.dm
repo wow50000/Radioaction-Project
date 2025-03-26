@@ -2,8 +2,8 @@ GLOBAL_VAR(lordsurname)
 GLOBAL_LIST_EMPTY(lord_titles)
 
 /datum/job/roguetown/ruler
-	title = "Duke"
-	f_title = "Duchess"
+	title = "King"
+	f_title = "Queen"
 	flag = RULER
 	department_flag = NOBLEMEN
 	faction = "Station"
@@ -36,8 +36,8 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	ruler_family = TRUE
 
 /datum/job/roguetown/exlord //just used to change the lords title
-	title = "Duke Emeritus"
-	f_title = "Duchess Emeritus"
+	title = "King Emeritus"
+	f_title = "Queen Emeritus"
 	flag = RULER
 	department_flag = NOBLEMEN
 	faction = "Station"
@@ -58,10 +58,10 @@ GLOBAL_LIST_EMPTY(lord_titles)
 			GLOB.lordsurname = "of [L.real_name]"
 		SSticker.rulermob = L
 		if(L.gender != FEMALE)
-			to_chat(world, "<b><span class='notice'><span class='big'>[L.real_name] is Duke of Rockhill.</span></span></b>")
+			to_chat(world, "<b><span class='notice'><span class='big'>[L.real_name] is King of Rockhill.</span></span></b>")
 			addtimer(CALLBACK(L, TYPE_PROC_REF(/mob, lord_color_choice)), 50)
 		else
-			to_chat(world, "<b><span class='notice'><span class='big'>[L.real_name] is Duchess of Rockhill.</span></span></b>")
+			to_chat(world, "<b><span class='notice'><span class='big'>[L.real_name] is Queen of Rockhill.</span></span></b>")
 			addtimer(CALLBACK(L, TYPE_PROC_REF(/mob, lord_color_choice)), 50)
 		var/mob/living/carbon/human/H = L
 		var/index = findtext(H.real_name, " ")
@@ -71,9 +71,9 @@ GLOBAL_LIST_EMPTY(lord_titles)
 			index = H.real_name
 		var/prev_real_name = H.real_name
 		var/prev_name = H.name
-		var/honorary = "Duke"
+		var/honorary = "King"
 		if(H.gender == FEMALE)
-			honorary = "Duchess"
+			honorary = "Queen"
 		H.real_name = "[honorary] [prev_real_name]"
 		H.name = "[honorary] [prev_name]"
 
@@ -92,6 +92,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 		pants = /obj/item/clothing/under/roguetown/tights/black
 		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
 		armor = /obj/item/clothing/suit/roguetown/armor/leather/duke
+		cloak = /obj/item/clothing/cloak/lordcloak
 		shoes = /obj/item/clothing/shoes/roguetown/armor
 		
 		if(H.mind)

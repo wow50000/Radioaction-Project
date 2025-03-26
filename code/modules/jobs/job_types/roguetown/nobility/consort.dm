@@ -1,13 +1,12 @@
 /datum/job/roguetown/consort
-	title = "Duke Consort"
-	f_title = "Duchess Consort"
+	title = "Queen"
 	flag = CONSORT
 	department_flag = NOBLEMEN
 	faction = "Station"
 	total_positions = 0
 	spawn_positions = 1
 
-	allowed_sexes = list(MALE, FEMALE)
+	allowed_sexes = list(FEMALE)
 	allowed_races = RACES_RESPECTED
 	allowed_patrons = ALL_NON_INHUMEN_PATRONS
 	tutorial = "Picked out of your political value rather than likely any form of love, you have become the Ruler's most trusted confidant and likely friend throughout your marriage. Your loyalty and, perhaps, love; will be tested this day. For the daggers that threaten your beloved are as equally pointed at your own throat."
@@ -30,14 +29,13 @@
 		return
 	if(!player.ckey)
 		return
-	for(var/mob/dead/new_player/duke in GLOB.player_list)
-		if(duke.mind.assigned_role == "Duke")
-			if(duke.client.prefs.gender != player.client.prefs.gender)
+	for(var/mob/dead/new_player/king in GLOB.player_list)
+		if(king.mind.assigned_role == "King")
+			if(king.client.prefs.gender != player.client.prefs.gender)
 				return TRUE
 
 /datum/job/roguetown/consort_dowager//just used to change the consort title
-	title = "Duke Dowager"
-	f_title = "Duchess Dowager"
+	title = "Queen Dowager"
 	flag = CONSORT
 	department_flag = NOBLEMEN
 	faction = "Station"
@@ -58,9 +56,7 @@
 			index = H.real_name
 		var/prev_real_name = H.real_name
 		var/prev_name = H.name
-		var/honorary = "Duke"
-		if(H.gender == FEMALE)
-			honorary = "Duchess"
+		var/honorary = "Queen"
 		H.real_name = "[honorary] [prev_real_name]"
 		H.name = "[honorary] [prev_name]"
 
@@ -159,7 +155,7 @@
 	new_role = "Servant"
 	overlay_state = "recruit_servant"
 	recruitment_faction = "Servants"
-	recruitment_message = "Serve the duchy, %RECRUIT!"
+	recruitment_message = "Serve the kingdom, %RECRUIT!"
 	accept_message = "Yes, your highness!"
 	refuse_message = "I refuse."
 	charge_max = 100

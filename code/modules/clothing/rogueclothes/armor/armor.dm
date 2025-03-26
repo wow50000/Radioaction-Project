@@ -810,7 +810,7 @@
 
 /obj/item/clothing/suit/roguetown/armor/leather/duchess
 	slot_flags = ITEM_SLOT_BACK|ITEM_SLOT_ARMOR //ugly hack to make it render over the head
-	name = "duchess dress"
+	name = "queen's dress"
 	desc = ""
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS|VITALS
 	icon = 'icons/roguetown/clothing/licensed-infraredbaron/armor.dmi'
@@ -820,7 +820,7 @@
 	ignore_sleeves_code = TRUE // No sleeves, otherwise arms will be over the sprite
 
 /obj/item/clothing/suit/roguetown/armor/leather/duke
-	name = "ducal uniform"
+	name = "king's uniform"
 	desc = ""
 	icon = 'icons/roguetown/clothing/licensed-infraredbaron/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/licensed-infraredbaron/onmob/armor.dmi'
