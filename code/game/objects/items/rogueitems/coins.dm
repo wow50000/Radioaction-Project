@@ -184,6 +184,9 @@
 	base_type = CTYPE_GOLD
 	plural_name = "zenarii"
 
+/obj/item/roguecoin/gold/pile/fifty/Initialize()
+	. = ..()
+	set_quantity(50)
 
 // SILVER
 /obj/item/roguecoin/silver
@@ -194,6 +197,10 @@
 	base_type = CTYPE_SILV
 	plural_name = "ziliquae"
 
+/obj/item/roguecoin/silver/pile/fifty/Initialize()
+	. = ..()
+	set_quantity(50)
+
 // COPPER
 /obj/item/roguecoin/copper
 	name = "zenny"
@@ -202,6 +209,10 @@
 	sellprice = 1
 	base_type = CTYPE_COPP
 	plural_name = "zennies"
+
+/obj/item/roguecoin/copper/pile/fifty/Initialize()
+	. = ..()
+	set_quantity(50)
 
 /obj/item/roguecoin/copper/pile/Initialize()
 	. = ..()
