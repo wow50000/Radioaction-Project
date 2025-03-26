@@ -9624,10 +9624,6 @@
 /obj/structure/rack/rogue/shelf,
 /turf/open/floor/rogue/hexstone,
 /area/rogue/indoors)
-"lji" = (
-/obj/structure/roguemachine/bounty,
-/turf/open/floor/rogue/cobblerock,
-/area/rogue/outdoors/rtfield)
 "ljm" = (
 /obj/structure/mineral_door/wood/donjon/stone{
 	locked = 1;
@@ -10226,7 +10222,6 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/blood/old,
-/obj/structure/roguemachine/bounty,
 /turf/open/floor/rogue/blocks,
 /area/rogue/outdoors/town)
 "lSf" = (
@@ -283544,7 +283539,7 @@ wQY
 qvR
 qvR
 wSn
-lji
+fxx
 fxx
 fxx
 rZt
