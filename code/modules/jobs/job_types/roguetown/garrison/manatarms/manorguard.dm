@@ -6,13 +6,13 @@
 	total_positions = 2
 	spawn_positions = 2
 
-	allowed_sexes = list(MALE, FEMALE)
+	allowed_sexes = list(MALE)
 	allowed_races = RACES_RESPECTED
-	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)
+	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
 	allowed_patrons = ALL_NON_INHUMEN_PATRONS
 	tutorial = "Having proven yourself loyal and capable, you are entrusted to defend the Royal Family and their Court, \
 				trained regularly in combat and siege warfare you stand a small chance of surviving the Duke's reign. \
-				It's an honor to die as part of His Highness' retinue, the Marshal reminds you every night."
+				It's an honor to die as part of His Highness' personal guard, the Marshal reminds you every night."
 	display_order = JDO_MANORGUARD
 	whitelist_req = TRUE
 
@@ -47,7 +47,7 @@
 	shoes = /obj/item/clothing/shoes/roguetown/armor
 	belt = /obj/item/storage/belt/rogue/leather/black
 	backr = /obj/item/storage/backpack/rogue/satchel/black
-	head = /obj/item/clothing/head/roguetown/helmet/sallet
+	head = /obj/item/clothing/head/roguetown/helmet/sallet/visored
 	beltl = /obj/item/rogueweapon/sword/short
 	r_hand = /obj/item/rogueweapon/halberd
 	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1, /obj/item/rope/chain = 1, /obj/item/storage/keyring/man_at_arms = 1, /obj/item/natural/cloth = 1)
@@ -60,13 +60,12 @@
 		H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/swimming, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/riding, 1, TRUE)
 		H.change_stat("strength", 2)
 		H.change_stat("constitution", 2)
 		H.change_stat("endurance", 2)
 		H.change_stat("perception", 1)
-	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
