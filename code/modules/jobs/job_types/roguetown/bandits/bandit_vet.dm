@@ -1,21 +1,21 @@
-/datum/job/roguetown/bandit2 //pysdon above there's like THREE bandit.dms now I'm so sorry. This one is latejoin bandits, the one in villain is the antag datum, and the one in the 'antag' folder is an old refugee class we don't use. Good luck!
+/datum/job/roguetown/bandit_vet //pysdon above there's like THREE bandit.dms now I'm so sorry. This one is latejoin bandits, the one in villain is the antag datum, and the one in the 'antag' folder is an old refugee class we don't use. Good luck!
 	title = "Bandit Veteran"
-	flag = BANDIT2
+	flag = BANDIT_VET
 	department_flag = FOREIGNERS
 	faction = "Station"
 	total_positions = 3
 	spawn_positions = 3
 	antag_job = TRUE
 	allowed_races = RACES_VERY_SHUNNED_UP	//Begone foul seelies. Your age of banditry is gone
-	tutorial = "Matthios' chosen, seasoned fighters of the cause who've earned his attention through meticulous worship and devotion to the cause. You are his finest, show them why you've been granted his will."
+	tutorial = "Matthios' chosen, seasoned fighters of the cause who've earned his attention through meticulous worship and devotion to their endless hunger for more. You are his finest, show them why you've been granted his will."
 
 	outfit = null
 	outfit_female = null
 
-	display_order = JDO_BANDIT2
+	display_order = JDO_BANDIT_VET
 	show_in_credits = FALSE
 	announce_latejoin = FALSE
-	min_pq = -1
+	min_pq = 1
 	max_pq = null
 
 	subclass_cat_rolls = list(CTAG_BANDIT = 20)

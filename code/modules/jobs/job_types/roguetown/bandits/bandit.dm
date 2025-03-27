@@ -33,7 +33,7 @@
 
 	cmode_music = 'sound/music/combat_bandit2.ogg'
 
-/datum/job/roguetown/bandit/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
+/datum/job/roguetown/bandit_vet/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
 	..()
 	if(L)
 		var/mob/living/carbon/human/H = L
