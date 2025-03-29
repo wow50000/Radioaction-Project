@@ -30,26 +30,25 @@ Unless of course, they went heavy into the gameplay loop, and got a better book.
 
 	var/list/spell_choices = list(
 		SPELL_FIREBALLGREATER,		// 13 cost	combat, AOE heavy single target damage
-		SPELL_METEOR,				// 13 cost	combat, LARGE AOE, light damage.
-		SPELL_SUNDER_LIGHTNING,		// 13 cost	combat, upper level AOE hard stunning damage
+	//	SPELL_METEOR,				// 13 cost	combat, LARGE AOE, light damage.
+	//	SPELL_SUNDER_LIGHTNING,		// 13 cost	combat, upper level AOE hard stunning damage
 		SPELL_FIREBALL,				// 3 cost	combat, damaging AOE + damages worn/held things
-		SPELL_LIGHTNINGBOLT,		// 3 cost	combat, single target damage, knockdown
+	//	SPELL_LIGHTNINGBOLT,		// 3 cost	combat, single target damage, knockdown
 		SPELL_SPITFIRE,				// 3 cost	combat, burstfire single target damage
 		SPELL_ARCANEBOLT,			// 3 cost	combat, single target single shot damage
-		SPELL_FROSTBOLT,			// 3 cost	combat, single target, single shot lesser damage w/ slow
-		SPELL_LIGHTNINGLURE,		// 3 cost	combat, ranged single target hard stun w/ time requirement.
+	//	SPELL_FROSTBOLT,			// 3 cost	combat, single target, single shot lesser damage w/ slow
+	//	SPELL_LIGHTNINGLURE,		// 3 cost	combat, ranged single target hard stun w/ time requirement.
 		SPELL_SLOWDOWN_SPELL_AOE,	// 3 cost	utility hold spell. Target unable to move, but can fight.
 		SPELL_FINDFAMILIAR,			// 3 cost	combat, summon spell.
-		SPELL_PUSH_SPELL,			// 3 cost	localized AOE knockback spell. Knocksdown/disarms victims
-		SPELL_ARCYNE_STORM,			// 2 cost	combat, light damaging AOE, stall/area denial spell
+		//SPELL_PUSH_SPELL,			// 3 cost	localized AOE knockback spell. Knocksdown/disarms victims
+		//SPELL_ARCYNE_STORM,			// 2 cost	combat, light damaging AOE, stall/area denial spell
 		SPELL_DARKVISION,			// 2 cost	utility, dark sight
 		SPELL_HASTE,				// 2 cost	utility/combatbuff, faster mve speed.
 		SPELL_SUMMON_WEAPON,		// 2 cost	utility/combat, summons a marked weapon to caster.
 		SPELL_MENDING,				// 2 cost	utility, repairs items
 		SPELL_MESSAGE,				// 2 cost	utility, messages anyone you know the name of.
 		SPELL_BLADE_BURST,			// 2 cost	combat, single target damage localized on rndm leg. possible bone break.
-		SPELL_FETCH,				// 2 cost	utility/combat, pulls single target closer
-		SPELL_REPEL,				// 2 cost	utility/combat, flings single target away
+	//	SPELL_FETCH,				// 2 cost	utility/combat, pulls single target closer
 		SPELL_FORCEWALL_WEAK,		// 2 cost	utility/combat, places walls caster can walk through. stall spell.
 		SPELL_NONDETECTION,			// 1 cost	utility, no scrying your location.
 		SPELL_FEATHERFALL,			// 1 cost	utility, no fall damage from 1 zlevel drop
@@ -1481,7 +1480,7 @@ Unless of course, they went heavy into the gameplay loop, and got a better book.
 /obj/effect/proc_holder/spell/invoked/meteor_storm
 	name = "Meteor storm"
 	desc = "Summons forth dangerous meteors from the sky to scatter and smash foes."
-	cost = 13
+	cost = 1300
 	releasedrain = 50
 	chargedrain = 1
 	chargetime = 50
@@ -1661,7 +1660,7 @@ obj/effect/proc_holder/spell/targeted/summonweapon/cast(list/targets,mob/user = 
 /obj/effect/proc_holder/spell/invoked/sundering_lightning
 	name = "Sundering Lightning"
 	desc = "Summons forth dangerous rapid lightning strikes."
-	cost = 13
+	cost = 1300
 	releasedrain = 50
 	chargedrain = 1
 	chargetime = 50

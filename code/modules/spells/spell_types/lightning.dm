@@ -6,7 +6,7 @@
 	clothes_req = TRUE
 	invocation = "UN'LTD P'WAH!"
 	invocation_type = "shout"
-	range = 7
+	range = 0
 	cooldown_min = 30
 	selection_type = "view"
 	random_target = TRUE
