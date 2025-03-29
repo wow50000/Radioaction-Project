@@ -69,3 +69,4 @@
 		H.change_stat("endurance", 2)
 		H.change_stat("perception", 1)
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_BOGVULNERABLE, TRAIT_GENERIC)
