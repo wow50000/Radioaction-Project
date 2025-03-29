@@ -38,8 +38,8 @@ Unless of course, they went heavy into the gameplay loop, and got a better book.
 		SPELL_ARCANEBOLT,			// 3 cost	combat, single target single shot damage
 	//	SPELL_FROSTBOLT,			// 3 cost	combat, single target, single shot lesser damage w/ slow
 	//	SPELL_LIGHTNINGLURE,		// 3 cost	combat, ranged single target hard stun w/ time requirement.
-		SPELL_SLOWDOWN_SPELL_AOE,	// 3 cost	utility hold spell. Target unable to move, but can fight.
-		SPELL_FINDFAMILIAR,			// 3 cost	combat, summon spell.
+	//	SPELL_SLOWDOWN_SPELL_AOE,	// 3 cost	utility hold spell. Target unable to move, but can fight.
+	//	SPELL_FINDFAMILIAR,			// 3 cost	combat, summon spell.
 		//SPELL_PUSH_SPELL,			// 3 cost	localized AOE knockback spell. Knocksdown/disarms victims
 		//SPELL_ARCYNE_STORM,			// 2 cost	combat, light damaging AOE, stall/area denial spell
 		SPELL_DARKVISION,			// 2 cost	utility, dark sight
@@ -48,7 +48,7 @@ Unless of course, they went heavy into the gameplay loop, and got a better book.
 		SPELL_MENDING,				// 2 cost	utility, repairs items
 		SPELL_MESSAGE,				// 2 cost	utility, messages anyone you know the name of.
 		SPELL_BLADE_BURST,			// 2 cost	combat, single target damage localized on rndm leg. possible bone break.
-	//	SPELL_FETCH,				// 2 cost	utility/combat, pulls single target closer
+		SPELL_FETCH,				// 2 cost	utility/combat, pulls single target closer
 		SPELL_FORCEWALL_WEAK,		// 2 cost	utility/combat, places walls caster can walk through. stall spell.
 		SPELL_NONDETECTION,			// 1 cost	utility, no scrying your location.
 		SPELL_FEATHERFALL,			// 1 cost	utility, no fall damage from 1 zlevel drop
@@ -222,7 +222,7 @@ Unless of course, they went heavy into the gameplay loop, and got a better book.
 			return BULLET_ACT_BLOCK
 		if(isliving(target))
 			var/mob/living/L = target
-			L.electrocute_act(1, src)
+			L.electrocute_act(0, src)
 	qdel(src)
 
 /obj/effect/proc_holder/spell/invoked/projectile/bloodsteal
@@ -365,13 +365,13 @@ Unless of course, they went heavy into the gameplay loop, and got a better book.
 	exp_fire = 4
 	exp_hotspot = 0
 	flag = "magic"
-	speed = 6
+	speed = 3
 
 /obj/effect/proc_holder/spell/invoked/projectile/spitfire
 	name = "Spitfire"
 	desc = "Shoot out a series of low-powered balls of fire that shines brightly on impact, potentially blinding a target."
 	clothes_req = FALSE
-	range = 8
+	range = 6
 	projectile_type = /obj/projectile/magic/aoe/rogue2
 	overlay_state = "fireball_multi"
 	sound = list('sound/magic/whiteflame.ogg')
@@ -479,7 +479,7 @@ Unless of course, they went heavy into the gameplay loop, and got a better book.
 	name = "Fetch"
 	desc = "Shoot out a magical bolt that draws in the target struck towards the caster."
 	clothes_req = FALSE
-	range = 15
+	range = 3
 	projectile_type = /obj/projectile/magic/fetch
 	overlay_state = ""
 	sound = list('sound/magic/magnet.ogg')
