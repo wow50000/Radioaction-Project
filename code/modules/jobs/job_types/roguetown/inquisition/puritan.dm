@@ -6,7 +6,7 @@
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	allowed_sexes = list(MALE, FEMALE)
+	allowed_sexes = list(MALE)
 	allowed_races = RACES_RESPECTED
 	allowed_patrons = list(
 		/datum/patron/psydon
@@ -60,7 +60,7 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/lockpicking, 2, TRUE)
 		H.change_stat("strength", 2)
 		H.change_stat("endurance", 2)
-		H.change_stat("constitution", 3)
+		H.change_stat("constitution", 2)
 		H.change_stat("perception", 3)
 		H.change_stat("intelligence", 3)
 
@@ -73,7 +73,6 @@
 	H.verbs |= /mob/living/carbon/human/proc/torture_victim
 	ADD_TRAIT(H, TRAIT_NOSEGRAB, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_BOGVULNERABLE, TRAIT_GENERIC)
 
 /mob/living/carbon/human/proc/torture_victim()
 	set name = "Extract Confession"
