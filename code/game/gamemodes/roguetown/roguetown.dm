@@ -163,7 +163,7 @@ var/global/list/roguegamemodes = list("Rebellion", "Vampires and Werewolves", "N
 		return TRUE
 
 	if(num_players() >= 64)
-		var/major_roll_highpop = pick(1,2,3)
+		var/major_roll_highpop = pick(1,2)
 		switch(major_roll_highpop)
 			if(1)
 				pick_rebels()
@@ -172,9 +172,6 @@ var/global/list/roguegamemodes = list("Rebellion", "Vampires and Werewolves", "N
 				pick_vampires()
 				pick_werewolves()
 				log_game("Major Antagonist: Vampires and Werewolves")
-			if(3)
-				pick_lich()
-				log_game("Major Antagonist: Lich")
 	else if(num_players() >= 52)
 		var/major_roll_midpop = pick(1,2)
 		switch(major_roll_midpop)
