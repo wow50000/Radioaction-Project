@@ -100,6 +100,7 @@
 		beltr = /obj/item/gun/ballistic/firearm/arquebus_pistol
 		beltl = /obj/item/ammo_holder/bullet/lead
 		r_hand = /obj/item/storage/keyring/royal
+		backl = /obj/item/storage/backpack/rogue/satchel
 		neck = /obj/item/storage/belt/rogue/pouch/coins/rich
 		backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1, /obj/item/powderflask = 1)
 		id = /obj/item/clothing/ring/active/nomag	

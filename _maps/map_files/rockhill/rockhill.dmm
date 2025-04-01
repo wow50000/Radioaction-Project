@@ -4889,6 +4889,10 @@
 /obj/item/reagent_containers/powder/flour,
 /turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town/tavern)
+"fxr" = (
+/obj/structure/roguemachine/lawboard,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/town)
 "fxx" = (
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/outdoors/rtfield)
@@ -5187,6 +5191,10 @@
 	},
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/shop)
+"fNV" = (
+/obj/structure/roguemachine/lawboard,
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/town/garrison)
 "fOT" = (
 /obj/structure/fluff/railing/wood{
 	dir = 8;
@@ -5285,6 +5293,10 @@
 "fRN" = (
 /turf/open/floor/carpet/purple,
 /area/rogue/indoors/town/shop)
+"fRO" = (
+/obj/structure/roguemachine/lawboard,
+/turf/open/floor/rogue/blocks,
+/area/rogue/outdoors/town)
 "fSe" = (
 /obj/structure/stairs{
 	dir = 1
@@ -7234,6 +7246,10 @@
 /obj/item/rogueweapon/surgery/saw,
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/town/basement)
+"hXk" = (
+/obj/structure/roguemachine/lawboard,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors)
 "hXu" = (
 /obj/structure/fluff/railing/wood{
 	dir = 8;
@@ -12298,6 +12314,10 @@
 	},
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/town)
+"nXR" = (
+/obj/structure/roguemachine/lawboard,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/town)
 "nXT" = (
 /obj/structure/table/wood{
 	icon_state = "map6"
@@ -15926,6 +15946,12 @@
 	icon_state = "weird1"
 	},
 /area/rogue/indoors/town/shop)
+"rZa" = (
+/obj/structure/roguemachine/lawboard,
+/turf/open/floor/rogue/tile{
+	icon_state = "bfloorz"
+	},
+/area/rogue/indoors/town/manor)
 "rZi" = (
 /turf/open/floor/rogue/rooftop{
 	icon_state = "roofg"
@@ -281682,7 +281708,7 @@ wSn
 qvR
 lVe
 lVe
-wlD
+hXk
 wlD
 ddv
 ddv
@@ -282912,7 +282938,7 @@ qvR
 fxx
 fxx
 pAV
-wlD
+hXk
 wlD
 wlD
 hnf
@@ -290833,7 +290859,7 @@ wVI
 gNw
 oAn
 oAn
-aOn
+nXR
 aOn
 aOn
 oAn
@@ -292394,7 +292420,7 @@ uOL
 aas
 bCz
 uOL
-uYE
+rZa
 uYE
 uYE
 uYE
@@ -292868,7 +292894,7 @@ toW
 ssb
 qee
 toW
-wVI
+fRO
 wbg
 wbg
 gKK
@@ -298868,7 +298894,7 @@ rNm
 fYf
 evo
 evo
-wVI
+fRO
 wbg
 wbg
 wbg
@@ -305283,7 +305309,7 @@ uaL
 xAt
 xAt
 tNj
-hpj
+fNV
 pai
 hpj
 szl
@@ -305302,7 +305328,7 @@ tNj
 tNj
 tNj
 tNj
-wbg
+fxr
 wbg
 wbg
 wbg
