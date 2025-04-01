@@ -1,4 +1,4 @@
-/datum/job/roguetown/guild_clerk
+/* /datum/job/roguetown/guild_clerk
 	title = "Guild Clerk"
 	flag = MERC_CLERK
 	department_flag = MERCENARIES
@@ -55,3 +55,4 @@
 	backl = /obj/item/rogueweapon/mace
 	beltl = /obj/item/storage/keyring/mercenary_boss//So they can access the Captain's office.
 	backr = /obj/item/storage/backpack/rogue/satchel
+ */

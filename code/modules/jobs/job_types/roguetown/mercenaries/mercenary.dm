@@ -1,4 +1,4 @@
-/datum/job/roguetown/mercenary
+/* /datum/job/roguetown/mercenary
 	title = "Mercenary"
 	flag = MERCENARY
 	department_flag = MERCENARIES
@@ -7,7 +7,7 @@
 	allowed_races = RACES_VERY_SHUNNED_UP
 	outfit = null
 	outfit_female = null
-//	display_order = JDO_MERCENARY
+	display_order = JDO_MERCENARY
 	selection_color = JCOLOR_MERCENARY
 	faction = "Station"
 	total_positions = 10
@@ -31,3 +31,4 @@
 		H.advsetup = 1
 		H.invisibility = INVISIBILITY_MAXIMUM
 		H.become_blind("advsetup")
+ */
