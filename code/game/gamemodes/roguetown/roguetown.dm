@@ -97,7 +97,7 @@ var/global/list/roguegamemodes = list("Rebellion", "Vampires and Werewolves", "N
 	var/lord_dead = FALSE
 	for(var/mob/living/carbon/human/H in GLOB.human_list)
 		if(H.mind)
-			if(H.job == "Duke")
+			if(H.job == "King")
 				lord_found = TRUE
 				if(H.stat == DEAD)
 					lord_dead = TRUE
@@ -217,8 +217,10 @@ var/global/list/roguegamemodes = list("Rebellion", "Vampires and Werewolves", "N
 /datum/game_mode/chaosmode/proc/pick_bandits()
 	//BANDITS
 	banditgoal = rand(200,400)
-	restricted_jobs = list("Duke",
-	"Duke Consort",
+	restricted_jobs = list(
+	"King",
+	"Queen",
+	"Heir",
 	"Merchant",
 	"Priest",
 	"Knight",
@@ -391,8 +393,10 @@ var/global/list/roguegamemodes = list("Rebellion", "Vampires and Werewolves", "N
 
 /datum/game_mode/chaosmode/proc/pick_cultist()
 	var/remaining = 3 // 1 heresiarch, 2 cultists
-	restricted_jobs = list("Duke",
-	"Duke Consort",
+	restricted_jobs = list(
+	"King",
+	"Queen",
+	"Heir",
 	"Priest",
 	"Bandit",
 	"Knight",
@@ -436,8 +440,9 @@ var/global/list/roguegamemodes = list("Rebellion", "Vampires and Werewolves", "N
 /datum/game_mode/chaosmode/proc/pick_lich()
 
 	restricted_jobs = list(
-	"Duke",
-	"Duke Consort",
+	"King",
+	"Queen",
+	"Heir",
 	"Dungeoneer",
 	"Inquisitor",
 	"Confessor",
@@ -482,8 +487,9 @@ var/global/list/roguegamemodes = list("Rebellion", "Vampires and Werewolves", "N
 /datum/game_mode/chaosmode/proc/pick_vampires()
 	var/vampsremaining = 3
 	restricted_jobs = list(
-	"Duke",
-	"Duke Consort",
+	"King",
+	"Queen",
+	"Heir",
 	"Dungeoneer",
 	"Inquisitor",
 	"Confessor",
@@ -537,8 +543,9 @@ var/global/list/roguegamemodes = list("Rebellion", "Vampires and Werewolves", "N
 /datum/game_mode/chaosmode/proc/pick_werewolves()
 	// Ideally we want Refugees/Towners to roll it
 	restricted_jobs = list(
-	"Duke",
-	"Duke Consort",
+	"King",
+	"Queen",
+	"Heir",
 	"Dungeoneer",
 	"Inquisitor",
 	"Confessor",
