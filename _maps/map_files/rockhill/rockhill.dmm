@@ -2263,6 +2263,10 @@
 /obj/structure/chair/stool/rogue,
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/rtfield)
+"cCw" = (
+/obj/effect/landmark/start/councillor,
+/turf/open/floor/rogue/tile/masonic/single,
+/area/rogue/indoors/town/manor)
 "cCQ" = (
 /obj/structure/chair/stool/rogue,
 /turf/open/floor/rogue/wood,
@@ -5216,7 +5220,7 @@
 /obj/machinery/light/rogue/torchholder{
 	pixel_y = 26
 	},
-/turf/open/floor/rogue/ruinedwood,
+/turf/open/floor/rogue/rooftop/green,
 /area/rogue/outdoors/town)
 "fNc" = (
 /obj/structure/flora/roguegrass/bush,
@@ -5477,7 +5481,7 @@
 /obj/structure/mineral_door/wood/donjon{
 	dir = 1;
 	locked = 1;
-	lockid = "keep_dungeon"
+	lockid = Manor
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/town/basement)
@@ -11156,6 +11160,14 @@
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/outdoors/bog)
+"mxR" = (
+/obj/structure/mineral_door/wood/donjon{
+	dir = 1;
+	locked = 1;
+	lockid = Manor
+	},
+/turf/open/floor/rogue/tile/masonic/inverted,
+/area/rogue/indoors/town/manor)
 "myl" = (
 /obj/structure/table/wood{
 	dir = 9;
@@ -11285,7 +11297,6 @@
 "mJn" = (
 /obj/structure/bed/rogue/inn,
 /obj/item/bedsheet/rogue/fabric,
-/obj/effect/landmark/start/marshal,
 /turf/open/floor/rogue/tile/masonic/single,
 /area/rogue/indoors/town/manor)
 "mJz" = (
@@ -17619,6 +17630,12 @@
 /obj/structure/fluff/canopy/side,
 /turf/open/floor/rogue/blocks,
 /area/rogue/outdoors/town)
+"tKf" = (
+/obj/structure/mineral_door/bars{
+	lockid = "manor"
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/town/roofs)
 "tKg" = (
 /obj/structure/bars/grille,
 /turf/open/transparent/openspace,
@@ -384629,7 +384646,7 @@ rTC
 rTC
 rTC
 rTC
-rTC
+tKf
 rTC
 rTC
 rTC
@@ -385031,7 +385048,7 @@ vIa
 wtF
 wtF
 wtF
-wtF
+yhZ
 wtF
 wtF
 rTC
@@ -385431,10 +385448,10 @@ vIa
 vIa
 vIa
 wtF
-hLW
-hLW
-hLW
-hLW
+yhZ
+yhZ
+yhZ
+yhZ
 wtF
 wtF
 eMc
@@ -385833,11 +385850,11 @@ vIa
 vIa
 vIa
 wtF
-hLW
-hLW
-hLW
-hLW
-hLW
+yhZ
+yhZ
+yhZ
+yhZ
+yhZ
 wtF
 rTC
 rTC
@@ -386235,11 +386252,11 @@ vIa
 vIa
 vIa
 wtF
-hLW
-hLW
-hLW
-hLW
-hLW
+yhZ
+yhZ
+yhZ
+yhZ
+yhZ
 wtF
 fZJ
 fZJ
@@ -387440,7 +387457,7 @@ aUc
 vIa
 vIa
 wtF
-sfJ
+hLW
 hLW
 wtF
 wtF
@@ -487538,12 +487555,12 @@ aUc
 aUc
 uFE
 uFE
-uFE
-uFE
-uFE
-uFE
-uFE
-uFE
+wtF
+wtF
+wtF
+wtF
+wtF
+wtF
 tPh
 tPh
 tPh
@@ -487940,12 +487957,12 @@ aUc
 aUc
 vIa
 vIa
-vIa
-vIa
-vIa
-vIa
-vIa
-uFE
+wtF
+tgZ
+los
+bFU
+rdP
+mxR
 tPh
 tPh
 nkW
@@ -488342,14 +488359,14 @@ aUc
 aUc
 vIa
 vIa
-vIa
-vIa
-vIa
-vIa
-vIa
-uFE
+wtF
+los
+bFU
+tgZ
+wtF
+wtF
 fMc
-hEc
+hGn
 hGn
 hGn
 hGn
@@ -488744,14 +488761,14 @@ aUc
 aUc
 vIa
 vIa
-vIa
-vIa
-vIa
-uFE
-uFE
-uFE
-sXz
-esF
+wtF
+bFU
+tgZ
+los
+wtF
+wtF
+uJF
+uJF
 xAt
 xAt
 xAt
@@ -489146,14 +489163,14 @@ aUc
 aUc
 vIa
 vIa
-uFE
-uJF
-uJF
-uJF
-sXz
-sXz
-sXz
-svx
+wtF
+tgZ
+los
+bFU
+wtF
+wtF
+hSp
+hSp
 hSp
 hSp
 hSp
@@ -489548,11 +489565,11 @@ aUc
 aUc
 vIa
 vIa
-uJF
-sXz
-sXz
-sXz
-sXz
+wtF
+los
+bFU
+tgZ
+wtF
 wtF
 yei
 uwS
@@ -489950,11 +489967,11 @@ aUc
 aUc
 vIa
 vIa
-uJF
-iVj
-sXz
-sXz
-uJF
+wtF
+bFU
+tgZ
+los
+wtF
 naI
 tVZ
 rdP
@@ -490352,11 +490369,11 @@ aUc
 aUc
 vIa
 vIa
-uJF
-uJF
-uJF
-uJF
-uJF
+wtF
+tgZ
+los
+bFU
+wtF
 naI
 nPt
 rdP
@@ -490754,11 +490771,11 @@ aUc
 aUc
 vIa
 vIa
-uJF
-uJF
-uJF
-uJF
-uJF
+wtF
+los
+bFU
+tgZ
+wtF
 naI
 fHm
 rdP
@@ -490767,7 +490784,7 @@ naI
 tkS
 tgZ
 vKN
-tgZ
+cCw
 naI
 tWQ
 tWQ
@@ -491156,11 +491173,11 @@ aUc
 aUc
 vIa
 vIa
-uJF
-uJF
-uJF
-uJF
-uJF
+wtF
+bFU
+tgZ
+los
+wtF
 naI
 naI
 naI
@@ -491558,11 +491575,11 @@ aUc
 aUc
 vIa
 vIa
-uJF
-uJF
-uJF
-uJF
-uJF
+wtF
+tgZ
+los
+bFU
+wtF
 naI
 fAH
 dxv
@@ -491961,8 +491978,8 @@ aUc
 vIa
 vIa
 wtF
-nBW
-nBW
+los
+bFU
 wtF
 wtF
 naI
@@ -504020,7 +504037,7 @@ aUc
 aUc
 vIa
 uFE
-hEc
+hGn
 hGn
 hGn
 hGn
@@ -504422,7 +504439,7 @@ aUc
 aUc
 vIa
 uFE
-esF
+xAt
 xAt
 xAt
 xAt
@@ -504824,7 +504841,7 @@ aUc
 aUc
 vIa
 uFE
-esF
+xAt
 xAt
 xAt
 xAt
@@ -505226,7 +505243,7 @@ aUc
 aUc
 vIa
 uFE
-esF
+xAt
 xAt
 xAt
 xAt
@@ -505628,7 +505645,7 @@ aUc
 aUc
 vIa
 uFE
-svx
+hSp
 hSp
 hSp
 hSp
