@@ -2263,10 +2263,6 @@
 /obj/structure/chair/stool/rogue,
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/rtfield)
-"cCw" = (
-/obj/effect/landmark/start/councillor,
-/turf/open/floor/rogue/tile/masonic/single,
-/area/rogue/indoors/town/manor)
 "cCQ" = (
 /obj/structure/chair/stool/rogue,
 /turf/open/floor/rogue/wood,
@@ -2365,6 +2361,12 @@
 /obj/machinery/light/rogue/wallfire/candle/blue/r,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/magician)
+"cIT" = (
+/obj/structure/bed/rogue/inn,
+/obj/item/bedsheet/rogue/fabric,
+/obj/effect/landmark/start/councillor,
+/turf/open/floor/rogue/tile/masonic/single,
+/area/rogue/indoors/town/manor)
 "cJt" = (
 /obj/structure/fluff/railing/wood{
 	dir = 1;
@@ -5119,11 +5121,8 @@
 	},
 /area/rogue/indoors/town/magician)
 "fHm" = (
-/obj/structure/bed/rogue/inn/wool,
-/obj/item/bedsheet/rogue/pelt,
-/obj/effect/landmark/start/councillor,
-/turf/open/floor/rogue/tile/masonic/inverted,
-/area/rogue/indoors/town/manor)
+/turf/closed/wall/mineral/rogue/decowood,
+/area/rogue/outdoors/town)
 "fHo" = (
 /obj/structure/closet/crate/roguecloset/crafted,
 /obj/machinery/light/rogue/wallfire/candle/l,
@@ -11160,14 +11159,6 @@
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/outdoors/bog)
-"mxR" = (
-/obj/structure/mineral_door/wood/donjon{
-	dir = 1;
-	locked = 1;
-	lockid = Manor
-	},
-/turf/open/floor/rogue/tile/masonic/inverted,
-/area/rogue/indoors/town/manor)
 "myl" = (
 /obj/structure/table/wood{
 	dir = 9;
@@ -11295,9 +11286,12 @@
 /turf/open/floor/rogue/blocks/stonered,
 /area/rogue/indoors/town)
 "mJn" = (
-/obj/structure/bed/rogue/inn,
-/obj/item/bedsheet/rogue/fabric,
-/turf/open/floor/rogue/tile/masonic/single,
+/obj/structure/mineral_door/wood/donjon{
+	dir = 1;
+	locked = 1;
+	lockid = Manor
+	},
+/turf/open/floor/rogue/tile/masonic/inverted,
 /area/rogue/indoors/town/manor)
 "mJz" = (
 /obj/structure/closet/crate/chest{
@@ -12274,9 +12268,6 @@
 /area/rogue/indoors/town/church)
 "nPt" = (
 /obj/machinery/light/rogue/wallfire/candle,
-/obj/structure/closet/crate/drawer,
-/obj/item/candle/yellow,
-/obj/item/natural/feather,
 /turf/open/floor/rogue/tile/masonic/inverted,
 /area/rogue/indoors/town/manor)
 "nPR" = (
@@ -17193,7 +17184,6 @@
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/dwarfin)
 "tkS" = (
-/obj/structure/closet/crate/roguecloset/dark,
 /obj/item/paper/scroll,
 /obj/item/paper/scroll,
 /obj/item/paper/scroll,
@@ -17210,6 +17200,11 @@
 /obj/item/paper/scroll,
 /obj/item/paper/scroll,
 /obj/item/paper/scroll,
+/obj/structure/closet/crate/roguecloset/dark{
+	pixel_x = 1;
+	pixel_y = 1
+	},
+/obj/item/natural/feather,
 /turf/open/floor/rogue/tile/masonic/single,
 /area/rogue/indoors/town/manor)
 "tlB" = (
@@ -17630,12 +17625,6 @@
 /obj/structure/fluff/canopy/side,
 /turf/open/floor/rogue/blocks,
 /area/rogue/outdoors/town)
-"tKf" = (
-/obj/structure/mineral_door/bars{
-	lockid = "manor"
-	},
-/turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/town/roofs)
 "tKg" = (
 /obj/structure/bars/grille,
 /turf/open/transparent/openspace,
@@ -17845,9 +17834,9 @@
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/church/chapel)
 "tVZ" = (
-/obj/structure/bed/rogue/inn/wool,
-/obj/item/bedsheet/rogue/wool,
 /obj/effect/landmark/start/councillor,
+/obj/structure/bed/rogue/inn,
+/obj/item/bedsheet/rogue/fabric,
 /turf/open/floor/rogue/tile/masonic/inverted,
 /area/rogue/indoors/town/manor)
 "tWz" = (
@@ -18498,6 +18487,10 @@
 /obj/machinery/light/rogue/wallfire/candle/blue,
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/town/church)
+"uEm" = (
+/obj/structure/closet/crate/chest/crafted,
+/turf/open/floor/rogue/tile/masonic/inverted,
+/area/rogue/indoors/town/manor)
 "uEx" = (
 /obj/machinery/light/rogue/torchholder{
 	dir = 4
@@ -19469,6 +19462,12 @@
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town/manor)
+"vKv" = (
+/obj/structure/mineral_door/bars{
+	lockid = "manor"
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/town/roofs)
 "vKy" = (
 /obj/structure/table/wood{
 	dir = 1;
@@ -384646,7 +384645,7 @@ rTC
 rTC
 rTC
 rTC
-tKf
+vKv
 rTC
 rTC
 rTC
@@ -487962,7 +487961,7 @@ tgZ
 los
 bFU
 rdP
-mxR
+mJn
 tPh
 tPh
 nkW
@@ -489976,13 +489975,13 @@ naI
 tVZ
 rdP
 rdP
+uEm
 naI
 bxD
 tgZ
 tgZ
-mJn
-naI
-tWQ
+cIT
+fHm
 tWQ
 tWQ
 tWQ
@@ -490378,13 +490377,13 @@ naI
 nPt
 rdP
 rdP
+rdP
 naI
 tgZ
 tgZ
 tgZ
 tgZ
-naI
-tWQ
+fHm
 tWQ
 tWQ
 tWQ
@@ -490777,16 +490776,16 @@ bFU
 tgZ
 wtF
 naI
-fHm
 rdP
 rdP
+rdP
+tkS
 naI
 tkS
-tgZ
 vKN
-cCw
-naI
-tWQ
+tgZ
+tgZ
+fHm
 tWQ
 tWQ
 tWQ
@@ -491188,7 +491187,7 @@ ogw
 naI
 naI
 naI
-tWQ
+fHm
 tWQ
 tWQ
 tWQ
@@ -501649,8 +501648,8 @@ tWQ
 tWQ
 qSA
 esF
-xAt
-xAt
+hGn
+oml
 xAt
 xAt
 xAt
@@ -502051,8 +502050,8 @@ tWQ
 tWQ
 qSA
 esF
-xAt
-xAt
+hSp
+uKX
 xAt
 xAt
 fkC
@@ -502453,8 +502452,8 @@ tWQ
 tWQ
 qSA
 esF
-xAt
-xAt
+hSp
+esF
 xAt
 fkC
 fkC
@@ -502855,8 +502854,8 @@ tWQ
 tWQ
 qSA
 esF
-xAt
-xAt
+hGn
+eUb
 xAt
 fkC
 wyk
