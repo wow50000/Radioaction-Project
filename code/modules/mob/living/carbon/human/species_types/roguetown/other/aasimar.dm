@@ -1,4 +1,4 @@
-/* /mob/living/carbon/human/species/aasimar
+/mob/living/carbon/human/species/aasimar
 	race = /datum/species/aasimar
 
 /datum/species/aasimar
@@ -90,16 +90,16 @@
 
 /datum/species/aasimar/get_skin_list()
 	return list(
-		"Archon" = SKIN_COLOR_ARCHON,
-		"Planetar" = SKIN_COLOR_PLANETAR,
-		"Deva"	   = SKIN_COLOR_DEVA,
-		"Solar" = SKIN_COLOR_SOLAR,
-		"Empyrea" = SKIN_COLOR_EMPYREA,
-		"Gaeia" = SKIN_COLOR_GAEIA,
-		"Celestial" = SKIN_COLOR_CELESTIAL,
-		"Olympia" = SKIN_COLOR_OLYMPIA,
-		"Necral" = SKIN_COLOR_NECRAL,
-		"Abyssal" = SKIN_COLOR_ABYSSAL,
+		"Psydon" = SKIN_COLOR_ARCHON,
+		"Noc" = SKIN_COLOR_PLANETAR,
+		"Dendor"	   = SKIN_COLOR_DEVA,
+		"Astrata" = SKIN_COLOR_SOLAR,
+		"Abyssor" = SKIN_COLOR_EMPYREA,
+		"Pestra" = SKIN_COLOR_GAEIA,
+		"Malum" = SKIN_COLOR_CELESTIAL,
+		"Eora" = SKIN_COLOR_OLYMPIA,
+		"Necra" = SKIN_COLOR_NECRAL,
+		"Ravox" = SKIN_COLOR_ABYSSAL,
 	)
 
 /datum/species/aasimar/get_hairc_list()
@@ -134,4 +134,4 @@
 
 /datum/species/aasimar/random_surname()
 	return
- */
+
