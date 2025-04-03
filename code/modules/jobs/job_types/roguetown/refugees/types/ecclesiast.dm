@@ -89,8 +89,6 @@
 					H.change_stat("speed", 1)
 					H.change_stat("constitution", 1)
 					H.change_stat("perception", 2)
-					H.verbs |= /mob/living/carbon/human/proc/torture_victim
-					H.verbs |= /mob/living/carbon/human/proc/faith_test
 					ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 				else
 					H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
