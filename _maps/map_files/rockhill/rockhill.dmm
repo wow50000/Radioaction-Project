@@ -1446,7 +1446,9 @@
 	lockid = "manor";
 	name = "Service Halls"
 	},
-/turf/open/floor/rogue/tile,
+/turf/open/floor/rogue/tile{
+	icon_state = "bfloorz"
+	},
 /area/rogue/indoors/town/manor)
 "bHz" = (
 /obj/structure/chair/wood/rogue{
@@ -20673,6 +20675,7 @@
 /obj/item/clothing/suit/roguetown/shirt/dress/gen/purple,
 /obj/machinery/light/roguestreet/orange/walllamp,
 /obj/structure/closet/crate/roguecloset/dark,
+/obj/item/clothing/head/roguetown/nyle/consortcrown,
 /turf/open/floor/rogue/tile/masonic,
 /area/rogue/indoors/town/manor)
 "xen" = (
@@ -290201,7 +290204,7 @@ sHm
 sZE
 uYE
 cqU
-tlB
+uYE
 uSe
 sWL
 sWL
@@ -291014,7 +291017,7 @@ uOL
 idR
 syY
 xDn
-uYE
+tlB
 uYE
 vZY
 oHw
