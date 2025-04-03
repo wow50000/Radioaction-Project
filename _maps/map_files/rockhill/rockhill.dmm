@@ -2361,6 +2361,12 @@
 /obj/machinery/light/rogue/wallfire/candle/blue/r,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/magician)
+"cIT" = (
+/obj/structure/bed/rogue/inn,
+/obj/item/bedsheet/rogue/fabric,
+/obj/effect/landmark/start/councillor,
+/turf/open/floor/rogue/tile/masonic/single,
+/area/rogue/indoors/town/manor)
 "cJt" = (
 /obj/structure/fluff/railing/wood{
 	dir = 1;
@@ -5115,11 +5121,8 @@
 	},
 /area/rogue/indoors/town/magician)
 "fHm" = (
-/obj/structure/bed/rogue/inn/wool,
-/obj/item/bedsheet/rogue/pelt,
-/obj/effect/landmark/start/councillor,
-/turf/open/floor/rogue/tile/masonic/inverted,
-/area/rogue/indoors/town/manor)
+/turf/closed/wall/mineral/rogue/decowood,
+/area/rogue/outdoors/town)
 "fHo" = (
 /obj/structure/closet/crate/roguecloset/crafted,
 /obj/machinery/light/rogue/wallfire/candle/l,
@@ -5216,7 +5219,7 @@
 /obj/machinery/light/rogue/torchholder{
 	pixel_y = 26
 	},
-/turf/open/floor/rogue/ruinedwood,
+/turf/open/floor/rogue/rooftop/green,
 /area/rogue/outdoors/town)
 "fNc" = (
 /obj/structure/flora/roguegrass/bush,
@@ -5477,7 +5480,7 @@
 /obj/structure/mineral_door/wood/donjon{
 	dir = 1;
 	locked = 1;
-	lockid = "keep_dungeon"
+	lockid = Manor
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/town/basement)
@@ -11283,10 +11286,12 @@
 /turf/open/floor/rogue/blocks/stonered,
 /area/rogue/indoors/town)
 "mJn" = (
-/obj/structure/bed/rogue/inn,
-/obj/item/bedsheet/rogue/fabric,
-/obj/effect/landmark/start/marshal,
-/turf/open/floor/rogue/tile/masonic/single,
+/obj/structure/mineral_door/wood/donjon{
+	dir = 1;
+	locked = 1;
+	lockid = Manor
+	},
+/turf/open/floor/rogue/tile/masonic/inverted,
 /area/rogue/indoors/town/manor)
 "mJz" = (
 /obj/structure/closet/crate/chest{
@@ -12263,9 +12268,6 @@
 /area/rogue/indoors/town/church)
 "nPt" = (
 /obj/machinery/light/rogue/wallfire/candle,
-/obj/structure/closet/crate/drawer,
-/obj/item/candle/yellow,
-/obj/item/natural/feather,
 /turf/open/floor/rogue/tile/masonic/inverted,
 /area/rogue/indoors/town/manor)
 "nPR" = (
@@ -17182,7 +17184,6 @@
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/dwarfin)
 "tkS" = (
-/obj/structure/closet/crate/roguecloset/dark,
 /obj/item/paper/scroll,
 /obj/item/paper/scroll,
 /obj/item/paper/scroll,
@@ -17199,6 +17200,11 @@
 /obj/item/paper/scroll,
 /obj/item/paper/scroll,
 /obj/item/paper/scroll,
+/obj/structure/closet/crate/roguecloset/dark{
+	pixel_x = 1;
+	pixel_y = 1
+	},
+/obj/item/natural/feather,
 /turf/open/floor/rogue/tile/masonic/single,
 /area/rogue/indoors/town/manor)
 "tlB" = (
@@ -17828,9 +17834,9 @@
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/church/chapel)
 "tVZ" = (
-/obj/structure/bed/rogue/inn/wool,
-/obj/item/bedsheet/rogue/wool,
 /obj/effect/landmark/start/councillor,
+/obj/structure/bed/rogue/inn,
+/obj/item/bedsheet/rogue/fabric,
 /turf/open/floor/rogue/tile/masonic/inverted,
 /area/rogue/indoors/town/manor)
 "tWz" = (
@@ -18481,6 +18487,10 @@
 /obj/machinery/light/rogue/wallfire/candle/blue,
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/town/church)
+"uEm" = (
+/obj/structure/closet/crate/chest/crafted,
+/turf/open/floor/rogue/tile/masonic/inverted,
+/area/rogue/indoors/town/manor)
 "uEx" = (
 /obj/machinery/light/rogue/torchholder{
 	dir = 4
@@ -19452,6 +19462,12 @@
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town/manor)
+"vKv" = (
+/obj/structure/mineral_door/bars{
+	lockid = "manor"
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/town/roofs)
 "vKy" = (
 /obj/structure/table/wood{
 	dir = 1;
@@ -384629,7 +384645,7 @@ rTC
 rTC
 rTC
 rTC
-rTC
+vKv
 rTC
 rTC
 rTC
@@ -385031,7 +385047,7 @@ vIa
 wtF
 wtF
 wtF
-wtF
+yhZ
 wtF
 wtF
 rTC
@@ -385431,10 +385447,10 @@ vIa
 vIa
 vIa
 wtF
-hLW
-hLW
-hLW
-hLW
+yhZ
+yhZ
+yhZ
+yhZ
 wtF
 wtF
 eMc
@@ -385833,11 +385849,11 @@ vIa
 vIa
 vIa
 wtF
-hLW
-hLW
-hLW
-hLW
-hLW
+yhZ
+yhZ
+yhZ
+yhZ
+yhZ
 wtF
 rTC
 rTC
@@ -386235,11 +386251,11 @@ vIa
 vIa
 vIa
 wtF
-hLW
-hLW
-hLW
-hLW
-hLW
+yhZ
+yhZ
+yhZ
+yhZ
+yhZ
 wtF
 fZJ
 fZJ
@@ -387440,7 +387456,7 @@ aUc
 vIa
 vIa
 wtF
-sfJ
+hLW
 hLW
 wtF
 wtF
@@ -487538,12 +487554,12 @@ aUc
 aUc
 uFE
 uFE
-uFE
-uFE
-uFE
-uFE
-uFE
-uFE
+wtF
+wtF
+wtF
+wtF
+wtF
+wtF
 tPh
 tPh
 tPh
@@ -487940,12 +487956,12 @@ aUc
 aUc
 vIa
 vIa
-vIa
-vIa
-vIa
-vIa
-vIa
-uFE
+wtF
+tgZ
+los
+bFU
+rdP
+mJn
 tPh
 tPh
 nkW
@@ -488342,14 +488358,14 @@ aUc
 aUc
 vIa
 vIa
-vIa
-vIa
-vIa
-vIa
-vIa
-uFE
+wtF
+los
+bFU
+tgZ
+wtF
+wtF
 fMc
-hEc
+hGn
 hGn
 hGn
 hGn
@@ -488744,14 +488760,14 @@ aUc
 aUc
 vIa
 vIa
-vIa
-vIa
-vIa
-uFE
-uFE
-uFE
-sXz
-esF
+wtF
+bFU
+tgZ
+los
+wtF
+wtF
+uJF
+uJF
 xAt
 xAt
 xAt
@@ -489146,14 +489162,14 @@ aUc
 aUc
 vIa
 vIa
-uFE
-uJF
-uJF
-uJF
-sXz
-sXz
-sXz
-svx
+wtF
+tgZ
+los
+bFU
+wtF
+wtF
+hSp
+hSp
 hSp
 hSp
 hSp
@@ -489548,11 +489564,11 @@ aUc
 aUc
 vIa
 vIa
-uJF
-sXz
-sXz
-sXz
-sXz
+wtF
+los
+bFU
+tgZ
+wtF
 wtF
 yei
 uwS
@@ -489950,22 +489966,22 @@ aUc
 aUc
 vIa
 vIa
-uJF
-iVj
-sXz
-sXz
-uJF
+wtF
+bFU
+tgZ
+los
+wtF
 naI
 tVZ
 rdP
 rdP
+uEm
 naI
 bxD
 tgZ
 tgZ
-mJn
-naI
-tWQ
+cIT
+fHm
 tWQ
 tWQ
 tWQ
@@ -490352,22 +490368,22 @@ aUc
 aUc
 vIa
 vIa
-uJF
-uJF
-uJF
-uJF
-uJF
+wtF
+tgZ
+los
+bFU
+wtF
 naI
 nPt
 rdP
 rdP
+rdP
 naI
 tgZ
 tgZ
 tgZ
 tgZ
-naI
-tWQ
+fHm
 tWQ
 tWQ
 tWQ
@@ -490754,22 +490770,22 @@ aUc
 aUc
 vIa
 vIa
-uJF
-uJF
-uJF
-uJF
-uJF
+wtF
+los
+bFU
+tgZ
+wtF
 naI
-fHm
 rdP
 rdP
+rdP
+tkS
 naI
 tkS
-tgZ
 vKN
 tgZ
-naI
-tWQ
+tgZ
+fHm
 tWQ
 tWQ
 tWQ
@@ -491156,11 +491172,11 @@ aUc
 aUc
 vIa
 vIa
-uJF
-uJF
-uJF
-uJF
-uJF
+wtF
+bFU
+tgZ
+los
+wtF
 naI
 naI
 naI
@@ -491171,7 +491187,7 @@ ogw
 naI
 naI
 naI
-tWQ
+fHm
 tWQ
 tWQ
 tWQ
@@ -491558,11 +491574,11 @@ aUc
 aUc
 vIa
 vIa
-uJF
-uJF
-uJF
-uJF
-uJF
+wtF
+tgZ
+los
+bFU
+wtF
 naI
 fAH
 dxv
@@ -491961,8 +491977,8 @@ aUc
 vIa
 vIa
 wtF
-nBW
-nBW
+los
+bFU
 wtF
 wtF
 naI
@@ -501632,8 +501648,8 @@ tWQ
 tWQ
 qSA
 esF
-xAt
-xAt
+hGn
+oml
 xAt
 xAt
 xAt
@@ -502034,8 +502050,8 @@ tWQ
 tWQ
 qSA
 esF
-xAt
-xAt
+hSp
+uKX
 xAt
 xAt
 fkC
@@ -502436,8 +502452,8 @@ tWQ
 tWQ
 qSA
 esF
-xAt
-xAt
+hSp
+esF
 xAt
 fkC
 fkC
@@ -502838,8 +502854,8 @@ tWQ
 tWQ
 qSA
 esF
-xAt
-xAt
+hGn
+eUb
 xAt
 fkC
 wyk
@@ -504020,7 +504036,7 @@ aUc
 aUc
 vIa
 uFE
-hEc
+hGn
 hGn
 hGn
 hGn
@@ -504422,7 +504438,7 @@ aUc
 aUc
 vIa
 uFE
-esF
+xAt
 xAt
 xAt
 xAt
@@ -504824,7 +504840,7 @@ aUc
 aUc
 vIa
 uFE
-esF
+xAt
 xAt
 xAt
 xAt
@@ -505226,7 +505242,7 @@ aUc
 aUc
 vIa
 uFE
-esF
+xAt
 xAt
 xAt
 xAt
@@ -505628,7 +505644,7 @@ aUc
 aUc
 vIa
 uFE
-svx
+hSp
 hSp
 hSp
 hSp
