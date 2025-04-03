@@ -5,7 +5,7 @@
 
 
 // Positive Specials
-/datum/special_trait/tough
+/* /datum/special_trait/tough
 	name = "Tough"
 	greet_text = span_notice("Father always said - The best defence is a good offence... Until mother knocked some sense into him with a rolling pin, that is. Momma was always a great teacher.")
 	weight = 80
@@ -740,3 +740,4 @@
 	ADD_TRAIT(character, TRAIT_NOSLEEP, "[type]")
 	character.change_stat("strength", 4)
 	character.change_stat("speed", 3)
+ */

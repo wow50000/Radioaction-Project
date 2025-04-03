@@ -2,7 +2,7 @@
 This confessor is different to 'confessors', the people who are hit with the confession slip.
 Please do not confuse the two.
 */
-/datum/job/roguetown/shepherd
+/* /datum/job/roguetown/shepherd
 	title = "Confessor"
 	flag = CONFESSOR
 	department_flag = INQUISITION
@@ -75,3 +75,4 @@ Please do not confuse the two.
 
 	H.verbs |= /mob/living/carbon/human/proc/faith_test
 	H.verbs |= /mob/living/carbon/human/proc/torture_victim
+ */
