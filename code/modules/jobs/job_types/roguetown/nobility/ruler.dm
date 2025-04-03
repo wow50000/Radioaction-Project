@@ -81,7 +81,6 @@ GLOBAL_LIST_EMPTY(lord_titles)
 
 	if(H.gender == MALE)
 		head = /obj/item/clothing/head/roguetown/crown/serpcrown
-		l_hand = /obj/item/rogueweapon/lordscepter
 		belt = /obj/item/storage/belt/rogue/leather
 		beltr = /obj/item/gun/ballistic/firearm/arquebus_pistol
 		beltl = /obj/item/ammo_holder/bullet/lead
