@@ -309,11 +309,6 @@
 		var/atype = members[index]
 		world.preloader_setup(members_attributes[index], atype)//preloader for assigning  set variables on atom creation
 		var/atom/instance = areaCache[atype]
-		if (!instance)
-			instance = GLOB.areas_by_type[atype]
-			if (!instance)
-				instance = new atype(null)
-			areaCache[atype] = instance
 		if(crds)
 			instance.contents.Add(crds)
 
