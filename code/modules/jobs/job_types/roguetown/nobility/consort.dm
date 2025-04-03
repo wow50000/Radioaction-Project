@@ -69,6 +69,7 @@
 		belt = /obj/item/storage/belt/rogue/leather/cloth/lady
 		head = /obj/item/clothing/head/roguetown/duchess_hood
 		backl = /obj/item/clothing/suit/roguetown/armor/leather/duchess
+		backr = /obj/item/storage/backpack/rogue/satchel
 		gloves = /obj/item/clothing/gloves/roguetown/leather/black
 
 		id = /obj/item/clothing/ring/silver

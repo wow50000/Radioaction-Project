@@ -86,7 +86,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 		beltl = /obj/item/ammo_holder/bullet/lead
 		backl = /obj/item/storage/backpack/rogue/satchel
 		neck = /obj/item/storage/belt/rogue/pouch/coins/rich
-		backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1, /obj/item/powderflask = 1)
+		backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1, /obj/item/powderflask = 1, /obj/item/key/lord = 1)
 		id = /obj/item/clothing/ring/active/nomag	
 		pants = /obj/item/clothing/under/roguetown/tights/black
 		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
