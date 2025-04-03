@@ -502,12 +502,16 @@ GLOBAL_DATUM_INIT(ahelp_tickets, /datum/admin_help_tickets, new)
 
 // Used for methods where input via arg doesn't work
 /client/proc/get_adminhelp()
-	var/msg = input(src, "Please describe your problem concisely and an admin will help as soon as they're able.", "Adminhelp contents") as text
-	adminhelp(msg)
+	to_chat(src, span_danger("This command has been disabled. If you have an issue, please make a ticket in discord- or handle the problem in-character. Thank you."))
+	return
+/* 	var/msg = input(src, "Please describe your problem concisely and an admin will help as soon as they're able.", "Adminhelp contents") as text
+	adminhelp(msg) */
 
-/client/verb/adminhelp(msg as text)
+/client/verb/adminhelp()
 	set category = "Admin"
 	set name = "Adminhelp"
+	to_chat(src, span_danger("This command has been disabled. If you have an issue, please make a ticket in discord- or handle the problem in-character. Thank you."))
+	return
 
 	if(GLOB.say_disabled)	//This is here to try to identify lag problems
 		to_chat(usr, span_danger("Speech is currently admin-disabled."))
@@ -517,19 +521,19 @@ GLOBAL_DATUM_INIT(ahelp_tickets, /datum/admin_help_tickets, new)
 	if(prefs.muted & MUTE_ADMINHELP)
 		to_chat(src, span_danger("Error: Admin-PM: You cannot send adminhelps (Muted)."))
 		return
-	if(handle_spam_prevention(msg,MUTE_ADMINHELP))
-		return
+//	if(handle_spam_prevention(msg,MUTE_ADMINHELP))
+//		return
 
-	msg = sanitize(trim(msg))
+//	msg = sanitize(trim(msg))
 
-	if(!msg)
-		return
+//	if(!msg)
+//		return
 
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Adminhelp") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 	if(current_ticket)
 		if(alert(usr, "You already have a ticket open. Is this for the same issue?",,"Yes","No") != "No")
 			if(current_ticket)
-				current_ticket.MessageNoRecipient(msg)
+//				current_ticket.MessageNoRecipient(msg)
 				current_ticket.TimeoutVerb()
 				return
 			else
@@ -538,7 +542,7 @@ GLOBAL_DATUM_INIT(ahelp_tickets, /datum/admin_help_tickets, new)
 			current_ticket.AddInteraction("[key_name_admin(usr)] opened a new ticket.")
 			current_ticket.Close()
 
-	new /datum/admin_help(msg, src, FALSE)
+//	new /datum/admin_help(msg, src, FALSE)
 
 //
 // LOGGING
