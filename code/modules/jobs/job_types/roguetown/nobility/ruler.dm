@@ -3,7 +3,6 @@ GLOBAL_LIST_EMPTY(lord_titles)
 
 /datum/job/roguetown/ruler
 	title = "King"
-	f_title = "Queen"
 	flag = RULER
 	department_flag = NOBLEMEN
 	faction = "Station"
