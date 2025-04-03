@@ -308,10 +308,6 @@
 	if(members[index] != /area/template_noop)		
 		var/atype = members[index]
 		world.preloader_setup(members_attributes[index], atype)//preloader for assigning  set variables on atom creation
-		var/atom/instance = areaCache[atype]
-
-		if(GLOB.use_preloader && instance)
-			world.preloader_load(instance)
 
 	//then instance the /turf and, if multiple tiles are presents, simulates the DMM underlays piling effect
 
