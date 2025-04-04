@@ -233,7 +233,7 @@
 	smeltresult = /obj/item/ingot/steel
 	max_blade_int = 200
 	minstr = 8
-	wdefense = 6
+	wdefense = 5
 	throwforce = 15
 
 /obj/item/rogueweapon/spear/improvisedbillhook
@@ -294,7 +294,7 @@
 	associated_skill = /datum/skill/combat/polearms
 	blade_dulling = DULLING_BASHCHOP
 	walking_stick = TRUE
-	wdefense = 6
+	wdefense = 5
 
 /obj/item/rogueweapon/halberd/attack_right(mob/user)
 	if(!overlays.len)
@@ -367,7 +367,7 @@
 	associated_skill = /datum/skill/combat/polearms
 	blade_dulling = DULLING_BASHCHOP
 	walking_stick = TRUE
-	wdefense = 6
+	wdefense = 4
 
 /obj/item/rogueweapon/eaglebeak/getonmobprop(tag)
 	. = ..()
@@ -395,7 +395,7 @@
 
 /datum/intent/mace/smash/eaglebeak
 	reach = 2
-	swingdelay = 12
+	swingdelay = 17.5
 	clickcd = 14
 
 /obj/item/rogueweapon/spear/bronze
