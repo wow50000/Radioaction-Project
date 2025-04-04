@@ -10,11 +10,11 @@
 	allowed_races = RACES_SHUNNED_UP
 	allowed_ages = ALL_AGES_LIST
 	allowed_patrons = ALL_NON_INHUMEN_PATRONS
-	tutorial = "Either a fresh lowborn recruit or a veteran of the now defunct bog guard, you have been assigned to the newly established Vanguard. \
-	You have a roof over your head, coin in your pocket, and a thankless job protecting the outskirts of town against what lurks beyond.\
-	The Bastion must not fall."
+	tutorial = "Either a freshly levied criminal or a common peasant, you have been assigned to protect and operate the Bog Gate. \
+	You have a roof over your head, coin in your pocket, and a thankless job protecting the outskirts of town against the horrors that lurk beyond.\
+	The Gate must not fall."
 	display_order = JDO_BOGGUARD
-	whitelist_req = TRUE
+	whitelist_req = FALSE
 	outfit = /datum/outfit/job/roguetown/bog
 	give_bank_account = 16
 	min_pq = 1
@@ -119,7 +119,7 @@
 	bogger.mind.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
 	bogger.mind.adjust_skillrank(/datum/skill/misc/swimming, 0, TRUE)
 	bogger.mind.adjust_skillrank(/datum/skill/misc/treatment, 1, TRUE)
-	bogger.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
+	bogger.mind.adjust_skillrank(/datum/skill/misc/reading, 0, TRUE)
 	bogger.change_stat("strength", 2)
 	bogger.change_stat("constitution", 1)
 	bogger.change_stat("endurance", 2)
@@ -138,7 +138,7 @@
 	bogger.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
 	bogger.mind.adjust_skillrank(/datum/skill/misc/swimming, 0, TRUE)
 	bogger.mind.adjust_skillrank(/datum/skill/misc/treatment, 1, TRUE)
-	bogger.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
+	bogger.mind.adjust_skillrank(/datum/skill/misc/reading, 0, TRUE)
 	bogger.change_stat("perception", 2)
 	bogger.change_stat("speed", 2)
 	bogger.change_stat("endurance", 2)
