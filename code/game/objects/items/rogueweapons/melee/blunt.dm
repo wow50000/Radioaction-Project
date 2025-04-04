@@ -270,7 +270,7 @@
 /obj/item/rogueweapon/mace/cudgel
 	name = "cudgel"
 	desc = "A stubby little club for brigands."
-	force = 25
+	force = 20
 	icon_state = "cudgel"
 	force_wielded = 25
 	gripped_intents = null
