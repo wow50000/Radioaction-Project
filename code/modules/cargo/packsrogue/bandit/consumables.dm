@@ -58,3 +58,14 @@
 	name = "Wine"
 	cost = 100
 	contains = list(/obj/item/reagent_containers/glass/bottle/rogue/wine)
+
+
+/datum/supply_pack/rogue/bandit/Knave/Mancatcher
+	name = "Mancatcher"
+	cost = 50
+	contains = list(/obj/item/restraints/legcuffs/beartrap)
+
+/datum/supply_pack/rogue/bandit/Knave/smokebomb
+	name = "Smoke bomb"
+	cost = 25
+	contains = list(/obj/item/smokebomb)

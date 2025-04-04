@@ -5,14 +5,11 @@
 	name = "Half Orc"
 	id = "halforc"
 	desc = "<b>Half Orcs</b><br>\
-	With the Ironmask clan on a centuries-long warpath to consolidate all orcs within their banner, \
-	crushed orc tribes have lost their menfolk and war-widows have been scattered to the hinterlands. \
-	Between human civilization and orc savagery, orc-women opting for exile over dishonor have become \
-	more common visitors to fur trading posts and prospecting camps, eventually leading to half-orcs \
-	being born in these rough places otherwise devoid of a fairer sex. Your mother-clan is in thrall \
-	to the Ironmask, true orcs would kill you as a mongrel dog and your father’s people cannot decide \
-	between mere distrust and disgust. Yet somehow your wandering feet came to Rockhill, where \
-	half-orcs ply muscle and their hardiness in the rough underbelly or outer reaches of society."
+	Born of blood and risen of gore, half-orcs have been corrupted by the powers of Inhumen. \
+	Created as a byproduct of Graggar's meddling with the perfection of Humen. \
+	They are seen as creatures, filth and overall lesser. If one isn't born into slavery, they're soon to find it. \
+	Some believe that this stigma may change, but they would be wrong. As a wise man once said-- \
+	The only mercy they can receive is a swift death."
 
 	skin_tone_wording = "Clan"
 

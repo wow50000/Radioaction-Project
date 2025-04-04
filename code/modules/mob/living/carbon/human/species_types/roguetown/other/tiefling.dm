@@ -5,17 +5,10 @@
 	name = "Tiefling"
 	id = "tiefling"
 	desc = "<b>Tiefling</b><br>\
-	Tieflings, also known as Infernal-Spawn by the Dwarves, are a relatively new species in Grimmoria. \
-  	Having shown up sometime within the past two centuries in relatively great numbers, it is understood that they lack any cultural identity \
-    as many seem to simply integrate within whatever society they find themselves born into. \
-    The unholy origins of Tieflings are well-established; it is known that many favor the Inhumen under Baotha. \
-    Many have claimed that they are the spawn of a succubus or incubus of Baotha laying with a mortal, \
-    in this, the claims are entirely true; they have faced near-insurmountable struggles as a result. \
-    Facing scrutiny, judgement and even genocide in the past. Wounding many Tiefling psyches' \
-    and leading to most seeking a solitary life outside the watchful eyes of others. \
-    Tieflings, while nominally mortal, are incapable of reproduction outside of their race. \
-    Tiefling tend to be extremely perceptive and paranoid, as luck is rarely on their side \
-    and their unique biology makes them extremely susceptible to injury."
+	Hell-Spawn, Thiefling, Devil, Infernal. They have many names, but one thing is for sure. \
+	These are creatures afflicted with chaotic energy, a corrupted form of creatures-- \
+	Philosophers and scholars have deemed Tieflings to have come from Baothan corruption of Humen. \
+	Theories have been made that overindulgance will lead to becoming one of the Infernal..."
 
 	skin_tone_wording = "Progenitor"
 

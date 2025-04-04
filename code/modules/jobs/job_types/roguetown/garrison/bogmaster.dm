@@ -9,10 +9,10 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_RESPECTED
 	allowed_ages = list(AGE_MIDDLEAGED, AGE_OLD)
-	tutorial = "An experienced soldier of the Duke's retinue, you have been tasked with overseeing the newly constructed Bastion. \
+	tutorial = "An experienced soldier of the Duke's retinue, you have been tasked with overseeing the Bog Gate. The one thing that keeps the horror of the Bog out. \
 				You report to the Royal Marshal and their Councillors, \
-				and your job is to keep the vanguard in line and to ensure the routes to the town remain safe.\
-				The Bastion must not fall."
+				and your job is to keep the boggards in line and to ensure the routes to the town remain safe.\
+				The Gate must not fall."
 	display_order = JDO_BOGMASTER
 	whitelist_req = TRUE
 

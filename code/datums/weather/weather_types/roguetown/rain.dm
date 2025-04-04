@@ -21,7 +21,7 @@
 	end_sound = 'sound/blank.ogg'
 
 	area_type = /area/rogue/outdoors
-	protected_areas = list(/area/rogue/indoors,/area/rogue/under)
+	protected_areas = list(/area/rogue/indoors,/area/rogue/under,/area/rogue/indoors/town)
 	impacted_z_levels = list()
 	var/lastlightning = 0
 
