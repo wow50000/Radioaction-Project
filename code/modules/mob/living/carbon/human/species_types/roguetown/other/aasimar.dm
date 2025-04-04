@@ -5,10 +5,10 @@
 	name = "Aasimar"
 	id = "aasimar"
 	desc = "<b>Aasimar</b><br>\
-	Aasimar are born of a rare union between mortals and Celestials of the Ten. \
+	Aasimar are born of a rare union between mortals and the Divine. \
     They bear the mark of their celestial touch through many varying physical features. \
-    Their looks resemble the traditional characteristics of whichever of the Gods the Celestial parent was associated with. \
-    Most commonly, many Aasimar are similar to Humans, albeit taller, and possess uncanny beauty, due generally to Eoran origins. \
+    Their looks resemble the traditional characteristics of whichever of the Gods they were crafted from. \
+    Most commonly, many Aasimar are similar to Humans, albeit taller. \
     They may have strangely colored skin and are more physically frail than the average mortal. \
     Because of their upbringing, they make for natural conduits for godly powers. \
     Rockhill's populace holds them with a mixture of wariness and respect. \
