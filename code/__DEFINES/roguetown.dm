@@ -17,6 +17,7 @@
 	/datum/species/kobold,\
 	/datum/species/goblinp,\
 	/datum/species/seelie,\
+	/datum/species/aasimar, \
 )
 
 #define RACES_HUMANLIKE \
@@ -82,6 +83,7 @@
 	/datum/species/kobold,\
 	/datum/species/goblinp,\
 	/datum/species/seelie,\
+	/datum/species/aasimar, \
 )
 
 #define CLOTHED_RACES_TYPES list(\
@@ -102,6 +104,7 @@
 	/datum/species/kobold,\
 	/datum/species/goblinp,\
 	/datum/species/seelie,\
+	/datum/species/aasimar, \
 )
 // Non-dwarf non-kobold non-goblin mostly
 #define NON_DWARVEN_RACE_TYPES list(\
@@ -118,6 +121,7 @@
 	/datum/species/demihuman,\
 	/datum/species/halforc,\
 	/datum/species/seelie,\
+	/datum/species/aasimar, \
 )
 // Non-elf non-dwarf non-kobold non-goblin mostly
 #define HUMANLIKE_RACE_TYPES list(\
@@ -129,6 +133,7 @@
 	/datum/species/axian,\
 	/datum/species/moth,\
 	/datum/species/demihuman,\
+	/datum/species/aasimar, \
 )
 // For their armour sets. Shouldn't need to define the sub species, but oh well.
 #define GOBLIN_RACE_TYPES list(\
