@@ -14,7 +14,7 @@
 	//dropshrink = 0.75
 	wlength = WLENGTH_NORMAL
 	w_class = WEIGHT_CLASS_BULKY
-	slot_flags = ITEM_SLOT_HIP | ITEM_SLOT_BACK
+	slot_flags = ITEM_SLOT_BACK
 	associated_skill = /datum/skill/combat/maces
 	anvilrepair = /datum/skill/craft/blacksmithing
 	smeltresult = /obj/item/ingot/iron
@@ -23,7 +23,7 @@
 	swingsound = BLUNTWOOSH_MED
 	minstr = 7
 	wdefense = 2
-	wbalance = -1
+	wbalance = -2
 	blade_dulling = DULLING_BASHCHOP
 
 /obj/item/rogueweapon/mace/attack_right(mob/user)
@@ -58,18 +58,18 @@
 	wbalance = -1
 	smeltresult = /obj/item/ingot/steel
 	blade_dulling = DULLING_BASH
-	wdefense = 3
+	wdefense = 2
 
 /obj/item/rogueweapon/mace/steel
-	force = 30
-	force_wielded = 40
+	force = 25
+	force_wielded = 35
 	name = "steel mace"
 	desc = "This steel mace is objectively superior to an iron one."
 	icon_state = "smace"
 	wbalance = -1
 	smeltresult = /obj/item/ingot/steel
 	blade_dulling = DULLING_BASH
-	wdefense = 3
+	wdefense = 2
 
 /obj/item/rogueweapon/mace/steel/attack_right(mob/user)
 	if(!overlays.len)
@@ -155,7 +155,7 @@
 	wbalance = -1
 	smeltresult = /obj/item/ingot/iron
 	blade_dulling = DULLING_BASH
-	wdefense = 3
+	wdefense = 1
 
 /obj/item/rogueweapon/mace/warhammer/steel
 	force = 25
@@ -164,7 +164,7 @@
 	desc = "A fine steel warhammer, makes a satisfying sound when paired with a knight's helm."
 	icon_state = "swarhammer"
 	smeltresult = /obj/item/ingot/steel
-	wdefense = 4
+	wdefense = 1
 
 /obj/item/rogueweapon/mace/warhammer/getonmobprop(tag)
 	if(tag)
@@ -193,9 +193,9 @@
 	blade_class = BCLASS_SMASH
 	attack_verb = list("smashes")
 	hitsound = list('sound/combat/hits/blunt/metalblunt (1).ogg', 'sound/combat/hits/blunt/metalblunt (2).ogg', 'sound/combat/hits/blunt/metalblunt (3).ogg')
-	penfactor = 80
-	damfactor = 1.1
-	swingdelay = 10
+	penfactor = 30
+	damfactor = 0.9
+	swingdelay = 17.5
 	icon_state = "insmash"
 	item_d_type = "blunt"
 	
@@ -231,12 +231,12 @@
 	blade_class = BCLASS_PICK
 	attack_verb = list("picks", "impales")
 	hitsound = list('sound/combat/hits/blunt/metalblunt (1).ogg', 'sound/combat/hits/blunt/metalblunt (2).ogg', 'sound/combat/hits/blunt/metalblunt (3).ogg')
-	chargetime = 14
+	chargetime = 25
 	chargedrain = 1
 	misscost = 1
 	no_early_release = TRUE
-	penfactor = 80
-	damfactor = 0.9
+	penfactor = 60
+	damfactor = 0.8
 	item_d_type = "stab"
 
 /obj/item/rogueweapon/mace/woodclub
