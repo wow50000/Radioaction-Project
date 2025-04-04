@@ -11,7 +11,7 @@
 		"I WILL NOT LIVE IN YOUR WALLS!",
 		"I WILL NOT FOLLOW YOUR RULES!",
 	)
-	var/favor = 50
+	var/favor = 250 //with removal of iron and steel bar turn ins, gives bandits a chance to get basic early supplies
 	var/totaldonated = 0
 
 /datum/antagonist/bandit/examine_friendorfoe(datum/antagonist/examined_datum,mob/examiner,mob/examined)

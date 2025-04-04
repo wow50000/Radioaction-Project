@@ -22,17 +22,15 @@
 		TRAIT_BASHDOORS,
 		TRAIT_STEELHEARTED,
 		TRAIT_BREADY,
-		TRAIT_TOXIMMUNE,
 		TRAIT_ORGAN_EATER,
 		TRAIT_NASTY_EATER,
 		TRAIT_NOSTINK,
 		TRAIT_CRITICAL_RESISTANCE,
 		TRAIT_HARDDISMEMBER, //Decapping Volfs causes them to bug out, badly, and need admin intervention to fix. Bandaid fix.
 		TRAIT_PIERCEIMMUNE, //Prevents weapon dusting and caltrop effects due to them transforming when killed/stepping on shards.
-		TRAIT_IGNORESLOWDOWN
 	)
 	inherent_biotypes = MOB_HUMANOID
-	armor = 30
+	armor = 40
 	no_equip = list(SLOT_SHIRT, SLOT_HEAD, SLOT_WEAR_MASK, SLOT_ARMOR, SLOT_GLOVES, SLOT_SHOES, SLOT_PANTS, SLOT_CLOAK, SLOT_BELT, SLOT_BACK_R, SLOT_BACK_L, SLOT_S_STORE)
 	nojumpsuit = 1
 	sexes = 1
@@ -42,10 +40,10 @@
 	specstats = list(
 		"strength" = 5, 
 		"perception" = 5, 
-		"intelligence" = -3, 
+		"intelligence" = -5, 
 		"constitution" = 5, 
-		"endurance" = 5, 
-		"speed" = 3, 
+		"endurance" = 4, 
+		"speed" = 1, 
 		"fortune" = 0
 		)
 	enflamed_icon = "widefire"
@@ -59,8 +57,6 @@
 		ORGAN_SLOT_LIVER = /obj/item/organ/liver,
 		ORGAN_SLOT_STOMACH = /obj/item/organ/stomach,
 		ORGAN_SLOT_APPENDIX = /obj/item/organ/appendix,
-		ORGAN_SLOT_TESTICLES = /obj/item/organ/testicles,
-		ORGAN_SLOT_PENIS = /obj/item/organ/penis/knotted/big,
 		ORGAN_SLOT_BREASTS = /obj/item/organ/breasts,
 		ORGAN_SLOT_VAGINA = /obj/item/organ/vagina,
 		)
