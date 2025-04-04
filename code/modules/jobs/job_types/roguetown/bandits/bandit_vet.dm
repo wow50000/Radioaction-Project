@@ -8,7 +8,6 @@
 	antag_job = TRUE
 	allowed_races = RACES_VERY_SHUNNED_UP	//Begone foul seelies. Your age of banditry is gone
 	tutorial = "Matthios' chosen, seasoned fighters of the cause who've earned his attention through meticulous worship and devotion to their endless hunger for more. You are his finest, show them why you've been granted his will."
-	whitelist_req = TRUE
 
 	outfit = null
 	outfit_female = null
@@ -16,7 +15,7 @@
 	display_order = JDO_BANDIT_VET
 	show_in_credits = FALSE
 	announce_latejoin = FALSE
-	min_pq = 100
+	min_pq = 1
 	max_pq = null
 
 	subclass_cat_rolls = list(CTAG_BANDIT = 20)
