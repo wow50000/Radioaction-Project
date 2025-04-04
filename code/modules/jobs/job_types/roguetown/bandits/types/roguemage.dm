@@ -6,7 +6,7 @@
 	outfit = /datum/outfit/job/roguetown/bandit/roguemage
 	category_tags = list(CTAG_BANDIT)
 	cmode_music = 'sound/music/combat_bandit_mage.ogg'
-	maximum_possible_slots = 2
+	maximum_possible_slots = 1
 
 /datum/outfit/job/roguetown/bandit/roguemage/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -50,7 +50,7 @@
 		H.change_stat("strength", 2)
 		H.change_stat("intelligence", 2)
 		H.change_stat("endurance", 1)
-		H.change_stat("speed",1)
+		H.change_stat("speed", 1)
 		ADD_TRAIT(H, TRAIT_DEATHBYSNUSNU, TRAIT_GENERIC)
 		ADD_TRAIT(H, TRAIT_ANTISCRYING, TRAIT_GENERIC)
 		H.mind.adjust_spellpoints(4)
