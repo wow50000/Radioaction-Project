@@ -16,13 +16,13 @@ $include ratwood.txt
 # There are various options which are hard-locked for security reasons.
 
 ## Server name: This appears at the top of the screen in-game and in the BYOND hub. Uncomment and replace 'tgstation' with the name of your choice.
-SERVERNAME Roguetown
+SERVERNAME AGE OF PSYDON
 
 ## Server tagline: This will appear right below the server's title.
-# SERVERTAGLINE A generic TG-based server
+SERVERTAGLINE 18+ ONLY -- MEDIEVAL IMMERSIVE ROLEPLAY -- Modified Ratwood Code -- APPLY ON DISCORD
 
 ## Server SQL name: This is the name used to identify the server to the SQL DB, distinct from SERVERNAME as it must be at most 32 characters.
-# SERVERSQLNAME tgstation
+SERVERSQLNAME rogueradio
 
 ## Station name: The name of the station as it is referred to in-game. If commented out, the game will generate a random name instead.
 STATIONNAME Roguetown
@@ -39,7 +39,7 @@ ROUND_END_COUNTDOWN 180
 ## Comment this out if you want to use the SQL based admin system, the legacy system uses admins.txt.
 ## You need to set up your database to use the SQL based system.
 ## This flag is automatically enabled if SQL_ENABLED isn't
-ADMIN_LEGACY_SYSTEM
+#ADMIN_LEGACY_SYSTEM
 
 ##Uncomment this to stop any admins loaded by the legacy system from having their rank edited by the permissions panel
 #PROTECT_LEGACY_ADMINS
@@ -231,7 +231,7 @@ GUEST_BAN
 #WEBCLIENT_ONLY_BYOND_MEMBERS
 
 ## Set to prevent anyone but those ckeys listed in config/whitelist.txt and config/admins.txt from joining your server
-#USEWHITELIST
+USEWHITELIST
 
 USEBLACKLIST
 
@@ -240,7 +240,7 @@ USEBLACKLIST
 # SERVER ss13.example.com:2506
 
 ## Discod address
-DISCORDURL https://discord.gg/bx9c7ha5Qk
+DISCORDURL https://discord.gg/6pW3uT3aaX
 
 ## Wiki address
 WIKIURL https://wiki.moviesfreepremium.xyz/blackstone
