@@ -159,16 +159,6 @@
 	cost = 20
 	contains = list(/obj/item/clothing/neck/roguetown/collar/leather)
 
-/datum/supply_pack/rogue/bandit/Apparel/collarcat
-	name = "Leather Cat Collar"
-	cost = 40
-	contains = list(/obj/item/clothing/neck/roguetown/collar/leather/bell)
-
-/datum/supply_pack/rogue/bandit/Apparel/collarcow
-	name = "Leather Cow Collar"
-	cost = 40
-	contains = list(/obj/item/clothing/neck/roguetown/collar/leather/bell/cow)
-
 /datum/supply_pack/rogue/bandit/Apparel/Dragonscale
 	name = "Dragonscale Necklace"
 	cost = 2000

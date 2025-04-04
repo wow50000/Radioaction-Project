@@ -114,20 +114,10 @@
 	cost = 40
 	contains = list(/obj/item/clothing/suit/roguetown/armor/leather/hide)
 
-/datum/supply_pack/rogue/bandit/Clothing/halfmasks
-	name = "Halfmask"
-	cost = 80
-	contains = list(/obj/item/clothing/mask/rogue/shepherd)
-
 /datum/supply_pack/rogue/bandit/Clothing/masks
 	name = "Steel Mask"
 	cost = 80
 	contains = list(/obj/item/clothing/mask/rogue/facemask/steel)
-
-/datum/supply_pack/rogue/bandit/Clothing/maskhound
-	name = "Hound Mask"
-	cost = 80
-	contains = list(/obj/item/clothing/mask/rogue/facemask/steel/hound)
 
 /datum/supply_pack/rogue/bandit/Clothing/maskgold
 	name = "Gold Mask"
@@ -139,16 +129,6 @@
 	cost = 40
 	contains = list(/obj/item/clothing/neck/roguetown/coif)
 
-/datum/supply_pack/rogue/bandit/Clothing/ropeleash
-	name = "Rope Leash"
-	cost = 5
-	contains = list(/obj/item/leash)
-
-/datum/supply_pack/rogue/bandit/Clothing/leatherleash
-	name = "Leather Leash"
-	cost = 20
-	contains = list(/obj/item/leash/leather)
-
 /datum/supply_pack/rogue/bandit/Clothing/chainleash
 	name = "Chain Leash"
 	cost = 50
@@ -158,16 +138,6 @@
 	name = "Leather Collar"
 	cost = 20
 	contains = list(/obj/item/clothing/neck/roguetown/collar/leather)
-
-/datum/supply_pack/rogue/bandit/Clothing/collarcat
-	name = "Leather Cat Collar"
-	cost = 40
-	contains = list(/obj/item/clothing/neck/roguetown/collar/leather/bell)
-
-/datum/supply_pack/rogue/bandit/Clothing/collarcow
-	name = "Leather Cow Collar"
-	cost = 40
-	contains = list(/obj/item/clothing/neck/roguetown/collar/leather/bell/cow)
 
 /datum/supply_pack/rogue/bandit/Clothing/Dragonscale
 	name = "Dragonscale Necklace"
