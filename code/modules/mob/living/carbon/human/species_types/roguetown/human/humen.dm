@@ -5,13 +5,11 @@
 	name = "Humen"
 	id = "humen"
 	desc = "<b>Humen</b><br>\
-	Humen (or Human) are the eldest of the weeping gods creation. Noted for their\
-	tenacity and overwhelming population, humans tend to outnumber the other races. \
-	at a rate of about ten to one in regions such as Grenzelhoft. Althrough to the west \
-	the opposite is true. Humen come from a vast swathe of cultures and ethnicity, most of which\
-	have historically been at odds with one another. Being the eldest of the weeping God, humen\
-	tend to find fortune easier than the other races, and are so diverse that no other racial trait\
-	are dominant in their species..."
+	Humen (or Human) are the first race, with man coming before all. \
+	Created of PSYDON's image himself, man has crafted the world with aid of the Ten Children. \
+	However, they grew lonesome. The greatest gift man has ever received- women. \
+	Crafted from Eora to be man's eternal companion, and to further the race. \
+	Together, they stand tall against the void. They stand tall-- against oblivion."
 
 	skin_tone_wording = "Ancestry"
 
