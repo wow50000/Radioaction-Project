@@ -70,7 +70,7 @@
 
 	log_game("The round has ended.")
 
-	to_chat(world, "<BR><BR><BR><span class='reallybig'>So ends another week in Ratwood Keep.</span>")
+	to_chat(world, "<BR><BR><BR><span class='reallybig'>So ends another week in the Kingdom of Rockhill.</span>")
 	get_end_reason()
 
 	var/list/key_list = list()
@@ -167,7 +167,7 @@
 	SSblackbox.Seal()
 
 	sleep(10 SECONDS)
-	SSvote.initiate_vote("map", "Ratwood players")
+	SSvote.initiate_vote("map", "Rockhill players")
 	ready_for_reboot = TRUE
 	standard_reboot()
 
