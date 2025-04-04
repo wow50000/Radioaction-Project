@@ -8,7 +8,7 @@
 	antag_job = TRUE
 	allowed_races = RACES_VERY_SHUNNED_UP	//Begone foul seelies. Your age of banditry is gone
 	tutorial = "Matthios' chosen, seasoned fighters of the cause who've earned his attention through meticulous worship and devotion to their endless hunger for more. You are his finest, show them why you've been granted his will."
-	whitelist_req = TRUE
+	whitelist_req = FALSE
 
 	outfit = null
 	outfit_female = null
