@@ -20,11 +20,11 @@
 	wlength = WLENGTH_SHORT
 	resistance_flags = FLAMMABLE
 	can_parry = TRUE
-	wdefense = 15
-	var/coverage = 90
+	wdefense = 10
+	var/coverage = 40
 	parrysound = "parrywood"
 	attacked_sound = "parrywood"
-	max_integrity = 150
+	max_integrity = 100
 	blade_dulling = DULLING_BASHCHOP
 	anvilrepair = /datum/skill/craft/blacksmithing
 	COOLDOWN_DECLARE(shield_bang)
@@ -75,7 +75,7 @@
 	desc = "A sturdy wooden shield. Will block anything you can imagine."
 	icon_state = "woodsh"
 	dropshrink = 0.8
-	wdefense = 15
+	wdefense = 10
 	coverage = 40
 	metalizer_result = /obj/item/cooking/pan
 
@@ -120,11 +120,11 @@
 	throw_range = 3
 	wlength = WLENGTH_NORMAL
 	resistance_flags = FLAMMABLE
-	wdefense = 15
-	coverage = 70
+	wdefense = 10
+	coverage = 55
 	attacked_sound = list('sound/combat/parry/shield/towershield (1).ogg','sound/combat/parry/shield/towershield (2).ogg','sound/combat/parry/shield/towershield (3).ogg')
 	parrysound = list('sound/combat/parry/shield/towershield (1).ogg','sound/combat/parry/shield/towershield (2).ogg','sound/combat/parry/shield/towershield (3).ogg')
-	max_integrity = 200
+	max_integrity = 120
 
 /obj/item/rogueweapon/shield/tower/getonmobprop(tag)
 	. = ..()
@@ -146,11 +146,11 @@
 	wlength = WLENGTH_NORMAL
 	resistance_flags = null
 	flags_1 = CONDUCT_1
-	wdefense = 18
-	coverage = 70
+	wdefense = 13
+	coverage = 60
 	attacked_sound = list('sound/combat/parry/shield/metalshield (1).ogg','sound/combat/parry/shield/metalshield (2).ogg','sound/combat/parry/shield/metalshield (3).ogg')
 	parrysound = list('sound/combat/parry/shield/metalshield (1).ogg','sound/combat/parry/shield/metalshield (2).ogg','sound/combat/parry/shield/metalshield (3).ogg')
-	max_integrity = 300
+	max_integrity = 150
 	blade_dulling = DULLING_BASH
 	sellprice = 30
 
@@ -191,10 +191,10 @@
 	force = 15
 	throwforce = 10
 	dropshrink = 0.8
-	coverage = 60
+	coverage = 50
 	attacked_sound = list('sound/combat/parry/shield/towershield (1).ogg','sound/combat/parry/shield/towershield (2).ogg','sound/combat/parry/shield/towershield (3).ogg')
 	parrysound = list('sound/combat/parry/shield/towershield (1).ogg','sound/combat/parry/shield/towershield (2).ogg','sound/combat/parry/shield/towershield (3).ogg')
-	max_integrity = 200
+	max_integrity = 125
 
 /obj/item/rogueweapon/shield/heater/attack_hand(mob/user)
 	if(!overlays.len)
@@ -234,7 +234,7 @@
 	coverage = 10
 	attacked_sound = list('sound/combat/parry/shield/metalshield (1).ogg','sound/combat/parry/shield/metalshield (2).ogg','sound/combat/parry/shield/metalshield (3).ogg')
 	parrysound = list('sound/combat/parry/shield/metalshield (1).ogg','sound/combat/parry/shield/metalshield (2).ogg','sound/combat/parry/shield/metalshield (3).ogg')
-	max_integrity = 300
+	max_integrity = 150
 	blade_dulling = DULLING_BASH
 	associated_skill = 0
 
