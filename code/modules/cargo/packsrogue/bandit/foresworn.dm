@@ -24,7 +24,7 @@
 	cost = 24
 	contains = list(/obj/item/clothing/head/roguetown/roguehood/shalal)
 
-//Armour
+//Armor
 /datum/supply_pack/rogue/bandit/Mage/gambeson
 	name = "Gambeson"
 	cost = 50
