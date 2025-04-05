@@ -12,7 +12,7 @@ GLOBAL_LIST_EMPTY(heretical_players)
 	f_title = "Priestess"
 	
 	allowed_races = RACES_TOLERATED_UP
-	allowed_patrons = ALL_DIVINE_PATRONS
+	allowed_patrons = list(/datum/patron/psydon)
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_ages = ALL_AGES_LIST
 	tutorial = "The Divine is all that matters in a world of the immoral. The Weeping God left his children to rule over us mortals and you will preach their wisdom to any who still heed their will. The faithless are growing in number, it is up to you to shepard them to a Gods-fearing future."
@@ -41,11 +41,11 @@ GLOBAL_LIST_EMPTY(heretical_players)
 		H.name = "[title] [prev_name]"
 
 /datum/outfit/job/roguetown/priest
-	allowed_patrons = list(/datum/patron/divine/astrata)
+	allowed_patrons = list(/datum/patron/psydon)
 
 /datum/outfit/job/roguetown/priest/pre_equip(mob/living/carbon/human/H)
 	..()
-	wrists = /obj/item/clothing/neck/roguetown/psicross/silver/astrata
+	wrists = /obj/item/clothing/neck/roguetown/psicross/silver
 	head = /obj/item/clothing/head/roguetown/priestmask
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/priest
 	pants = /obj/item/clothing/under/roguetown/tights/black

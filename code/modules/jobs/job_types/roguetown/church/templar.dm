@@ -36,8 +36,12 @@
 /datum/outfit/job/roguetown/templar/pre_equip(mob/living/carbon/human/H)
 	..()
 	head = /obj/item/clothing/head/roguetown/helmet/heavy/bucket
-	cloak = /obj/item/clothing/cloak/tabard/crusader/tief
+	cloak = /obj/item/clothing/cloak/tabard/crusader
 	switch(H.patron.name)
+		if("Psydon")
+			wrists = /obj/item/clothing/neck/roguetown/psicross/silver
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/psydonhelm
+			cloak = /obj/item/clothing/cloak/templar/psydon
 		if("Astrata")
 			wrists = /obj/item/clothing/neck/roguetown/psicross/astrata
 			if(prob(50))

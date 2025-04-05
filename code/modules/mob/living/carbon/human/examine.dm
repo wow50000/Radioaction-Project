@@ -149,10 +149,10 @@
 				. += "<span class='userdanger'>A MONSTER!</span>"
 
 
-		var/commie_text
+		var/psydonite_text
 		if(mind)
-			if(HAS_TRAIT(user, TRAIT_COMMIE))
-				commie_text = span_notice("PSYDON!!")
+			if(HAS_TRAIT(user, TRAIT_PSYDONITE))
+				psydonite_text = span_notice("PSYDON!!")
 
 			if(HAS_TRAIT(src, TRAIT_WANTED))
 				. += span_userdanger("BANDIT!")
@@ -169,8 +169,8 @@
 		if(HAS_TRAIT(src, TRAIT_MANIAC_AWOKEN))
 			. += span_userdanger("MANIAC!")
 
-		if(commie_text)
-			. += commie_text
+		if(psydonite_text)
+			. += psydonite_text
 
 		if(HAS_TRAIT(src, TRAIT_ZIZO_MARKED) && HAS_TRAIT(user, TRAIT_ZIZO_MARKED))
 			. += span_purple("A fellow seeker of Her ascension.")

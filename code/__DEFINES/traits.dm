@@ -91,7 +91,8 @@
 #define TRAIT_LEPROSY "Leprosy"
 #define TRAIT_NUDE_SLEEPER "Nude Sleeper"
 #define TRAIT_WANTED "Wanted Brigand"
-#define TRAIT_COMMIE "CHILDREN OF PSYDON" //PSYDON trait
+#define TRAIT_PSYDONITE "CHILDREN OF PSYDON" //PSYDON trait
+#define TRAIT_COMMIE "Matthios' People" // Bandit Trait
 #define TRAIT_DEATHBYSNUSNU "Bed Breaker" // double sex damage (requires strong intent)
 #define TRAIT_POISONBITE "Venomous Bite" // Adds tox damage on bites
 #define TRAIT_AMBUSHIMMUNITY "Ambush Immunity"
