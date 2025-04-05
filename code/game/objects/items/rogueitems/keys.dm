@@ -405,10 +405,16 @@
 	lockid = "bog_gatehouse"
 
 /obj/item/key/bog_master
-	name = "Warden's key"
-	desc = "This key opens the Warden's office."
+	name = "Bog Master's key"
+	desc = "This key opens the Bog Master's office."
 	icon_state = "spikekey"
 	lockid = "bog_master"
+
+/obj/item/key/bog_master
+	name = "bog barracks key"
+	desc = "This key opens the Bog Master's office."
+	icon_state = "spikekey"
+	lockid = "bog_barracks"
 
 /obj/item/key/town_barracks
 	name = "town barracks key"
