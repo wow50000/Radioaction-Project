@@ -25,7 +25,6 @@
 	wdefense = 2
 	wbalance = 3
 	blade_dulling = DULLING_BASHCHOP
-	clickcd = 14
 
 /obj/item/rogueweapon/mace/attack_right(mob/user)
 	if(!overlays.len)
@@ -187,6 +186,7 @@
 	chargetime = 0
 	penfactor = 15
 	swingdelay = 10
+	clickcd = 14
 	icon_state = "instrike"
 	item_d_type = "blunt"
 
@@ -197,7 +197,8 @@
 	hitsound = list('sound/combat/hits/blunt/metalblunt (1).ogg', 'sound/combat/hits/blunt/metalblunt (2).ogg', 'sound/combat/hits/blunt/metalblunt (3).ogg')
 	penfactor = 30
 	damfactor = 0.9
-	swingdelay = 12.5
+	clickcd = 14
+	swingdelay = 12
 	icon_state = "insmash"
 	item_d_type = "blunt"
 	
@@ -237,6 +238,7 @@
 	chargedrain = 1
 	misscost = 1
 	no_early_release = TRUE
+	clickcd = 14
 	penfactor = 50
 	damfactor = 0.8
 	item_d_type = "stab"
