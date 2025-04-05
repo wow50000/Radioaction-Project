@@ -102,7 +102,7 @@
 	animname = "stab"
 	blade_class = BCLASS_STAB
 	hitsound = list('sound/combat/hits/bladed/genstab (1).ogg', 'sound/combat/hits/bladed/genstab (2).ogg', 'sound/combat/hits/bladed/genstab (3).ogg')
-	penfactor = 20
+	penfactor = 15
 	chargetime = 0
 	swingdelay = 0
 	item_d_type = "stab"
@@ -387,7 +387,7 @@
 	blade_class = BCLASS_BLUNT
 	hitsound = list('sound/combat/hits/blunt/metalblunt (1).ogg', 'sound/combat/hits/blunt/metalblunt (2).ogg', 'sound/combat/hits/blunt/metalblunt (3).ogg')
 	chargetime = 0
-	penfactor = 20
+	penfactor = 15
 	swingdelay = 5
 	damfactor = 0.8
 	item_d_type = "blunt"
@@ -818,7 +818,7 @@
 	attack_verb = list("freezes")
 	animname = "chop"
 	hitsound = list('sound/combat/hits/pick/genpick (1).ogg')
-	penfactor = 20
+	penfactor = 15
 	swingdelay = 6
 	damfactor = 1.2
 	blade_class = BCLASS_BURN

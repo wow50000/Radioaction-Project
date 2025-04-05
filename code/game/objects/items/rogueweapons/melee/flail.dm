@@ -46,7 +46,7 @@
 	chargetime = 5
 	chargedrain = 1
 	no_early_release = TRUE
-	penfactor = 80
+	penfactor = 60
 	recovery = 10
 	damfactor = 1.5
 	chargedloop = /datum/looping_sound/flailswing
@@ -111,7 +111,7 @@
 	hitsound = list('sound/combat/hits/blunt/flailhit.ogg')
 	chargetime = 0
 	recovery = 10
-	penfactor = 40
+	penfactor = 15
 	reach = 3
 	icon_state = "incrack"
 	item_d_type = "blunt"
@@ -123,7 +123,7 @@
 	hitsound = list('sound/combat/hits/blunt/flailhit.ogg')
 	chargetime = 0
 	recovery = 10
-	damfactor = 0.5
+	damfactor = 0.25
 	penfactor = 0
 	reach = 2
 	icon_state = "inpunish"

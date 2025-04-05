@@ -9,7 +9,7 @@
 	chargetime = 1.5
 	warnie = "mobwarning"
 	hitsound = list('sound/combat/hits/bladed/genstab (1).ogg', 'sound/combat/hits/bladed/genstab (2).ogg', 'sound/combat/hits/bladed/genstab (3).ogg')
-	penfactor = 17.5
+	penfactor = 20
 	item_d_type = "stab"
 
 /datum/intent/spear/bash
@@ -392,12 +392,12 @@
 /datum/intent/spear/thrust/eaglebeak
 	penfactor = 20
 	damfactor = 0.9
-
+	reach = 2
 /datum/intent/mace/smash/eaglebeak
 	reach = 1
 	swingdelay = 12
 	clickcd = 14
-
+	penfactor = 30
 /obj/item/rogueweapon/spear/bronze
 	name = "Bronze Spear"
 	desc = "A spear forged of bronze. Expensive but more durable than a regular iron one."
@@ -545,7 +545,7 @@
 
 /datum/intent/sword/thrust/estoc
 	name = "thrust"
-	penfactor = 50
+	penfactor = 20
 	recovery = 20
 	clickcd = 10
 
