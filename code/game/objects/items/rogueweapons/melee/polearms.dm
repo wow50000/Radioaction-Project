@@ -9,7 +9,7 @@
 	chargetime = 1.5
 	warnie = "mobwarning"
 	hitsound = list('sound/combat/hits/bladed/genstab (1).ogg', 'sound/combat/hits/bladed/genstab (2).ogg', 'sound/combat/hits/bladed/genstab (3).ogg')
-	penfactor = 50
+	penfactor = 17.5
 	item_d_type = "stab"
 
 /datum/intent/spear/bash
@@ -394,8 +394,8 @@
 	damfactor = 0.9
 
 /datum/intent/mace/smash/eaglebeak
-	reach = 2
-	swingdelay = 17.5
+	reach = 1
+	swingdelay = 12
 	clickcd = 14
 
 /obj/item/rogueweapon/spear/bronze

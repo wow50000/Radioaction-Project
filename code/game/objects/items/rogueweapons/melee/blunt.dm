@@ -23,8 +23,9 @@
 	swingsound = BLUNTWOOSH_MED
 	minstr = 7
 	wdefense = 2
-	wbalance = -2
+	wbalance = 3
 	blade_dulling = DULLING_BASHCHOP
+	clickcd = 14
 
 /obj/item/rogueweapon/mace/attack_right(mob/user)
 	if(!overlays.len)
@@ -55,7 +56,7 @@
 	name = "bell ringer"
 	desc = "This heavy hammer is used to ring the church's bell."
 	icon_state = "churchmace"
-	wbalance = -1
+	wbalance = 3
 	smeltresult = /obj/item/ingot/steel
 	blade_dulling = DULLING_BASH
 	wdefense = 2
@@ -66,7 +67,7 @@
 	name = "steel mace"
 	desc = "This steel mace is objectively superior to an iron one."
 	icon_state = "smace"
-	wbalance = -1
+	wbalance = 3
 	smeltresult = /obj/item/ingot/steel
 	blade_dulling = DULLING_BASH
 	wdefense = 2
@@ -152,7 +153,7 @@
 	name = "warhammer"
 	desc = "Made to punch through armor and skull alike."
 	icon_state = "iwarhammer"
-	wbalance = -1
+	wbalance = 3
 	smeltresult = /obj/item/ingot/iron
 	blade_dulling = DULLING_BASH
 	wdefense = 1
@@ -185,7 +186,7 @@
 	hitsound = list('sound/combat/hits/blunt/metalblunt (1).ogg', 'sound/combat/hits/blunt/metalblunt (2).ogg', 'sound/combat/hits/blunt/metalblunt (3).ogg')
 	chargetime = 0
 	penfactor = 15
-	swingdelay = 0
+	swingdelay = 10
 	icon_state = "instrike"
 	item_d_type = "blunt"
 
@@ -196,7 +197,7 @@
 	hitsound = list('sound/combat/hits/blunt/metalblunt (1).ogg', 'sound/combat/hits/blunt/metalblunt (2).ogg', 'sound/combat/hits/blunt/metalblunt (3).ogg')
 	penfactor = 30
 	damfactor = 0.9
-	swingdelay = 17.5
+	swingdelay = 12.5
 	icon_state = "insmash"
 	item_d_type = "blunt"
 	
@@ -211,7 +212,7 @@
 	recovery = 30
 	warnie = "mobwarning"
 	hitsound = list('sound/combat/hits/bladed/genstab (1).ogg', 'sound/combat/hits/bladed/genstab (2).ogg', 'sound/combat/hits/bladed/genstab (3).ogg')
-	penfactor = 25
+	penfactor = 15
 	damfactor = 0.9
 	item_d_type = "stab"
 
@@ -222,7 +223,7 @@
 	attack_verb = list("thrusts", "stabs")
 	animname = "stab"
 	hitsound = list('sound/combat/hits/bladed/genstab (1).ogg', 'sound/combat/hits/bladed/genstab (2).ogg', 'sound/combat/hits/bladed/genstab (3).ogg')
-	penfactor = 20
+	penfactor = 15
 	damfactor = 0.8
 	item_d_type = "stab"
 
@@ -236,7 +237,7 @@
 	chargedrain = 1
 	misscost = 1
 	no_early_release = TRUE
-	penfactor = 60
+	penfactor = 50
 	damfactor = 0.8
 	item_d_type = "stab"
 
