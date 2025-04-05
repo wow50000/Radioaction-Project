@@ -12,7 +12,7 @@
 	equip_sound = 'sound/blank.ogg'
 	content_overlays = FALSE
 	bloody_icon_state = "bodyblood"
-	var/heldz_items = 3
+	var/heldz_items = 4
 	sewrepair = TRUE
 	fiber_salvage = TRUE
 	salvage_amount = 1
@@ -111,7 +111,7 @@
 	icon_state = "leather"
 	item_state = "leather"
 	equip_sound = 'sound/blank.ogg'
-	heldz_items = 3
+	heldz_items = 4
 
 /obj/item/storage/belt/rogue/leather/dropped(mob/living/carbon/human/user)
 	..()
