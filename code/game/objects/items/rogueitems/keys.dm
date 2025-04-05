@@ -410,7 +410,7 @@
 	icon_state = "spikekey"
 	lockid = "bog_master"
 
-/obj/item/key/bog_master
+/obj/item/key/bog_barracks
 	name = "bog barracks key"
 	desc = "This key opens the Bog Master's office."
 	icon_state = "spikekey"
