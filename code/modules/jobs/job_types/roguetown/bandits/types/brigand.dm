@@ -47,6 +47,7 @@
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_DEATHBYSNUSNU, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_ANTISCRYING, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_COMMIE, TRAIT_GENERIC)
 	H.adjust_blindness(-3)
 	var/weapons = list("Axe & Cudgel","Flail & Shield")
 	var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
