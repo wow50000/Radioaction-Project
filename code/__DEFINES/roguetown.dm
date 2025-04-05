@@ -148,6 +148,7 @@
 
 
 #define ALL_CLERIC_PATRONS list(\
+	/datum/patron/psydon, \
 	/datum/patron/divine/astrata,\
 	/datum/patron/divine/noc,\
 	/datum/patron/divine/dendor,\
@@ -159,6 +160,7 @@
 )
 
 #define ALL_ACOLYTE_PATRONS list(\
+	/datum/patron/psydon, \
 	/datum/patron/divine/astrata,\
 	/datum/patron/divine/noc,\
 	/datum/patron/divine/dendor,\
@@ -168,6 +170,7 @@
 )
 
 #define ALL_DIVINE_PATRONS list(\
+	/datum/patron/psydon, \
 	/datum/patron/divine/astrata,\
 	/datum/patron/divine/noc,\
 	/datum/patron/divine/dendor,\
