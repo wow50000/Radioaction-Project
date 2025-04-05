@@ -1,4 +1,4 @@
-/datum/job/roguetown/steward
+/* /datum/job/roguetown/steward
 	title = "Steward"
 	flag = STEWARD
 	department_flag = NOBLEMEN
@@ -68,3 +68,4 @@
 	ADD_TRAIT(H, TRAIT_SEEPRICES, TRAIT_GENERIC)
 
 
+ */
