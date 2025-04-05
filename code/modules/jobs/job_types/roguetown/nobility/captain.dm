@@ -1,4 +1,4 @@
-/datum/job/roguetown/captain
+/* /datum/job/roguetown/captain
 	title = "Retinue Captain"
 	flag = GUARD_CAPTAIN
 	department_flag = NOBLEMEN
@@ -94,7 +94,7 @@
 	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_BOGVULNERABLE, TRAIT_GENERIC)
-
+ */
 /obj/effect/proc_holder/spell/self/convertrole
 	name = "Recruit Beggar"
 	desc = "Recruit someone to your cause."

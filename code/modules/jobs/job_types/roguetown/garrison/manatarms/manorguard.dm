@@ -27,18 +27,18 @@
 	..()
 	if(ishuman(L))
 		var/mob/living/carbon/human/H = L
-		if(istype(H.cloak, /obj/item/clothing/cloak/stabard/surcoat/guard))
+		if(istype(H.cloak, /obj/item/clothing/cloak/stabard/guardhood))
 			var/obj/item/clothing/S = H.cloak
 			var/index = findtext(H.real_name, " ")
 			if(index)
 				index = copytext(H.real_name, 1,index)
 			if(!index)
 				index = H.real_name
-			S.name = "manor guard jupon ([index])"
+			S.name = "manor guard hood ([index])"
 
 /datum/outfit/job/roguetown/manorguard/pre_equip(mob/living/carbon/human/H)
 	..()
-	cloak = /obj/item/clothing/cloak/stabard/surcoat/guard
+	cloak = /obj/item/clothing/cloak/stabard/guardhood
 	pants = /obj/item/clothing/under/roguetown/chainlegs
 	gloves = /obj/item/clothing/gloves/roguetown/chain
 	neck = /obj/item/clothing/neck/roguetown/chaincoif

@@ -113,10 +113,10 @@
 	keys = list(/obj/item/key/councillor_rooms, /obj/item/key/keep_barracks, /obj/item/key/keep_dungeon,  /obj/item/key/manor)
 
 /obj/item/storage/keyring/bog_guard
-	keys = list(/obj/item/key/bog_gatehouse)
+	keys = list(/obj/item/key/bog_gatehouse, /obj/item/key/bog_barracks)
 
 /obj/item/storage/keyring/bog_master
-	keys = list(/obj/item/key/bog_gatehouse, /obj/item/key/bog_master)
+	keys = list(/obj/item/key/bog_gatehouse, /obj/item/key/bog_master, /obj/item/key/bog_barracks)
 
 /obj/item/storage/keyring/town_watch
 	keys = list(/obj/item/key/town_dungeon, /obj/item/key/town_barracks, /obj/item/key/town_armory)

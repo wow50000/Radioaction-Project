@@ -1,4 +1,4 @@
-/datum/job/roguetown/farmer
+/* /datum/job/roguetown/farmer
 	title = "Soilson"
 	flag = FARMER
 	department_flag = PEASANTS
@@ -57,3 +57,4 @@
 		head = /obj/item/clothing/head/roguetown/armingcap
 		armor = /obj/item/clothing/suit/roguetown/shirt/dress/gen/random
 		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
+ */
