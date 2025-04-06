@@ -14,13 +14,14 @@
 	weather_sound = 'sound/blank.ogg'
 	weather_alpha = 200
 
-	probability = 3
+	probability = 0
 
 	end_duration = 5 SECONDS
 	end_message = ""
 	end_sound = 'sound/blank.ogg'
 
 	area_type = /area/rogue/outdoors
+	impacted_areas = /area/rogue/outdoors
 	protected_areas = list(/area/rogue/indoors,/area/rogue/under,/area/rogue/indoors/town)
 	impacted_z_levels = list()
 	var/lastlightning = 0

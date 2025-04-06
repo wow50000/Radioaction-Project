@@ -38,6 +38,7 @@
 	ADD_TRAIT(H, TRAIT_NOSTINK, TRAIT_GENERIC) // Vital for any surgical role dealing in potentially decaying bodies.
 	ADD_TRAIT(H, TRAIT_DEATHBYSNUSNU, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_ANTISCRYING, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_COMMIE, TRAIT_GENERIC)
 	H.change_stat("strength", 2)
 	H.change_stat("intelligence", 3)
 	H.change_stat("speed", 2)

@@ -67,7 +67,7 @@ SUBSYSTEM_DEF(ticker)
 	var/end_state = "undefined"
 	var/job_change_locked = FALSE
 	var/list/royals_readied = list()
-	var/rulertype = "Duke" // reports whether duke or duchess rules
+	var/rulertype = "King"
 	var/rulermob = null // reports what the ruling mob is.
 	var/failedstarts = 0
 	var/list/manualmodes = list()
@@ -202,7 +202,7 @@ SUBSYSTEM_DEF(ticker)
 				tipped = TRUE
 
 			if(timeLeft <= 0)
-				if(!checkreqroles()) // Unable to find a duke.
+				if(!checkreqroles()) // Unable to find a King.
 					current_state = GAME_STATE_PREGAME
 					start_at = world.time + 60 SECONDS
 					timeLeft = null
@@ -238,7 +238,7 @@ SUBSYSTEM_DEF(ticker)
 
 /datum/controller/subsystem/ticker/proc/checkreqroles()
 	var/list/readied_jobs = list()
-	var/list/required_jobs = list("Duke")
+	var/list/required_jobs = list("King", "Merchant")
 
 	// Start now server button
 	if(start_immediately)
@@ -258,8 +258,8 @@ SUBSYSTEM_DEF(ticker)
 					readied_jobs.Add(V)
 
 #ifndef FASTLOAD
-	if(!("Duke" in readied_jobs))
-		var/list/stuffy = list("Set Duke to 'high' in your class preferences to start the game!", "PLAY Duke NOW!", "A Duke is required to start.", "Pray for a Duke.", "One day, there will be a Duke.", "Just try playing Duke.", "If you don't play Duke, the game will never start.", "We need at least one Duke to start the game.", "We're waiting for you to pick Duke to start.", "Still no Duke is readied..", "I'm going to lose my mind if we don't get a Duke readied up.","No. The game will not start because there is no Duke.")
+	if(!("King" && "Merchant" in readied_jobs))
+		var/list/stuffy = list("Is there both a King and a Merchant?", "Make sure you have both a Merchant and a King.")
 		to_chat(world, span_purple("[pick(stuffy)]"))
 		return FALSE
 #endif
