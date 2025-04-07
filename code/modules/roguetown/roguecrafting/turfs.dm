@@ -183,7 +183,7 @@
 	name = "twig platform"
 	result = /turf/open/floor/rogue/twig/platform
 	reqs = list(/obj/item/grown/log/tree/stick = 3,
-				/obj/item/rope = 1)
+				/obj/item/rope = 0)
 	skillcraft = /datum/skill/craft/crafting
 	verbage_simple = "assemble"
 	verbage = "assembles"
