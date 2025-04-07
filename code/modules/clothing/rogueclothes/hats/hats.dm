@@ -586,6 +586,7 @@
 	smeltresult = /obj/item/ingot/steel
 	body_parts_covered = HEAD|HAIR|EARS
 	flags_inv = HIDEEARS
+	armor_class = ARMOR_CLASS_MEDIUM
 
 /obj/item/clothing/head/roguetown/helmet/sallet/attackby(obj/item/W, mob/living/user, params)
 	..()
@@ -1305,6 +1306,7 @@
 	block2add = FOV_RIGHT|FOV_LEFT
 	max_integrity = 425
 	smeltresult = /obj/item/ingot/blacksteel
+	armor_class = ARMOR_CLASS_HEAVY
 
 /obj/item/clothing/head/roguetown/helmet/heavy/crusader
 	name = "bucket helm"

@@ -140,6 +140,7 @@
 	unequip_delay_self = 1200
 	equip_delay_other = 60
 	strip_delay = 60
+	armor_class = ARMOR_CLASS_HEAVY
 
 /obj/item/clothing/suit/roguetown/armor/plate/half/iron
 	name = "iron breastplate"
