@@ -1,4 +1,4 @@
-/datum/job/roguetown/bapprentice
+/datum/job/roguetown/courier
 	title = "Courier"
 	flag = COURIER
 	department_flag = YOUNGFOLK
@@ -9,7 +9,7 @@
 	allowed_races = RACES_TOLERATED_UP
 	allowed_ages = list(AGE_ADULT)
 
-	tutorial = "Unusually nimble and highly litterate, you are a courier. The lifeblood of communication in the realm, your job is to carry information, parcels and news throughout the lands."
+	tutorial = "Unusually nimble and highly literate, you are a courier. The lifeblood of communication in the realm, your job is to carry information, parcels and news throughout the lands."
 
 	outfit = /datum/outfit/job/roguetown/courier
 	display_order = JDO_COURIER
@@ -22,6 +22,7 @@
 	gloves = /obj/item/clothing/gloves/roguetown/leather
 	belt = /obj/item/storage/belt/rogue/leather/rope
 	beltr = /obj/item/rogueweapon/huntingknife/idagger/steel
+	beltl = /obj/item/storage/keyring/shophand
 	backr = /obj/item/storage/backpack/rogue/satchel
 	shoes = /obj/item/clothing/shoes/roguetown/simpleshoes
 	if(H.gender == MALE)
