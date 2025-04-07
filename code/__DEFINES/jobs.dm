@@ -180,8 +180,9 @@
 #define SHOPHAND	(1<<5)
 #define CLERK 		(1<<6)
 #define MAGEAPPRENTICE	(1<<7)
+#define COURIER	(1<<8)
 
-#define MERCENARIES		(1<<8)
+#define MERCENARIES		(1<<9)
 
 #define MERCENARY	(1<<0)
 #define VETERAN		(1<<1)
