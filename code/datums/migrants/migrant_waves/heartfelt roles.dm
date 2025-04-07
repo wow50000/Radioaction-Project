@@ -44,12 +44,11 @@
 		H.change_stat("endurance", 2)
 		H.change_stat("speed", 1)
 		H.change_stat("perception", 2)
-		H.change_stat("fortune", 5)
+		H.change_stat("fortune", 2)
 
 	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_NOSEGRAB, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 
 /datum/migrant_role/heartfelt/lady
 	name = "Lady of Heartfelt"
@@ -88,7 +87,7 @@
 		H.change_stat("endurance", 3)
 		H.change_stat("speed", 2)
 		H.change_stat("perception", 2)
-		H.change_stat("fortune", 5)
+		H.change_stat("fortune", 2)
 	ADD_TRAIT(H, TRAIT_SEEPRICES, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_NUTCRACKER, TRAIT_GENERIC)
@@ -188,7 +187,6 @@
 	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_NOSEGRAB, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 
 /datum/migrant_role/heartfelt/knight/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
 	..()

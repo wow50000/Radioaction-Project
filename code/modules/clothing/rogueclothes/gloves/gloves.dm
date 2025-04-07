@@ -76,6 +76,7 @@
 	anvilrepair = /datum/skill/craft/blacksmithing
 	smeltresult = /obj/item/ingot/steel
 	sewrepair = FALSE
+	armor_class = ARMOR_CLASS_HEAVY
 
 /obj/item/clothing/gloves/roguetown/grenzelgloves
 	name = "grenzelhoft gloves"
@@ -110,6 +111,7 @@
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
 	anvilrepair = /datum/skill/craft/blacksmithing
 	smeltresult = /obj/item/ingot/blacksteel
+	armor_class = ARMOR_CLASS_HEAVY
 
 //---------------- LEATHER/GLOVES.DM ---------------------
 

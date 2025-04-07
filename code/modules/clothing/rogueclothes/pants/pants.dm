@@ -260,6 +260,7 @@
 	smeltresult = /obj/item/ingot/blacksteel
 	r_sleeve_status = SLEEVE_NOMOD
 	l_sleeve_status = SLEEVE_NOMOD
+	armor_class = ARMOR_CLASS_HEAVY
 
 //---------------- NEW/PANTS.DM--------------------
 

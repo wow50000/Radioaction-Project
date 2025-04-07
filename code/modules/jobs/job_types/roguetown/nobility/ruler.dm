@@ -115,7 +115,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 			H.change_stat("endurance", 3)
 			H.change_stat("speed", 1)
 			H.change_stat("perception", 2)
-			H.change_stat("fortune", 5)
+			H.change_stat("fortune", 3)
 
 			H.dna.species.soundpack_m = new /datum/voicepack/male/evil()
 
@@ -159,7 +159,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 			H.change_stat("endurance", 3)
 			H.change_stat("speed", 2)
 			H.change_stat("perception", 2)
-			H.change_stat("fortune", 5)
+			H.change_stat("fortune", 3)
 
 		ADD_TRAIT(H, TRAIT_SEEPRICES, TRAIT_GENERIC)
 		ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
