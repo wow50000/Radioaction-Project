@@ -61,8 +61,8 @@ GLOBAL_LIST_INIT(nonhuman_positions, list(
 
 // FIRST POSITIONS SUCH AS DUKE OR HEAD BUTLER E.T.C. MUST ALWAYS STAY ON THE TOP OF THE LIST
 GLOBAL_LIST_INIT(noble_positions, list(
-	"Duke",
-	"Duke Consort",
+	"King",
+	"Consort",
 	"Heir",
 	"Retinue Captain",
 	"Royal Marshal",
@@ -80,12 +80,12 @@ GLOBAL_LIST_INIT(courtier_positions, list(
 
 GLOBAL_LIST_INIT(garrison_positions, list(
 	"Town Sheriff",
-	"Watchman",
-	"Warden",
+	"Town Watch",
+	"Bog Master",
 	"Gatemaster",
-	"Vanguard",
+	"Boggard",
 	"Veteran",
-	"Man at Arms",
+	"Royal Guard",
 	"Dungeoneer",
 ))
 
@@ -149,6 +149,7 @@ GLOBAL_LIST_INIT(youngfolk_positions, list(
 	"Smithy Apprentice",
 	"Churchling",
 	"Shophand",
+	"Courier",
 ))
 
 GLOBAL_LIST_INIT(foreigner_positions, list(
