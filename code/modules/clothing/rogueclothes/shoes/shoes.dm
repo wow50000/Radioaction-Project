@@ -114,6 +114,7 @@
 	sewrepair = FALSE
 	resistance_flags = FIRE_PROOF
 	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
+	armor_class = ARMOR_CLASS_HEAVY
 	armor = list("blunt" = 90, "slash" = 100, "stab" = 80, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
 	// ----------------- BLACKSTEEL -----------------------
@@ -133,6 +134,7 @@
 	armor = list("blunt" = 90, "slash" = 100, "stab" = 80, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	anvilrepair = /datum/skill/craft/blacksmithing
 	smeltresult = /obj/item/ingot/blacksteel
+	armor_class = ARMOR_CLASS_HEAVY
 	
 
 /obj/item/clothing/shoes/roguetown/armor/nobleboot
@@ -209,6 +211,7 @@
 	armor = list("blunt" = 80, "slash" = 100, "stab" = 70, "fire" = 0, "acid" = 0)
 	anvilrepair = /datum/skill/craft/blacksmithing
 	smeltresult = /obj/item/ingot/iron
+	armor_class = ARMOR_CLASS_HEAVY
 
 /obj/item/clothing/shoes/roguetown/boots/furlinedboots
 	name = "fur lined boots"

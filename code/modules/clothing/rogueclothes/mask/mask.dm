@@ -92,6 +92,7 @@
 	experimental_onhip = TRUE
 	anvilrepair = /datum/skill/craft/blacksmithing
 	smeltresult = /obj/item/ingot/iron
+	armor_class = ARMOR_CLASS_MEDIUM
 
 /obj/item/clothing/mask/rogue/facemask/hound
 	name = "iron hound mask"
@@ -116,11 +117,13 @@
 	icon_state = "smask"
 	max_integrity = 200
 	smeltresult = /obj/item/ingot/steel
+	armor_class = ARMOR_CLASS_MEDIUM
 
 /obj/item/clothing/mask/rogue/facemask/steel/hound
 	name = "steel hound mask"
 	desc = "A steel mask, made for those who have snouts, protecting the eyes, nose and muzzle while obscuring the face."
 	icon_state = "smask_hound"
+	armor_class = ARMOR_CLASS_MEDIUM
 
 /obj/item/clothing/mask/rogue/shepherd
 	name = "halfmask"
@@ -166,9 +169,10 @@
 /obj/item/clothing/mask/rogue/facemask/goldmask
 	name = "gold mask"
 	icon_state = "goldmask"
-	max_integrity = 150
+	max_integrity = 300
 	sellprice = 100
 	smeltresult = /obj/item/ingot/gold
+	armor_class = ARMOR_CLASS_MEDIUM
 
 /obj/item/clothing/mask/rogue/exoticsilkmask
 	name = "exotic silk mask"
@@ -257,7 +261,7 @@
 	blocksound = PLATEHIT
 	break_sound = 'sound/foley/breaksound.ogg'
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
-	max_integrity = 100
+	max_integrity = 150
 	resistance_flags = FIRE_PROOF
 	armor = list("blunt" = 90, "slash" = 100, "stab" = 80, "fire" = 0, "acid" = 0)
 	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT)
@@ -267,6 +271,7 @@
 	slot_flags = ITEM_SLOT_MASK|ITEM_SLOT_HIP
 	anvilrepair = /datum/skill/craft/blacksmithing
 	smeltresult = /obj/item/ingot/iron
+	armor_class = ARMOR_CLASS_MEDIUM
 
 /obj/item/clothing/mask/rogue/shepherd/shadowmask
 	name = "purple halfmask"
