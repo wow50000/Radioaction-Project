@@ -89,7 +89,7 @@
 			H.change_stat("endurance", 3)
 			H.change_stat("speed", 2)
 			H.change_stat("perception", 2)
-			H.change_stat("fortune", 5)
+			H.change_stat("fortune", 2)
 
 		ADD_TRAIT(H, TRAIT_SEEPRICES, TRAIT_GENERIC)
 		ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
@@ -131,7 +131,7 @@
 			H.change_stat("endurance", 3)
 			H.change_stat("speed", 1)
 			H.change_stat("perception", 2)
-			H.change_stat("fortune", 5)
+			H.change_stat("fortune", 2)
 
 			H.dna.species.soundpack_m = new /datum/voicepack/male/evil()
 
@@ -146,7 +146,6 @@
 
 		ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
 		ADD_TRAIT(H, TRAIT_NOSEGRAB, TRAIT_GENERIC)
-		ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 
 /datum/outfit/job/roguetown/lady/post_equip(mob/living/carbon/human/H)
 	..()
