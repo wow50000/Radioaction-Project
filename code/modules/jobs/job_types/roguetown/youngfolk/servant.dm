@@ -10,7 +10,9 @@
 	allowed_ages = list(AGE_ADULT)
 	allowed_ages = ALL_AGES_LIST
 	tutorial = "Granted a life of comfortable slavery in the Duke's manor, you follow the Head Butler/Maid's commands and spend your day performing necessary but menial tasks."
-
+	give_bank_account = 3
+	min_pq = 0
+	max_pq = null
 	outfit = /datum/outfit/job/roguetown/servant
 	display_order = JDO_SERVANT
 
