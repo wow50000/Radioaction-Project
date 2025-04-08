@@ -117,7 +117,7 @@
 	duration = 40 SECONDS
 
 /datum/status_effect/buff/moondust/nextmove_modifier()
-	return 0.15
+	return 0.5
 
 /datum/status_effect/buff/moondust/on_apply()
 	. = ..()
@@ -135,7 +135,7 @@
 	duration = 60 SECONDS
 
 /datum/status_effect/buff/moondust_purest/nextmove_modifier()
-	return 0.20
+	return 0.45
 
 /datum/status_effect/buff/moondust_purest/on_apply()
 	. = ..()
