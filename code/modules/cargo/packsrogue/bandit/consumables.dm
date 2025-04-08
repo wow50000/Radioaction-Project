@@ -60,12 +60,12 @@
 	contains = list(/obj/item/reagent_containers/glass/bottle/rogue/wine)
 
 
-/datum/supply_pack/rogue/bandit/Knave/Mancatcher
+/datum/supply_pack/rogue/bandit/Consumables/Mancatcher
 	name = "Mancatcher"
 	cost = 50
 	contains = list(/obj/item/restraints/legcuffs/beartrap)
 
-/datum/supply_pack/rogue/bandit/Knave/smokebomb
+/datum/supply_pack/rogue/bandit/Consumables/smokebomb
 	name = "Smoke bomb"
 	cost = 25
 	contains = list(/obj/item/smokebomb)
