@@ -86,7 +86,7 @@
 /obj/item/clothing/shoes/roguetown/armor //This subtype is for armoured shoes
 	name = "dark boots"
 	color = "#d5c2aa"
-	desc = "A fine set of dark boots."
+	desc = "A fine set of sturdy dark boots."
 	icon_state = "blackboots"
 	item_state = "blackboots"
 	blocksound = SOFTHIT //This hit sound is for leather
