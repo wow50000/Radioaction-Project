@@ -99,7 +99,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 /obj/effect/landmark/start/banditvetlate
 	name = "Bandit_Veteran"
 	icon_state = "arrow"
-	jobspawn_override = list("Bandit")
+	jobspawn_override = list("Bandit, Bandit Veteran")
 	delete_after_roundstart = FALSE
 
 /obj/effect/landmark/start/banditlate
@@ -508,7 +508,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	return INITIALIZE_HINT_QDEL
 
 /obj/effect/landmark/start/bandit
-	name = "bandit"
+	name = "bandit, bandit_vet"
 	icon = 'icons/mob/landmarks.dmi'
 	icon_state = "arrow"
 
