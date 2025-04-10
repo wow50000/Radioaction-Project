@@ -96,6 +96,12 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	jobspawn_override = list("Town Watch", "Bailiff")
 	delete_after_roundstart = FALSE
 
+/obj/effect/landmark/start/banditvetlate
+	name = "Bandit_Veteran"
+	icon_state = "arrow"
+	jobspawn_override = list("Bandit, Bandit Veteran")
+	delete_after_roundstart = FALSE
+
 /obj/effect/landmark/start/banditlate
 	name = "Bandit"
 	icon_state = "arrow"
@@ -112,6 +118,12 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	name = "Beggarlate"
 	icon_state = "arrow"
 	jobspawn_override = list("Beggar")
+	delete_after_roundstart = FALSE
+
+/obj/effect/landmark/start/courierlate
+	name = "Courierlate"
+	icon_state = "arrow"
+	jobspawn_override = list("Courier")
 	delete_after_roundstart = FALSE
 
 /obj/effect/landmark/start/orphanlate
@@ -343,6 +355,10 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	name = "Beggar"
 	icon_state = "arrow"
 
+/obj/effect/landmark/start/courier
+	name = "Courier"
+	icon_state = "arrow"
+
 /obj/effect/landmark/start/lady
 	name = "Queen"
 	icon_state = "arrow"
@@ -492,7 +508,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	return INITIALIZE_HINT_QDEL
 
 /obj/effect/landmark/start/bandit
-	name = "bandit"
+	name = "bandit, bandit_vet"
 	icon = 'icons/mob/landmarks.dmi'
 	icon_state = "arrow"
 
