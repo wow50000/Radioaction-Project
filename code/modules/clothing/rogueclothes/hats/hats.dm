@@ -498,6 +498,7 @@
 	resistance_flags = FIRE_PROOF
 	clothing_flags = CANT_SLEEP_IN
 	sewrepair = FALSE
+	flags_inv = HIDEHAIR
 
 /obj/item/clothing/head/roguetown/helmet/skullcap
 	name = "skull cap"
@@ -529,6 +530,7 @@
 	icon_state = "kettle"
 	body_parts_covered = HEAD|HAIR|EARS
 	flags_inv = HIDEEARS
+	flags_inv = HIDEHAIR
 
 /obj/item/clothing/head/roguetown/helmet/kettle/attackby(obj/item/W, mob/living/user, params)
 	..()
