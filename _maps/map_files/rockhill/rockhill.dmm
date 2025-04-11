@@ -9000,7 +9000,8 @@
 /area/rogue/outdoors/rtfield)
 "iDP" = (
 /obj/structure/roguemachine/vendor{
-	keycontrol = "blacksmith"
+	keycontrol = "blacksmith";
+	lockid = "blacksmith"
 	},
 /turf/closed/wall/mineral/rogue/craftstone,
 /area/rogue/indoors/town/dwarfin)
