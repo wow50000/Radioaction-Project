@@ -1,4 +1,4 @@
-/datum/job/roguetown/architect
+/* /datum/job/roguetown/architect
 	title = "Architect"
 	tutorial = "There are ancient secrets within stone, something your creed has known since man built upon dirt. You've pride in your work, youre the only reason this place doesn't fall apart."
 	flag = ARCHITECT
@@ -55,3 +55,4 @@
 
 
 
+ */

@@ -1,4 +1,4 @@
-/datum/job/roguetown/artificer
+/* /datum/job/roguetown/artificer
 	title = "Artificer"
 	flag = ARTIFICER
 	department_flag = YEOMEN
@@ -57,3 +57,4 @@
 	H.change_stat("endurance", 1)
 	H.change_stat("constitution", 1)
 	H.change_stat("speed", -1)
+ */
