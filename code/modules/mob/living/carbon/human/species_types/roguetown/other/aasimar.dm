@@ -12,7 +12,8 @@
     They may have strangely colored skin and are more physically frail than the average mortal. \
     Because of their upbringing, they make for natural conduits for godly powers. \
     Rockhill's populace holds them with a mixture of wariness and respect. \
-    It is also widely believed that an Aasimar's unjust death is a bad omen, that the Ten will not take lightly."
+    It is also widely believed that an Aasimar's unjust death is a bad omen, that the faithful will not take lightly. \
+	NOTE: This is a RESPECTED RACE."
 
 	skin_tone_wording = "Craft"
 

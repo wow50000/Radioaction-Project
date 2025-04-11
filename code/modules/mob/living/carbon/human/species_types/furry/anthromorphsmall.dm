@@ -2,9 +2,17 @@
 	race = /datum/species/anthromorphsmall
 
 /datum/species/anthromorphsmall
-	name = "Verminvolk" 
+	name = "Vermin" 
 	id = "anthromorphsmall"
-	desc = "A race akin to wild-kin, except afflicted with significantly smaller stature. A bit less respected than their kin due to their closer resemblance to vermin, like the dichotomy between Kobold and Sissean."
+	desc = "<b>Vermin</b><br>\
+	Rats. We're rats. Often chased off due to their rodent-like appearance, they've found themselves often forced to the shadows and sewers. \
+	Some say they bring plague much like their smaller predecessors-- some say they're malformed monsters from beyond the walls. \
+	The truth- unknown to the masses- the Vermin come from Dendor. In his madness and shapeshifting, wild magicks left behind inflicted many rous. \
+	From this infliction the Vermin were made. Humanoid vermin, regarded with disgust by many other races. \
+	Will you live off scraps, or rise higher? One day, the Vermintide will arrive... \
+	NOTE: THIS IS A SHUNNED RACE. Expect mistreatment."
+
+
 	default_color = "444"
 	species_traits = list(
 		MUTCOLORS,

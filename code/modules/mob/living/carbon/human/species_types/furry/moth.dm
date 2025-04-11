@@ -4,7 +4,14 @@
 /datum/species/moth
 	name = "Fluvian"
 	id = "moth"
-	desc = "In time you will learn the history of this race"
+	desc = "<b>Fluvian</b><br>\
+	Another creation of Dendor's madness and misdeeds. Unlike their distant cousins-- the Sisseans, Vermin and so on-- they are looked at with horror. \
+	Due to their insect-like appearance, the Fluvians are seen as monsters, forced into bearing the same shackles as other monstrous races like the Dark Elves and Half-Orcs. \
+	Tailors chase off these creatures, calling guards to see them put in prisons for wandering about due to their appearance- and their tendency to eat clothing. \
+	NOTE: This is a VERY SHUNNED RACE. VERY BAD THINGS may happen."
+
+
+
 	species_traits = list(EYECOLOR,LIPS,STUBBLE,MUTCOLORS)
 	inherent_traits = list(TRAIT_NOMOBSWAP)
 	possible_ages = ALL_AGES_LIST

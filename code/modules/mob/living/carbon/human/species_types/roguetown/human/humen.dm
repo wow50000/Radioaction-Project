@@ -9,7 +9,10 @@
 	Created of PSYDON's image himself, man has crafted the world with aid of the Ten Children. \
 	However, they grew lonesome. The greatest gift man has ever received- women. \
 	Crafted from Eora to be man's eternal companion, and to further the race. \
-	Together, they stand tall against the void. They stand tall-- against oblivion."
+	Together, they stand tall against the void. They stand tall-- against oblivion. \
+	In their time, Humens have found unlikely allies with the Dwarves and Elves, against the growing forces of chaos. \
+	Together we stand, divided we fall. \
+	NOTE: This is the highest respected race. Stand tall, HUMAN."
 
 	skin_tone_wording = "Ancestry"
 

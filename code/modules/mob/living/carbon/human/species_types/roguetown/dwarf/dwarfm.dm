@@ -6,19 +6,14 @@
 	id = "dwarfm"
 	clothes_id = "dwarf"
 	desc = "<b>Dwarf</b><br>\
-	A proud and robust race of short mountain folk, \
-	the dwarves are known for their pride in martial strength \
-	and their tenacity towards their ancient traditions.\
-	A Dwarf, much like the rock that they carve their fortress out of \
-	is stubborn and ancient, with their race being the longest lived of all \
-	of the weeping gods creation. They, like stone: also rarely change \
-	and tend to shun the modernization of the world around them. \
-	Instead, a Dwarf looks to his ancestorial heritage for guidance on \
-	the various challenges they face. Even if, in some irony: this behaviour \
-	leads the race towards technological advacement as they continue \
-	to improve their craft through powerful mechanization and forging \
-	Dwarves are hearty, but are not known for their speed or eyesight... \
-	Each dwarf hails from a ancient fortress named after the most plentiful mineral."
+	In his will of creation, Malum forged the first Dwarves from stone itself. \
+	The most common and hardiest of material-- capable of many great deeds. These people are stalwart, reliable. \
+	Above all else, they are unshakeable in both loyalty and stance. From the northern lands of Hammerhold, they are regarded as unbreakable. \
+	Yet due to the original conflicts, Dwarves are naturally xenophobic to any but their own kind. \
+	To even enter the great capital of Hammerhold-- Hammerhold Fort, you must be invited by a higher official. \
+	Despite this xenophobia, Dwarves have entered an unlikely alliance with Humens and Elves, standing together against the growing chaos. \
+	Together we stand, divided we fall. \
+	NOTE: This is a RESPECTED RACE."
 
 	skin_tone_wording = "Dwarf Fortress"
 

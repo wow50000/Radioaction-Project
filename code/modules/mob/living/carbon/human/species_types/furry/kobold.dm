@@ -5,7 +5,11 @@
 	name = "Kobold"
 	id = "kobold"
 	desc = "<b>Kobold</b><br>\
-	In time you will learn the history of this race."
+	In ancient times, dragons reigned supreme. Though with their greedy and horrific nature, they were hunted. \
+	Now extinct, all that is left is their children. Born through generations of mutation and wild magicks, the Kobold was made. \
+	However, the racial discrimination of the draconic ancestry reigns supreme. Will you live up to your almighty roots? \
+	NOTE: THIS IS A SHUNNED RACE. Expect mistreatment."
+
 	species_traits = list(EYECOLOR,LIPS,STUBBLE,MUTCOLORS)
 	inherent_traits = list(TRAIT_NOMOBSWAP)
 	possible_ages = ALL_AGES_LIST
