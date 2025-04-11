@@ -1085,6 +1085,8 @@
 	active_item = TRUE
 	if(user.mind.special_role == "Bandit")
 		to_chat(user, span_notice("I feel bolstered by Matthios Power!..."))
+		ADD_TRAIT(user, TRAIT_NOFIRE, "blkknight_[REF(src)]")
+		ADD_TRAIT(user, TRAIT_RESISTHEAT, "blkknight_[REF(src)]")
 		user.change_stat("strength", 2)
 		user.change_stat("perception", 2)
 		user.change_stat("intelligence", 2)
@@ -1102,6 +1104,8 @@
 	active_item = FALSE
 	if(user.mind.special_role == "Bandit")
 		to_chat(user, span_notice("I've removed the necklace of Matthios..."))
+		REMOVE_TRAIT(user, TRAIT_NOFIRE, "blkknight_[REF(src)]")
+		REMOVE_TRAIT(user, TRAIT_RESISTHEAT, "blkknight_[REF(src)]")
 		user.change_stat("strength", -2)
 		user.change_stat("perception", -2)
 		user.change_stat("intelligence", -2)
