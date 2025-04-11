@@ -3,8 +3,8 @@
 	crate_name = "Gifts of Strength"
 	crate_type = /obj/structure/closet/crate/chest/merchant
 
-//Armour
-/datum/supply_pack/rogue/bandit/Mage/gambeson
+//Armor
+/datum/supply_pack/rogue/bandit/Brigand/gambeson
 	name = "Gambeson"
 	cost = 50
 	contains = list(/obj/item/clothing/suit/roguetown/armor/gambeson)
@@ -24,7 +24,7 @@
 	cost = 100
 	contains = list(/obj/item/clothing/under/roguetown/chainlegs)
 
-/datum/supply_pack/rogue/bandit/foresworn/boots
+/datum/supply_pack/rogue/bandit/Brigand/boots
 	name = "Steel Boots"
 	cost = 200
 	contains = list(/obj/item/clothing/shoes/roguetown/armor/steel)

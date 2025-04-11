@@ -32,7 +32,7 @@
 
 /datum/supply_pack/rogue/luxury/moondust
 	name = "Moon Dust"
-	cost = 30
+	cost = 35
 	contains = list(/obj/item/reagent_containers/powder/moondust)
 
 /datum/supply_pack/rogue/luxury/spice
