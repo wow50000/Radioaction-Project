@@ -11,8 +11,9 @@
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
 	allowed_patrons = ALL_NON_INHUMEN_PATRONS
 	tutorial = "Having proven yourself loyal and capable, you are entrusted to defend the Royal Family and their Court, \
-				trained regularly in combat and siege warfare you stand a small chance of surviving the Duke's reign. \
-				It's an honor to die as part of His Highness' personal guard, the Marshal reminds you every night."
+				trained regularly in combat and siege warfare you stand a small chance of surviving the King's reign. \
+				It's an honor to die as part of His Highness' personal guard, the Hand reminds you every night. \
+				As if the ruler dies under your watch-- your honor is forfeit, as is your life."
 	display_order = JDO_MANORGUARD
 	whitelist_req = TRUE
 

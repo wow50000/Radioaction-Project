@@ -7,7 +7,7 @@
 	spawn_positions = 1
 	allowed_patrons = ALL_NON_INHUMEN_PATRONS
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_RESPECTED
+	allowed_races = RACES_TOLERATED
 	allowed_ages = list(AGE_MIDDLEAGED, AGE_OLD)
 	tutorial = "An experienced soldier of the Duke's retinue, you have been tasked with overseeing the Bog Gate. The one thing that keeps the horror of the Bog out. \
 				You report to the Royal Marshal and their Councillors, \

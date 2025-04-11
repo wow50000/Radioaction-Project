@@ -10,8 +10,11 @@
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
 	allowed_patrons = ALL_NON_INHUMEN_PATRONS
 	tutorial = "A Knight with expert training; \
-	Born into petty nobility and raised as a squire from a young age, now you Guard the Duke or Duchess, answer to their commands, and protect the court's honor. \
-	You're wholly dedicated to the standing Regent and their safety. Do not fail."
+	You've grown to status within the Kingdom of Rockhill, and your loyalty is unquestionable. \
+	Tried and true, you have put many to the blade for the honor of chivalry and your liege. \
+	Never should it come to question who you answer to-- as you are the ultimate weapon for the King to wield. \
+	As long as you breathe, may the royalty never have to raise a blade. <br>\
+	For Rockhill. For the King."
 	display_order = JDO_KNIGHT
 	whitelist_req = TRUE
 	outfit = /datum/outfit/job/roguetown/knight

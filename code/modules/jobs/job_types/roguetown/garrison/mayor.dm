@@ -10,8 +10,8 @@
 	allowed_races = RACES_RESPECTED
 	allowed_ages = list(AGE_MIDDLEAGED, AGE_OLD)
 	allowed_patrons = ALL_NON_INHUMEN_PATRONS
-	tutorial = "Whether you are a crooked politician or a true benefactor, the cityfolk now turn to you for guidance on smaller matters. \
-				The Duke may hold the official title, but with the Sheriff under your command, will you submit to the weight of tradition or reshape the very idea of authority?"
+	tutorial = "The King has placed you as the ruler of the town, to lead through the bureacratic ladder- and use those beneath you to further the gain of the Kingdom. \
+				Do well, and follow your liege. Above all else, you owe your life to the crown. Command your Bailiff, and see out the will of the King."
 	whitelist_req = TRUE
 	outfit = /datum/outfit/job/roguetown/mayor
 	display_order = JDO_MAYOR

@@ -3,15 +3,16 @@
 	flag = SQUIRE
 	department_flag = YOUNGFOLK
 	faction = "Station"
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 2
+	spawn_positions = 2
 	allowed_races = RACES_RESPECTED
 	allowed_sexes = list(MALE)
 	allowed_ages = list(AGE_ADULT)
 	subclass_cat_rolls = list(CTAG_SQUIRE = 20)
 
-	tutorial = "You are a little hero bound to your master. Often mistreated, you are still a warrior, yet a young and an inexperienced one. \
-	The dae when you will be proudly charging into the enemy wearing a plate armor will come eventually, but for now... NOT A STEP FROM YOUR MASTER!"
+	tutorial = "You've risen from little roots, to a position of Squireship in service to a Knight. There is no greater honor, nor greater trust. \
+	If your Knight is to charge, you are to follow. While your days may be of tedious tasks and menial service, you are certain of it... This is your ticket to Knighthood. \
+	For Rockhill. For the King."
 
 	outfit = /datum/outfit/job/roguetown/squire
 	display_order = JDO_SQUIRE

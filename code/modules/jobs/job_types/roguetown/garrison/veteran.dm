@@ -7,7 +7,7 @@
 	spawn_positions = 1
 
 	allowed_sexes = list(MALE, FEMALE) //same as town guard
-	allowed_races = RACES_RESPECTED // same as town guard
+	allowed_races = RACES_TOLERATED // same as town guard
 	allowed_patrons = ALL_NON_INHUMEN_PATRONS
 	tutorial = "You've known combat your entire life. \
 	There isn't a way to kill a man you havent practiced in the tapestries of war itself. \
