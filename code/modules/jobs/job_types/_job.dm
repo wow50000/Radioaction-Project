@@ -1,3 +1,6 @@
+GLOBAL_VAR_INIT(hugbox_duration, 40 SECONDS)
+GLOBAL_VAR_INIT(hugbox_duration_still, 3 MINUTES)
+
 /datum/job
 	//The name of the job , used for preferences, bans and more. Make sure you know what you're doing before changing this.
 	var/title = "NOPE"
