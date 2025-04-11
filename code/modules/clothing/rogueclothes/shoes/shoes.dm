@@ -80,7 +80,7 @@
 	isbarefoot = TRUE
 	anvilrepair = /datum/skill/craft/blacksmithing
 
-// **ARMOURED** //
+// **ARMORED** //
 
 
 /obj/item/clothing/shoes/roguetown/armor //This subtype is for armoured shoes
@@ -114,7 +114,7 @@
 	sewrepair = FALSE
 	resistance_flags = FIRE_PROOF
 	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
-	armor_class = ARMOR_CLASS_HEAVY
+	armor_class = ARMOR_CLASS_MEDIUM
 	armor = list("blunt" = 90, "slash" = 100, "stab" = 80, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
 	// ----------------- BLACKSTEEL -----------------------

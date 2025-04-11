@@ -53,3 +53,8 @@
 	name = "Hammer"
 	cost = 250
 	contains = list(/obj/item/rogueweapon/hammer/iron)
+
+/datum/supply_pack/rogue/bandit/Gear/hknife
+	name = "Leather Whip"
+	cost = 50
+	contains = list(/obj/item/rogueweapon/whip)
