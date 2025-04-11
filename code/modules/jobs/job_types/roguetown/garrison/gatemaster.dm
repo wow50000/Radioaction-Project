@@ -6,7 +6,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	allowed_sexes = list(MALE)
-	allowed_races = RACES_RESPECTED
+	allowed_races = RACES_TOLERATED
 	allowed_patrons = ALL_NON_INHUMEN_PATRONS
 	tutorial = "Tales speak of the Gatemaster's legendary ability to stand still at a gate and ask people questions. \
 	Rivaled only by a tree's ability to stay in place, Gatemasters are known to stock up for the long weeks. \

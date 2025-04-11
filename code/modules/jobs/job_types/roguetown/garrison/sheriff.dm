@@ -6,14 +6,15 @@
 	total_positions = 1
 	spawn_positions = 1
 	selection_color = JCOLOR_SOLDIER
-	allowed_races = RACES_RESPECTED
+	allowed_races = RACES_TOLERATED
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_ages = list(AGE_MIDDLEAGED, AGE_OLD)
 	allowed_patrons = ALL_NON_INHUMEN_PATRONS
 	display_order = JDO_BAILIFF
 	tutorial = "Crime has always been a constant of your life, and you always chose the side of justice. \
 	You rose up through the ranks as a watchman, and now rule over them - Ensure that they enforce the laws of this land properly. \
-	While you may work under the Mayor, everyone knows the Duke is the true authority, or is he?"
+	It is thanks to the Mayor that you've maintained such powerful standing-- and you owe everything to his command. \
+	Ensure that the Mayor has no worries, and that the King's rule is absolute. The peasants can be rowdy.."
 	whitelist_req = FALSE
 	outfit = /datum/outfit/job/roguetown/sheriff
 	give_bank_account = 26

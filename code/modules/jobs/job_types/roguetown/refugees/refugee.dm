@@ -1,4 +1,4 @@
-GLOBAL_VAR_INIT(hugbox_duration, 40 SECONDS)
+/* GLOBAL_VAR_INIT(hugbox_duration, 40 SECONDS)
 GLOBAL_VAR_INIT(hugbox_duration_still, 3 MINUTES)
 
 /datum/job/roguetown/refugee
@@ -43,3 +43,4 @@ GLOBAL_VAR_INIT(hugbox_duration_still, 3 MINUTES)
 		H.advsetup = 1
 		H.invisibility = INVISIBILITY_MAXIMUM
 		H.become_blind("advsetup")
+ */
