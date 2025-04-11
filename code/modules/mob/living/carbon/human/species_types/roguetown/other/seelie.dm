@@ -6,12 +6,10 @@
 	name = "Seelie"
 	id = "seelie"
 	desc = "<b>Seelie</b><br>\
-	The smallest of Fae-folk, Seelie are a mysterious race and not well understood. \
-    Parentless creatures and unable to reproduce naturally, it is clear that they do not propogate in a typical human way. \
-    Instead, Seelie tend to appear and gather in places of chaos and misfortune, thriving in such an environment. \
-    Seelie are known to have Elemental Attunements, an influence of nature that mystically sprung them into existance. \
-    Any tribalism or history regarding the race is scarce and uncommmon, and as such misconception and myth surrounds them. \
-    The wary traveller should take heed of such beings, as both fortune and missery is said to accompany the little troublemakers."
+	Created of Xylix's enjoyment and misdeeds, these Fae-folk are mischevious in nature. \
+	Much like their patron saint, they find joy in the whimsical and unknown. \
+	With abilities befitting their mystical nature, they are viewed with wariness and unease. \
+	NOTE: THIS IS A SHUNNED RACE. Expect bad things to happen."
 
 	skin_tone_wording = "Elemental Connection"
 

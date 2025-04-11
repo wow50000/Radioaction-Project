@@ -5,24 +5,17 @@
 	name = "Lupian"
 	id = "lupian"
 	desc = "<b>Lupian</b><br>\
-	Lupians are the sons and daughters of Noc. They are a volf-like people hailing from the Northern Regions of the world. \
-	They are resilient, cunning and fight ready creachures capable of surviving the north thanks to their rugged pelts, \
-	sharp teeth and deep-rooted spirit of community. They are very dutiful individuals and make fantastic and fearsome \
-	warriors to those who earn their loyalty. Thanks to their pack minded nature they are slow to trust the other races \
-	but form deep connections with those they do. In recent years they have been driven from the forests by unrest and the \
-	inevitable spread of the rot and pressed into cohabitation with races they'd deem lesser."
-	expanded_desc = "Lupians live under elective monarchies, forms of feudalism where the king of a pack is chosen from, and by, the military council. \
-	The leader of the pack is a philosopher king, a paragon of virtue and one who should inspire awe and loyalty among the population \
-	while the real power is held by the military leadership. Should a king fail his people it is not uncommon for the entire kingdom \
-	to fall into disarray as law and order begin to break down, for many Lupians see it a disgrace to themselves to follow a king who \
-	appears weak. Similarly, most Lupians uphold an image of pride and toughness, it is only in the presence of someone who appears \
-	stronger do they bend the knee. To become a leader is a constant challenge to maintain. \
-	<br><br> \
-	Vakran was once the largest of the pack-nations, the capital of Lupian civilization. After the King sequestered himself away under \
-	insurmountable stress and went into hiding, it was revealed weeks later that he was poisoned by one of his sons. This plunged the \
-	nation states under the Vakran name into chaos. Vassals left, either becoming free or aligning themselves with the neighboring \
-	Frostfell or Felsaad, while others faced internal strife, civils wars between those who believed the Vakran name still held strong, \
-	and those who saw the crown tainted, even the military council decimated itself between duels and the pitting of coups."
+	The hounds of Dendor, Hunters of the North. These Lupine-beasts come from bloody tribal origins in the deep north. \
+	The most notable of these tribes is the Frostfell, the barbaric tribe that has come out on top of the others through sheer conquest. \
+	While other packs still exist, they have been subjugated and placed under rule of the Frostfell lineage. \
+	With the vassalage of other tribes done, the Foresworn warriors of the Frostfell turn their gaze elsewhere-- known for their wolf-head Heater Shield heraldry. \
+	It is said the howls of war are the last that any army hears, before they are met with a gruesome fate. \
+	Even with such horrifying stories, the Foresworn have been enlisted in many Dwarven armies of the north to battle back forces of Chaos. \
+	As such, bringing them to a reasonable standing within the coalition. \
+	NOTE: This is a TOLERATED RACE. May be treated as 'lesser'."
+
+
+
 	skin_tone_wording = "Pack"
 	species_traits = list(
 		MUTCOLORS,

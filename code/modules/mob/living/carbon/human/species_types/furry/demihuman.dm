@@ -4,7 +4,14 @@
 /datum/species/demihuman
 	name = "Half-Breed"
 	id = "demihuman"
-	desc = "In time you will learn the history of this race"
+	desc = "<b>Half-Breed</b><br>\
+		Half-Humen, Half-Animal. These creatures are barely tolerated, seen as mudding the purity of PSYDON's creation. \
+		The only reason they find themselves not outcasted is in part due to their human roots-- and the proven use of animal species in the past. \
+		Where you come from remains up to you- but the question remains. Will you fall prey to subjugation, or rise with your PSYDONITE blood? \
+		Stand tall, HUMAN. Defeat the beast within. \
+		NOTE: This is a TOLERATED RACE. May be treated as 'lesser'."
+
+
 	skin_tone_wording = "Ancestry"
 	default_color = "FFFFFF"
 	species_traits = list(EYECOLOR,HAIR,FACEHAIR,LIPS,STUBBLE,OLDGREY,MUTCOLORS_PARTSONLY)

@@ -5,13 +5,12 @@
 	name = "Dark Elf"
 	id = "elfd"
 	desc = "<b>Dark Elf</b><br>\
-	Elves, are a generic term for tall, pointy-eared humanoids\
-    Of whom trace their original heritage to the ancient mysterious Snow Elves. \
-	These ones are of a dark complexion and originate mostly from the underdark. \
-    Their culture and entire lives normally involve serving the evil gods of the inhumen pantheon. \
-    Previously rare but in recent times, more and more dark elfs can be seen on the surface. \
-    The ones who aren't overtly cruel and bloodthirsty, tend to flee to the surface lest they get culled by their own society, \
-    while some more sinister ones abandon their cities in search of new and greater power."
+	A dark twist of Zizo's manifestation. A corruption of the purity that Eora had made-- Dark Elves. \
+	Often referred to as Drow, they are creatures of pure chaos origin. Due to their horrific actions, they've been rendered untrustable. \
+	Almost always killed on sight- or enslaved immediately. The latter are lucky to even be left breathing. \
+	Perhaps one of the greatest threats to MAN, Humens have put them into absolute subjugation... \
+	Will you break free of your shackles, or remain a slave-- dismissing your roots? \
+	NOTE: This is a VERY SHUNNED RACE. VERY BAD THINGS may happen."
 
 /*
 	Former RT Desc: These guys were undead which doesn't really fit considering now you have a ton of them walking around.

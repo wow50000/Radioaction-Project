@@ -9,7 +9,8 @@
 	Created as a byproduct of Graggar's meddling with the perfection of Humen. \
 	They are seen as creatures, filth and overall lesser. If one isn't born into slavery, they're soon to find it. \
 	Some believe that this stigma may change, but they would be wrong. As a wise man once said-- \
-	The only mercy they can receive is a swift death."
+	The only mercy they can receive is a swift death. \
+	NOTE: This is a VERY SHUNNED RACE. VERY BAD THINGS may happen."
 
 	skin_tone_wording = "Clan"
 

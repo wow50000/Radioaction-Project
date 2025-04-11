@@ -6,13 +6,14 @@
 	id = "tabaxi"
 
 	desc = "<b>Tabaxi</b><br>\
-		Tabaxi are taller than most humans at six to seven feet.\
-		Their bodies are slender and covered in spotted or striped fur.\
-		Like most felines, Tabaxi have long tails and retractable claws.\
-		Tabaxi fur color ranges from light yellow to brownish red.\
-		Tabaxi eyes are slit-pupilled and usually green or yellow.\
-		Tabaxi are competent swimmers and climbers as well as speedy runners.\
-		They have a good sense of balance and an acute sense of smell."
+		Creatures of feline descent- they have clawed their way through the social ladder to be regarded higher than other animal-like species. \
+		More specifically, the New Moon of Zybantium. This coven of Spellsword Tabaxi have been direct assistants and servants to Humens for decades. \
+		Now, they have earned the faith and trust of the Humen for their race through dutiful service and betterment of society. \
+		The Tabaxi, originating from Dendor's animalistic shapeshifting-- his wild magicks have attuned to the bloodline of Tabaxi, causing an attraction to the Arcane. \
+		They are swift, agile, and graceful. At the cost of some much more brutish strength-- a counterpart to the vicious Lupians. \
+		NOTE: This is a TOLERATED RACE. May be treated as 'lesser'."
+
+
 	skin_tone_wording = "Fur Colors"
 	species_traits = list(EYECOLOR,HAIR,FACEHAIR,LIPS,STUBBLE, MUTCOLORS)
 	inherent_traits = list(TRAIT_NOMOBSWAP)

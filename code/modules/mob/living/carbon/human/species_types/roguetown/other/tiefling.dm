@@ -7,8 +7,9 @@
 	desc = "<b>Tiefling</b><br>\
 	Hell-Spawn, Thiefling, Devil, Infernal. They have many names, but one thing is for sure. \
 	These are creatures afflicted with chaotic energy, a corrupted form of creatures-- \
-	Philosophers and scholars have deemed Tieflings to have come from Baothan corruption of Humen. \
-	Theories have been made that overindulgance will lead to becoming one of the Infernal..."
+	Philosophers and scholars have deemed Tieflings to have come from Baothan manipulation of Humen. \
+	Theories have been made that overindulgance will lead to becoming one of the Infernal... \
+	NOTE: This is a VERY SHUNNED RACE. VERY BAD THINGS may happen."
 
 	skin_tone_wording = "Progenitor"
 
