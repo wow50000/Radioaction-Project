@@ -3,8 +3,8 @@
 	flag = BANDIT_VET
 	department_flag = FOREIGNERS
 	faction = "Station"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	antag_job = TRUE
 	allowed_races = RACES_VERY_SHUNNED_UP	//Begone foul seelies. Your age of banditry is gone
 	tutorial = "Matthios' chosen, seasoned fighters of the cause who've earned his attention through meticulous worship and devotion to their endless hunger for more. You are his finest, show them why you've been granted his will."

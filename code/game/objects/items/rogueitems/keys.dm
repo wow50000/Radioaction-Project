@@ -416,6 +416,18 @@
 	icon_state = "spikekey"
 	lockid = "bog_barracks"
 
+/obj/item/key/bog_armory
+	name = "bog armory key"
+	desc = "A key to the bog armory."
+	icon_state = "spikekey"
+	lockid = "bog_armory"
+
+/obj/item/key/bog_dungeon
+	name = "bog dungeon key"
+	desc = "A key to the bog dungeon."
+	icon_state = "spikekey"
+	lockid = "bog_dungeon"
+
 /obj/item/key/town_barracks
 	name = "town barracks key"
 	desc = "This key opens the town barracks."

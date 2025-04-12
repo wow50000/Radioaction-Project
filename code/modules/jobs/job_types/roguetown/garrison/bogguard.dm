@@ -72,7 +72,7 @@
 
 /datum/outfit/job/roguetown/bog/pre_equip(mob/living/carbon/human/H)
 	head = /obj/item/clothing/head/roguetown/helmet/skullcap
-	armor = /obj/item/clothing/suit/roguetown/shirt/shadow
+	armor = /obj/item/clothing/suit/roguetown/armor/plate/half/iron
 	cloak = /obj/item/clothing/cloak/stabard/bog
 	neck = /obj/item/clothing/neck/roguetown/chaincoif
 	gloves = /obj/item/clothing/gloves/roguetown/leather/black

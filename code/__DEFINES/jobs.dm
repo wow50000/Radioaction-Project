@@ -265,6 +265,7 @@
 
 #define JDO_MERCHANT 17
 #define JDO_SHOPHAND 17.1
+#define JDO_COURIER 17.2
 
 #define JDO_ARCHIVIST 18
 
@@ -378,7 +379,8 @@
 	/datum/job/roguetown/artificer,\
 	/datum/job/roguetown/seamster, \
 	/datum/job/roguetown/merchant,\
-	/datum/job/roguetown/scribe
+	/datum/job/roguetown/scribe, \
+	/datum/job/roguetown/courier
 
 #define WANDERER_ROLES \
 	/datum/job/roguetown/guild_clerk,\

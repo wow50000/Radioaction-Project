@@ -1,13 +1,16 @@
 /datum/job/roguetown/courier
 	title = "Courier"
 	flag = COURIER
-	department_flag = YOUNGFOLK
+	department_flag = YEOMEN
 	faction = "Station"
 	total_positions = 2
 	spawn_positions = 2
-
-	allowed_races = RACES_TOLERATED_UP
-	allowed_ages = list(AGE_ADULT)
+	selection_color = JCOLOR_YEOMAN
+	allowed_races = RACES_SHUNNED_UP
+	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
+	allowed_sexes = list(MALE, FEMALE)
+	allowed_patrons = ALL_NON_INHUMEN_PATRONS
+	whitelist_req = FALSE
 
 	tutorial = "Unusually nimble and highly literate, you are a courier. The lifeblood of communication in the realm, your job is to carry information, parcels and news throughout the lands."
 
