@@ -20,7 +20,7 @@
 	associated_skill = /datum/skill/combat/crossbows
 	anvilrepair = /datum/skill/craft/blacksmithing
 	smeltresult = /obj/item/ingot/steel
-	damfactor = 2
+	damfactor = 1.5
 	metalizer_result = /obj/structure/bars/pipe
 
 /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow/getonmobprop(tag)

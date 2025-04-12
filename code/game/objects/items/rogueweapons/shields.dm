@@ -21,10 +21,10 @@
 	resistance_flags = FLAMMABLE
 	can_parry = TRUE
 	wdefense = 10
-	var/coverage = 40
+	var/coverage = 66
 	parrysound = "parrywood"
 	attacked_sound = "parrywood"
-	max_integrity = 100
+	max_integrity = 200
 	blade_dulling = DULLING_BASHCHOP
 	anvilrepair = /datum/skill/craft/blacksmithing
 	COOLDOWN_DECLARE(shield_bang)
@@ -77,7 +77,7 @@
 	icon_state = "woodsh"
 	dropshrink = 0.8
 	wdefense = 10
-	coverage = 40
+	coverage = 60
 	metalizer_result = /obj/item/cooking/pan
 
 /obj/item/rogueweapon/shield/wood/attack_right(mob/user)
@@ -148,10 +148,10 @@
 	resistance_flags = null
 	flags_1 = CONDUCT_1
 	wdefense = 13
-	coverage = 60
+	coverage = 75
 	attacked_sound = list('sound/combat/parry/shield/metalshield (1).ogg','sound/combat/parry/shield/metalshield (2).ogg','sound/combat/parry/shield/metalshield (3).ogg')
 	parrysound = list('sound/combat/parry/shield/metalshield (1).ogg','sound/combat/parry/shield/metalshield (2).ogg','sound/combat/parry/shield/metalshield (3).ogg')
-	max_integrity = 150
+	max_integrity = 225
 	blade_dulling = DULLING_BASH
 	sellprice = 30
 
@@ -192,10 +192,10 @@
 	force = 15
 	throwforce = 10
 	dropshrink = 0.8
-	coverage = 50
+	coverage = 66
 	attacked_sound = list('sound/combat/parry/shield/towershield (1).ogg','sound/combat/parry/shield/towershield (2).ogg','sound/combat/parry/shield/towershield (3).ogg')
 	parrysound = list('sound/combat/parry/shield/towershield (1).ogg','sound/combat/parry/shield/towershield (2).ogg','sound/combat/parry/shield/towershield (3).ogg')
-	max_integrity = 125
+	max_integrity = 175
 
 /obj/item/rogueweapon/shield/heater/attack_hand(mob/user)
 	if(!overlays.len)
@@ -235,7 +235,7 @@
 	coverage = 10
 	attacked_sound = list('sound/combat/parry/shield/metalshield (1).ogg','sound/combat/parry/shield/metalshield (2).ogg','sound/combat/parry/shield/metalshield (3).ogg')
 	parrysound = list('sound/combat/parry/shield/metalshield (1).ogg','sound/combat/parry/shield/metalshield (2).ogg','sound/combat/parry/shield/metalshield (3).ogg')
-	max_integrity = 150
+	max_integrity = 200
 	blade_dulling = DULLING_BASH
 	associated_skill = 0
 
