@@ -342,7 +342,7 @@
 	name = "nightmaster's key"
 	desc = "This rusted key opens the brothel."
 	icon_state = "greenkey"
-	lockid = "nightman"
+	lockid = "nightmaiden"
 
 /obj/item/key/mercenary
 	name = "mercenary key"
