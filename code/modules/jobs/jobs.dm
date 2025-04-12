@@ -105,6 +105,7 @@ GLOBAL_LIST_INIT(inquisition_positions, list(
 GLOBAL_LIST_INIT(yeoman_positions, list(
 	"Mayor",
 	"Merchant",
+	"Courier",
 	"Scholar",
 	"Barkeep",
 	"Guild Smith",
@@ -149,7 +150,6 @@ GLOBAL_LIST_INIT(youngfolk_positions, list(
 	"Smithy Apprentice",
 	"Churchling",
 	"Shophand",
-	"Courier",
 ))
 
 GLOBAL_LIST_INIT(foreigner_positions, list(

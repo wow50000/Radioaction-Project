@@ -1,4 +1,4 @@
-/datum/job/roguetown/clerk
+/* /datum/job/roguetown/clerk
 	title = "Clerk"
 	flag = CLERK
 	department_flag = YOUNGFOLK
@@ -137,3 +137,4 @@
 		H.change_stat("intelligence", -1)
 		H.change_stat("speed", 0)
 	ADD_TRAIT(H, TRAIT_SEEPRICES_SHITTY, TRAIT_GENERIC)
+ */
