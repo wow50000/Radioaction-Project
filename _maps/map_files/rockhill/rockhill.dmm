@@ -598,11 +598,11 @@
 /turf/open/floor/rogue/tile,
 /area/rogue/indoors/town/dwarfin)
 "aCH" = (
-/obj/structure/roguemachine/merchantvend{
-	lockid = "merchant"
+/obj/machinery/tanningrack,
+/turf/open/floor/rogue/tile{
+	icon_state = "tile"
 	},
-/turf/closed/wall/mineral/rogue/craftstone,
-/area/rogue/indoors/town)
+/area/rogue/indoors/town/tavern)
 "aCU" = (
 /obj/structure/fluff/railing/wood{
 	dir = 4;
@@ -2065,12 +2065,11 @@
 /turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town/garrison)
 "bZT" = (
-/obj/structure/table/wood{
-	dir = 1;
-	icon_state = "tablewood1"
+/obj/structure/roguemachine/merchantvend{
+	lockid = "merchant"
 	},
-/turf/open/floor/rogue/wood,
-/area/rogue/indoors/town/shop)
+/turf/closed/wall/mineral/rogue/craftstone,
+/area/rogue/indoors/town)
 "bZV" = (
 /obj/structure/fluff/railing/wood{
 	dir = 8;
@@ -4275,6 +4274,11 @@
 "efA" = (
 /obj/structure/bookcase/random,
 /obj/item/book/rogue/cooking,
+/obj/item/paper,
+/obj/item/paper,
+/obj/item/paper,
+/obj/item/paper/scroll,
+/obj/item/paper/scroll,
 /turf/open/floor/rogue/ruinedwood{
 	icon_state = "weird1"
 	},
@@ -24450,11 +24454,12 @@
 /turf/open/floor/rogue/tile,
 /area/rogue/indoors/town)
 "yaK" = (
-/obj/machinery/tanningrack,
-/turf/open/floor/rogue/tile{
-	icon_state = "tile"
+/obj/structure/table/wood{
+	dir = 1;
+	icon_state = "tablewood1"
 	},
-/area/rogue/indoors/town/tavern)
+/turf/open/floor/rogue/wood,
+/area/rogue/indoors/town/shop)
 "yaQ" = (
 /obj/structure/ladder,
 /turf/open/floor/rogue/ruinedwood{
@@ -283635,7 +283640,7 @@ jHy
 eFG
 eFG
 eFG
-lzS
+wKj
 fxx
 fxx
 uaL
@@ -298076,7 +298081,7 @@ evo
 dBd
 evo
 evo
-aCH
+bZT
 hUt
 hUt
 hUt
@@ -298479,7 +298484,7 @@ rNm
 rNm
 lwN
 evo
-bZT
+yaK
 hUt
 nRo
 nRo
@@ -387301,7 +387306,7 @@ wNn
 tpy
 ajv
 ajv
-yaK
+aCH
 vxj
 wNn
 cBA
