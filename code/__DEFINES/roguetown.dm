@@ -334,7 +334,7 @@ GLOBAL_LIST_EMPTY(job_respawn_delays)
 #define DOUGH_NUTRITION MEAL_MEAGRE
 #define SMALLDOUGH_NUTRITION MEAL_MEAGRE/2 //7.5
 #define BUTTERDOUGH_NUTRITION DOUGH_NUTRITION+BUTTERSLICE_NUTRITION //17
-#define BUTTERDOUGHSLICE_NUTRITION 8.5 //This should be butterdough_nutrition/2, but for some reason it returns 16 if you do that. So...
+#define BUTTERDOUGHSLICE_NUTRITION BUTTERDOUGH_NUTRITION/2 //This should be butterdough_nutrition/2, but for some reason it returns 16 if you do that. So...
 //DAIRY
 #define BUTTER_NUTRITION SNACK_CHUNKY
 #define BUTTERSLICE_NUTRITION BUTTER_NUTRITION/6 //2

@@ -402,6 +402,7 @@
 /datum/reagent/consumable/soup/veggie
 	name = "vegetable soup"
 	description = ""
+	taste_description = "vegetable stew"
 	reagent_state = LIQUID
 	nutriment_factor = 5
 	taste_mult = 6
@@ -426,6 +427,7 @@
 /datum/reagent/consumable/soup/stew
 	name = "thick stew"
 	description = "All manners of edible bits went into this."
+	taste_description = "hearty stew"
 	reagent_state = LIQUID
 	nutriment_factor = 10
 	taste_mult = 8
