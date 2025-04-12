@@ -118,7 +118,7 @@
 GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_LEPROSY = span_necrosis("I'm a disgusting leper..."),
 	TRAIT_AMBUSHIMMUNITY = span_info("With careful footing, I've learned how to avoid the attention of fauna."),
-	TRAIT_CHOSEN = "Appointed by the Church of the Successors, you hold authority over all spiritual matters in the City.",
+	TRAIT_CHOSEN = "Appointed by the Citadel of PSYDON, you hold authority over all spiritual matters in the town.",
 	TRAIT_BOGVULNERABLE = span_info("I am used to steady ground. The Terrorbog is unfamiliar terrain."),
 	TRAIT_WEBWALK = "I can move freely between webs.",
 	TRAIT_NOSTINK = span_dead("My nose is numb to the smell of decay."),

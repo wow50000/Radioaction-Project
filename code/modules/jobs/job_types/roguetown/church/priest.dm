@@ -99,13 +99,10 @@ GLOBAL_LIST_EMPTY(heretical_players)
 	set category = "Priest"
 	if(!mind)
 		return
-	if(!istype(get_area(src), /area/rogue/indoors/town/church/chapel))
-		to_chat(src, span_warning("I need to do this in the chapel."))
-		return FALSE
 	for(var/mob/living/carbon/human/HU in get_step(src, src.dir))
 		if(!HU.mind)
 			continue
-		if(HU.mind.assigned_role == "Duke")
+		if(HU.mind.assigned_role == "King")
 			continue
 		if(!HU.head)
 			continue
@@ -115,25 +112,25 @@ GLOBAL_LIST_EMPTY(heretical_players)
 		//Abdicate previous Duke
 		for(var/mob/living/carbon/human/HL in GLOB.human_list)
 			if(HL.mind)
-				if(HL.mind.assigned_role == "Duke" || HL.mind.assigned_role == "Duke Consort")
+				if(HL.mind.assigned_role == "King" || HL.mind.assigned_role == "Queen")
 					HL.mind.assigned_role = "Towner" //So they don't get the innate traits of the lord
 			//would be better to change their title directly, but that's not possible since the title comes from the job datum
-			if(HL.job == "Duke")
-				HL.job = "Duke Emeritus"
-			if(HL.job == "Duke Consort")
-				HL.job = "Consort Dowager"
+			if(HL.job == "King")
+				HL.job = "King Emeritus"
+			if(HL.job == "Queen")
+				HL.job = "Queen Dowager"
 			SSjob.type_occupations[/datum/job/roguetown/ruler].remove_spells(HL)
 
 		//Coronate new Lord (or Lady)
-		HU.mind.assigned_role = "Duke"
-		HU.job = "Duke"
+		HU.mind.assigned_role = "King"
+		HU.job = "King"
 		SSjob.type_occupations[/datum/job/roguetown/ruler].add_spells(HU)
 
 		switch(HU.gender)
 			if("male")
-				SSticker.rulertype = "Duke"
+				SSticker.rulertype = "King"
 			if("female")
-				SSticker.rulertype = "Duchess"
+				SSticker.rulertype = "Queen"
 		SSticker.rulermob = HU
 		var/dispjob = mind.assigned_role
 		removeomen(OMEN_NOLORD)
@@ -148,9 +145,6 @@ GLOBAL_LIST_EMPTY(heretical_players)
 		return
 	var/inputty = input("Excommunicate someone, removing their ability to use miracles... (excommunicate them again to remove it)", "Sinner Name") as text|null
 	if(inputty)
-		if(!istype(get_area(src), /area/rogue/indoors/town/church/chapel))
-			to_chat(src, span_warning("I need to do this from the Church's chapel."))
-			return FALSE
 		if(inputty in GLOB.excommunicated_players)
 			GLOB.excommunicated_players -= inputty
 			priority_announce("[real_name] has forgiven [inputty]. Their patron hears their prayer once more!", title = "Hail the Ten!", sound = 'sound/misc/bell.ogg')
@@ -178,9 +172,6 @@ GLOBAL_LIST_EMPTY(heretical_players)
 		return
 	var/inputty = input("Brand someone as a foul heretic... (brand them again to remove it)", "Sinner Name") as text|null
 	if(inputty)
-		if(!istype(get_area(src), /area/rogue/indoors/town/church/chapel))
-			to_chat(src, span_warning("I need to do this from the Church."))
-			return FALSE
 		if(inputty in GLOB.heretical_players)
 			GLOB.heretical_players -= inputty
 			priority_announce("[real_name] has removed the Heretic's Brand from [inputty]. Once more walk in the light!", title = "Hail the Ten!", sound = 'sound/misc/bell.ogg')
@@ -216,10 +207,6 @@ GLOBAL_LIST_EMPTY(heretical_players)
 
 	var/inputty = input("Make an announcement", "ROGUETOWN") as text|null
 	if(!inputty)
-		return FALSE
-
-	if(!istype(get_area(src), /area/rogue/indoors/town/church/chapel))
-		to_chat(src, span_warning("I need to do this from the chapel."))
 		return FALSE
 
 	priority_announce("[inputty]", title = "The Priest Speaks", sound = 'sound/misc/bell.ogg')
