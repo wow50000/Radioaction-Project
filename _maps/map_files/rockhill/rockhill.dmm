@@ -9196,13 +9196,6 @@
 	},
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/rtfield)
-"iDP" = (
-/obj/structure/chair/wood/rogue{
-	dir = 8
-	},
-/obj/effect/landmark/start/guildsmith,
-/turf/open/floor/carpet/royalblack,
-/area/rogue/indoors)
 "iEg" = (
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/exposed/tavern)
@@ -16785,6 +16778,13 @@
 /obj/item/natural/feather,
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/bog)
+"qdn" = (
+/obj/structure/chair/wood/rogue{
+	dir = 8
+	},
+/obj/effect/landmark/start/guildsmith,
+/turf/open/floor/carpet/royalblack,
+/area/rogue/indoors)
 "qdx" = (
 /obj/item/ingot/iron,
 /obj/item/ingot/iron,
@@ -271906,7 +271906,7 @@ qvR
 qvR
 qvR
 kHC
-iDP
+qdn
 kxk
 kxk
 sco
