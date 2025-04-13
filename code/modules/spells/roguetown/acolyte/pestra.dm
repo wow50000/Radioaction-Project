@@ -145,11 +145,10 @@
 	chargedloop = /datum/looping_sound/invokeholy
 	req_items = list(/obj/item/clothing/neck/roguetown/psicross)
 	sound = 'sound/magic/revive.ogg'
-	associated_skill = /datum/skill/magic/holy
+	associated_skill = /datum/skill/misc/treatment
 	antimagic_allowed = TRUE
 	charge_max = 2 MINUTES
-	miracle = TRUE
-	devotion_cost = 30
+	miracle = FALSE
 	/// Amount of PQ gained for curing zombos
 	var/unzombification_pq = PQ_GAIN_UNZOMBIFY
 
