@@ -1427,10 +1427,6 @@
 "bpD" = (
 /turf/closed/mineral/random/rogue,
 /area/rogue/under/cave)
-"bpP" = (
-/obj/structure/roguewindow/openclose/reinforced,
-/turf/open/floor/rogue/blocks,
-/area/rogue/indoors/town/dwarfin)
 "bqh" = (
 /obj/machinery/light/rogue/wallfire/candle/l,
 /turf/open/floor/carpet/royalblack,
@@ -1937,7 +1933,7 @@
 	},
 /area/rogue/indoors/town/shop)
 "bQo" = (
-/obj/structure/roguewindow,
+/turf/closed/wall/mineral/rogue/craftstone,
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/dwarfin)
 "bQy" = (
@@ -3429,10 +3425,6 @@
 /obj/machinery/light/rogue/wallfire/candle,
 /turf/open/floor/rogue/churchbrick,
 /area/rogue/indoors/town/church)
-"dog" = (
-/obj/structure/roguewindow/openclose/reinforced,
-/turf/open/dark_filler,
-/area/rogue/indoors/town/dwarfin)
 "dol" = (
 /turf/closed/mineral/rogue,
 /area/rogue/outdoors/mountains)
@@ -5437,6 +5429,7 @@
 /area/rogue/outdoors/town)
 "fff" = (
 /obj/structure/chair/stool/rogue,
+/obj/effect/landmark/start/seamster,
 /turf/open/floor/carpet/stellar,
 /area/rogue/indoors)
 "ffk" = (
@@ -7032,10 +7025,7 @@
 /turf/closed/wall/mineral/rogue/wooddark,
 /area/rogue/outdoors/beach)
 "gGo" = (
-/obj/structure/mineral_door/wood{
-	locked = 1;
-	lockid = "blacksmith"
-	},
+/turf/closed/wall/mineral/rogue/craftstone,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/dwarfin)
 "gGu" = (
@@ -9207,12 +9197,12 @@
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/rtfield)
 "iDP" = (
-/obj/structure/roguemachine/vendor{
-	keycontrol = "blacksmith";
-	lockid = "blacksmith"
+/obj/structure/chair/wood/rogue{
+	dir = 8
 	},
-/turf/closed/wall/mineral/rogue/craftstone,
-/area/rogue/indoors/town/dwarfin)
+/obj/effect/landmark/start/guildsmith,
+/turf/open/floor/carpet/royalblack,
+/area/rogue/indoors)
 "iEg" = (
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/exposed/tavern)
@@ -12719,9 +12709,7 @@
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/tavern)
 "mox" = (
-/obj/structure/roguewindow/openclose/reinforced{
-	dir = 8
-	},
+/turf/closed/wall/mineral/rogue/craftstone,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/dwarfin)
 "moF" = (
@@ -16797,14 +16785,6 @@
 /obj/item/natural/feather,
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/bog)
-"qdn" = (
-/obj/structure/table/wood,
-/obj/structure/bars{
-	icon_state = "barsbent";
-	layer = 2.81
-	},
-/turf/open/floor/rogue/blocks,
-/area/rogue/indoors/town/dwarfin)
 "qdx" = (
 /obj/item/ingot/iron,
 /obj/item/ingot/iron,
@@ -19863,7 +19843,7 @@
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/rtfield)
 "teE" = (
-/obj/structure/mineral_door/wood/deadbolt,
+/turf/closed/wall/mineral/rogue/craftstone,
 /turf/open/floor/rogue/blocks{
 	icon_state = "paving"
 	},
@@ -21045,15 +21025,6 @@
 	},
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/town/bath)
-"umj" = (
-/obj/structure/table/wood,
-/obj/structure/bars{
-	icon_state = "barsbent";
-	layer = 2.81
-	},
-/obj/structure/bell_common,
-/turf/open/floor/rogue/blocks,
-/area/rogue/indoors/town/dwarfin)
 "umm" = (
 /obj/item/natural/manacrystal,
 /turf/open/floor/rogue/dirt,
@@ -21698,9 +21669,7 @@
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/rtfield)
 "uUw" = (
-/obj/structure/roguewindow/openclose/reinforced{
-	dir = 8
-	},
+/turf/closed/wall/mineral/rogue/craftstone,
 /turf/open/dark_filler,
 /area/rogue/indoors/town/dwarfin)
 "uVn" = (
@@ -271937,7 +271906,7 @@ qvR
 qvR
 qvR
 kHC
-qRi
+iDP
 kxk
 kxk
 sco
@@ -287185,7 +287154,7 @@ qMJ
 wbg
 wbg
 wVI
-dog
+uUw
 ooF
 gsM
 gsM
@@ -287587,7 +287556,7 @@ wVI
 wbg
 wbg
 wVI
-dog
+uUw
 bGD
 gsM
 gsM
@@ -289211,7 +289180,7 @@ mvp
 mvp
 mvp
 mvp
-svc
+bQo
 wbg
 wbg
 wbg
@@ -289599,11 +289568,11 @@ wbg
 wVI
 sco
 fyd
-gsM
 sco
-qdn
-iDP
-umj
+sco
+sco
+sco
+sco
 wFB
 eah
 gnI
@@ -290006,7 +289975,7 @@ kyT
 lyO
 lyO
 gsM
-bpP
+mox
 eah
 eah
 eah
@@ -290408,7 +290377,7 @@ jdV
 lyO
 lyO
 gsM
-bpP
+mox
 wcf
 eah
 njh
@@ -389697,7 +389666,7 @@ fZJ
 fZJ
 fZJ
 rZi
-dog
+uUw
 xQf
 dMk
 dMk
@@ -390903,7 +390872,7 @@ fZJ
 fZJ
 fZJ
 rZi
-dog
+uUw
 mqp
 dMk
 dMk
