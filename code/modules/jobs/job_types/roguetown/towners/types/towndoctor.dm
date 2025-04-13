@@ -12,13 +12,13 @@
 /datum/outfit/job/roguetown/towner/doctor/pre_equip(mob/living/carbon/human/H)
 	..()
 	mask = /obj/item/clothing/mask/rogue/spectacles
-	neck = /obj/item/clothing/neck/roguetown/psicross
+	neck = /obj/item/clothing/neck/roguetown/psicross/pestra
 	belt = /obj/item/storage/belt/rogue/leather
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 	beltr = /obj/item/rogueweapon/huntingknife/idagger
 	shoes = /obj/item/clothing/shoes/roguetown/simpleshoes
 	backl = /obj/item/storage/backpack/rogue/backpack
-	backpack_contents = list(/obj/item/storage/fancy/skit = 1, /obj/item/storage/fancy/ifak = 1, /obj/item/reagent_containers/glass/alembic = 1, /obj/item/key/lowdoctor = 1)
+	backpack_contents = list(/obj/item/storage/fancy/skit = 1, /obj/item/storage/fancy/ifak = 1, /obj/item/reagent_containers/glass/alembic = 1, /obj/item/key/lowdoctor = 1, /obj/item/thermometer = 1, )
 	if(H.gender == MALE)
 		armor = /obj/item/clothing/suit/roguetown/armor/leather/vest
 		pants = /obj/item/clothing/under/roguetown/trou
@@ -51,5 +51,5 @@
 		H.mind.AddSpell(new SPELL_DOCHEAL)
 		H.mind.AddSpell(new SPELL_STABLE)
 		H.mind.AddSpell(new SPELL_PURGE)
-		H.mind.AddSpell(new SPELL_DEBRIDE)
+		H.mind.AddSpell(new SPELL_CURE_ROT)
 		H.mind.AddSpell(new SPELL_CPR)
