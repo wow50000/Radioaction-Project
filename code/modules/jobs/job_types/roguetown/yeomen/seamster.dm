@@ -1,6 +1,6 @@
 /datum/job/roguetown/seamster
-	title = "Seamster"
-	f_title = "Seamstress"
+	title = "Village Seamster"
+	f_title = "Village Seamstress"
 	flag = SEAMSTER
 	department_flag = YEOMEN
 	faction = "Station"

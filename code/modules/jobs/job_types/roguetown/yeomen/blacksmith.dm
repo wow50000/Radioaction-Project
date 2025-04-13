@@ -1,10 +1,10 @@
 /datum/job/roguetown/guildsmith
-	title = "Guild Smith"
+	title = "Village Smith"
 	flag = GUILDSMITH
 	department_flag = YEOMEN
 	faction = "Station"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 
 	allowed_races = RACES_TOLERATED_UP
 

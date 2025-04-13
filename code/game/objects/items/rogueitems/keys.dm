@@ -302,6 +302,24 @@
 	icon_state = "rustkey"
 	lockid = "butcher"
 
+/obj/item/key/lowdoctor
+	name = "clinic key"
+	desc = "This key goes to the village clinic."
+	icon_state = "brownkey"
+	lockid = "lowdoctor"
+
+/obj/item/key/lowfisher
+	name = "fisher key"
+	desc = "This key goes to the village fishing hut."
+	icon_state = "brownkey"
+	lockid = "lowfisher"
+
+/obj/item/key/lowsmith
+	name = "smithy key"
+	desc = "This key goes to the village smithy."
+	icon_state = "brownkey"
+	lockid = "lowsmith"
+
 /obj/item/key/church
 	name = "church key"
 	desc = "This bronze key should open almost all doors in the church."

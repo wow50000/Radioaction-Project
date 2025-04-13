@@ -4,6 +4,7 @@
 	allowed_races = RACES_TOLERATED_UP
 	outfit = /datum/outfit/job/roguetown/towner/seamstress
 	category_tags = list(CTAG_TOWNER)
+	maximum_possible_slots = 0
 
 /datum/outfit/job/roguetown/towner/seamstress/pre_equip(mob/living/carbon/human/H)
 	..()
