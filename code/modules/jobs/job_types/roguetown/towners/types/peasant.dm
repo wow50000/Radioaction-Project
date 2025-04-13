@@ -1,11 +1,12 @@
 /datum/subclass/farmer
-	name = "Farmer"
+	name = "Village Farmer"
 	tutorial = "As a Peasent, you are a skilled farmer, able to grow a variety of berrys and apples. \
 	Join the local Soilsmen at their farm, or make your own little orchard."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_TOLERATED_UP
 	outfit = /datum/outfit/job/roguetown/towner/farmer
 	category_tags = list(CTAG_TOWNER)
+	maximum_possible_slots = 3
 
 /datum/outfit/job/roguetown/towner/farmer/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -18,18 +19,18 @@
 	H.mind.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/treatment, 1, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/reading, 0, TRUE)
-	belt = /obj/item/storage/belt/rogue/leather/rope
+	belt = /obj/item/storage/belt/rogue/leather
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/random
 	pants = /obj/item/clothing/under/roguetown/trou
 	head = /obj/item/clothing/head/roguetown/armingcap
 	shoes = /obj/item/clothing/shoes/roguetown/simpleshoes
-	backr = /obj/item/storage/backpack/rogue/satchel
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	backl = /obj/item/storage/backpack/rogue/satchel
 	neck = /obj/item/storage/belt/rogue/pouch/coins/poor
 	armor = /obj/item/clothing/suit/roguetown/armor/workervest
 	mouth = /obj/item/rogueweapon/huntingknife
 	beltr = /obj/item/flint
+	beltl = /obj/item/key/farm
 	backr = /obj/item/rogueweapon/hoe
 	if(H.gender == FEMALE)
 		armor = /obj/item/clothing/suit/roguetown/shirt/dress/gen/random

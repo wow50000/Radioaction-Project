@@ -1,10 +1,10 @@
 /datum/job/roguetown/guildsmith
-	title = "Guild Smith"
+	title = "Village Smith"
 	flag = GUILDSMITH
 	department_flag = YEOMEN
 	faction = "Station"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 
 	allowed_races = RACES_TOLERATED_UP
 
@@ -25,7 +25,7 @@
 	backpack_contents = list(/obj/item/rogueweapon/hammer/iron = 1, /obj/item/rogueweapon/tongs = 1)
 	belt = /obj/item/storage/belt/rogue/leather
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
-	beltr = /obj/item/key/blacksmith
+	beltr = /obj/item/key/lowsmith
 	pants = /obj/item/clothing/under/roguetown/trou
 	if(prob(50))
 		head = /obj/item/clothing/head/roguetown/hatblu

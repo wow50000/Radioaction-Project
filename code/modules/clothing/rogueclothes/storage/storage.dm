@@ -111,7 +111,7 @@
 	icon_state = "leather"
 	item_state = "leather"
 	equip_sound = 'sound/blank.ogg'
-	heldz_items = 4
+	heldz_items = 3
 
 /obj/item/storage/belt/rogue/leather/dropped(mob/living/carbon/human/user)
 	..()

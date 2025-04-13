@@ -304,11 +304,11 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/guildsmith
-	name = "Guild Smith"
+	name = "Village Smith"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/seamster
-	name = "Seamster"
+	name = "Village Seamster"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/alchemist

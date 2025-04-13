@@ -1,8 +1,9 @@
 /datum/subclass/fisher
-	name = "Fisher"
+	name = "Village Fisher"
 	tutorial = "You are a fisherman, with your bag of bait and your fishing rod, you are one of few who can reliably get a stable source of meat around here."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_TOLERATED_UP
+	maximum_possible_slots = 2
 	outfit = /datum/outfit/job/roguetown/towner/fisher
 
 	category_tags = list(CTAG_TOWNER)
@@ -48,8 +49,8 @@
 		belt = /obj/item/storage/belt/rogue/leather
 		backr = /obj/item/fishingrod
 		beltr = /obj/item/cooking/pan
-		beltl = /obj/item/flint
-		backpack_contents = list(/obj/item/natural/worms = 2,/obj/item/rogueweapon/shovel/small=1)
+		beltl = /obj/item/key/lowfisher
+		backpack_contents = list(/obj/item/natural/worms = 2, /obj/item/rogueweapon/shovel/small=1, /obj/item/flint = 1)
 	else
 		armor = /obj/item/clothing/suit/roguetown/shirt/dress/gen/random
 		shoes = /obj/item/clothing/shoes/roguetown/armor/leather

@@ -893,7 +893,6 @@
 	resident_key_amount = 2
 
 /obj/structure/mineral_door/wood/towner/blacksmith
-	resident_subclass = /datum/subclass/blacksmith
 	lockid = "towner_blacksmith"
 
 /obj/structure/mineral_door/wood/towner/cheesemaker
