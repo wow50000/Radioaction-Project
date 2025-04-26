@@ -2,8 +2,8 @@
 	race = /datum/species/human/northern
 
 /datum/species/human/northern
-	name = "Humen"
-	id = "humen"
+	name = "Human"
+	id = "human"
 	desc = "<b>Humen</b><br>\
 	Humen (or Human) are the first race, with man coming before all. \
 	Created of PSYDON's image himself, man has crafted the world with aid of the Ten Children. \
