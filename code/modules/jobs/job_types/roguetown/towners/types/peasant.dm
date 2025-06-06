@@ -20,14 +20,14 @@
 	H.mind.adjust_skillrank(/datum/skill/misc/treatment, 1, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/reading, 0, TRUE)
 	belt = /obj/item/storage/belt/rogue/leather
-	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/random
-	pants = /obj/item/clothing/under/roguetown/trou
+	shirt = null
+	pants = /obj/item/clothing/under/roguetown/tights/stockings/silk
 	head = /obj/item/clothing/head/roguetown/armingcap
-	shoes = /obj/item/clothing/shoes/roguetown/simpleshoes
+	shoes = null
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	backl = /obj/item/storage/backpack/rogue/satchel
-	neck = /obj/item/storage/belt/rogue/pouch/coins/poor
-	armor = /obj/item/clothing/suit/roguetown/armor/workervest
+	neck = /obj/item/clothing/neck/roguetown/collar/leather/cursed
+	armor = null
 	mouth = /obj/item/rogueweapon/huntingknife
 	beltr = /obj/item/flint
 	beltl = /obj/item/key/farm

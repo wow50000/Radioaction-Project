@@ -1,12 +1,12 @@
 /datum/job/roguetown/towner
-	title = "Towner"
+	title = "Slave"
 	flag = VILLAGER
 	department_flag = PEASANTS
 	faction = "Station"
 	total_positions = 75
 	spawn_positions = 75
-	allowed_races = RACES_SHUNNED_UP
-	tutorial = "You've lived in this shithole for effectively all your life. You are not an explorer, nor exactly a warrior in many cases. You're just some average poor bastard who thinks they'll be something someday."
+	allowed_races = RACES_VERY_SHUNNED_UP
+	tutorial = "All town roles are property of their master; you have no rights."
 	subclass_cat_rolls = list(CTAG_TOWNER = 20)
 	outfit = null
 	outfit_female = null
@@ -14,7 +14,7 @@
 	banned_leprosy = FALSE
 	display_order = JDO_VILLAGER
 	give_bank_account = TRUE
-	min_pq = -15
+	min_pq = 0
 	max_pq = null
 	wanderer_examine = FALSE
 	advjob_examine = TRUE

@@ -326,17 +326,7 @@
 	/datum/job/roguetown/butler
 
 #define NOBLE_ROLES \
-	/datum/job/roguetown/prince,\
-	/datum/job/roguetown/councillor,\
-	/datum/job/roguetown/physician,\
-	/datum/job/roguetown/magician,\
-	/datum/job/roguetown/marshal,\
-	/datum/job/roguetown/captain,\
-	/datum/job/roguetown/hand,\
-	/datum/job/roguetown/knight,\
-	/datum/job/roguetown/consort,\
-	/datum/job/roguetown/ruler,\
-	/datum/job/roguetown/steward
+	/datum/job/roguetown/ruler
 
 #define KING_QUEEN_ROLES \
 	/datum/job/roguetown/consort,\
@@ -356,19 +346,19 @@
 
 #define PEASANT_ROLES \
 	/datum/job/roguetown/towner,\
-	/datum/job/roguetown/nightmaiden,\
-	/datum/job/roguetown/beggar,\
-	/datum/job/roguetown/butcher,\
-	/datum/job/roguetown/cook,\
-	/datum/job/roguetown/lunatic,\
-	/datum/job/roguetown/nightman,\
-	/datum/job/roguetown/farmer,\
-	/datum/job/roguetown/orphan,\
-	/datum/job/roguetown/shophand,\
-	/datum/job/roguetown/bapprentice,\
-	/datum/job/roguetown/prisonerb,\
-	/datum/job/roguetown/hostage,\
-	/datum/job/roguetown/prisonerr
+//	/datum/job/roguetown/nightmaiden,\
+//	/datum/job/roguetown/beggar,\
+//	/datum/job/roguetown/butcher,\
+//	/datum/job/roguetown/cook,\
+//	/datum/job/roguetown/lunatic,\
+//	/datum/job/roguetown/nightman,\
+//	/datum/job/roguetown/farmer,\
+//	/datum/job/roguetown/orphan,\
+//	/datum/job/roguetown/shophand,\
+//	/datum/job/roguetown/bapprentice,\
+//	/datum/job/roguetown/prisonerb,\
+//	/datum/job/roguetown/hostage,\
+//	/datum/job/roguetown/prisonerr
 
 #define YEOMEN_ROLES \
 	/datum/job/roguetown/mayor,\
@@ -388,13 +378,13 @@
 	/datum/job/roguetown/grabber,\
 
 #define GARRISON_ROLES \
-	/datum/job/roguetown/bogguardsman,\
-	/datum/job/roguetown/bogmaster,\
-	/datum/job/roguetown/dungeoneer,\
-	/datum/job/roguetown/gatemaster,\
-	/datum/job/roguetown/manorguard,\
-	/datum/job/roguetown/sheriff,\
 	/datum/job/roguetown/citywatch \
+//	/datum/job/roguetown/bogguardsman,\
+//	/datum/job/roguetown/bogmaster,\
+//	/datum/job/roguetown/dungeoneer,\
+//	/datum/job/roguetown/gatemaster,\
+//	/datum/job/roguetown/manorguard,\
+//	/datum/job/roguetown/sheriff,\
 
 #define GOBLIN_ROLES \
 	/datum/job/roguetown/goblinchief,\

@@ -19,12 +19,13 @@
 	H.mind.adjust_skillrank(/datum/skill/labor/fishing, 1, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 	belt = /obj/item/storage/belt/rogue/leather
-	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/random
-	pants = /obj/item/clothing/under/roguetown/trou
+	shirt = null
+	armor = null
+	shoes = null
+	pants = /obj/item/clothing/under/roguetown/tights/stockings/silk
 	head = /obj/item/clothing/head/roguetown/chef
-	shoes = /obj/item/clothing/shoes/roguetown/shortboots
 	backl = /obj/item/storage/backpack/rogue/backpack
-	neck = /obj/item/storage/belt/rogue/pouch/coins/mid
+	neck = /obj/item/clothing/neck/roguetown/collar/leather/cursed
 	beltr = /obj/item/flint
 	beltl = /obj/item/rogueweapon/huntingknife
 	backpack_contents = list(/obj/item/cooking/pan = 1, /obj/item/reagent_containers/food/snacks/rogue/cheddar = 1, /obj/item/reagent_containers/glass/bottle/rogue/milk = 3, /obj/item/natural/cloth = 1, /obj/item/reagent_containers/powder/salt = 4)

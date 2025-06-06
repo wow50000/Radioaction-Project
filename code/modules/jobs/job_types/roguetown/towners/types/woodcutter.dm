@@ -10,7 +10,7 @@
 /datum/outfit/job/roguetown/towner/woodcutter/pre_equip(mob/living/carbon/human/H)
 	..()
 	head = /obj/item/clothing/head/roguetown/roguehood
-	neck = /obj/item/storage/belt/rogue/pouch/coins/poor
+	neck = /obj/item/clothing/neck/roguetown/collar/leather/cursed
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	belt = /obj/item/storage/belt/rogue/leather
 	beltr = /obj/item/rogueweapon/hammer/wood
@@ -18,13 +18,10 @@
 	backr = /obj/item/storage/backpack/rogue/satchel
 	backl = /obj/item/rogueweapon/stoneaxe/woodcut
 	backpack_contents = list(/obj/item/flint = 1, /obj/item/rogueweapon/huntingknife = 1)
-	shoes = /obj/item/clothing/shoes/roguetown/armor/leather
-	if(H.gender == FEMALE)
-		armor = /obj/item/clothing/suit/roguetown/shirt/dress/gen
-	if(H.gender == MALE)
-		armor = /obj/item/clothing/suit/roguetown/armor/workervest
-		pants = /obj/item/clothing/under/roguetown/trou
-		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/random
+	shirt = null
+	armor = null
+	shoes = null
+	pants = /obj/item/clothing/under/roguetown/tights/stockings/silk
 
 	H.mind.adjust_skillrank(/datum/skill/combat/axes, 3, TRUE) // AXE MEN! GIVE ME SPLINTERS!
 	H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)

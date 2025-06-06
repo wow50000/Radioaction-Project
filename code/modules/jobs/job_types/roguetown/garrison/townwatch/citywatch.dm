@@ -7,18 +7,16 @@
 	spawn_positions = 12
 	selection_color = JCOLOR_SOLDIER
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_TOLERATED_UP
+	allowed_races = list(/datum/species/lupian)
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
 	display_order = JDO_TOWNWATCH
 	allowed_patrons = ALL_NON_INHUMEN_PATRONS
 	whitelist_req = TRUE
-	tutorial = "Responsible for the safety of the city and the enforcement of the law, \
-				you walk among the downtrodden, delivering justice and protecting the innocent. \
-				Your loyalty lies in the Bailiff and the city, for neither clergy nor nobility understand the hardships of a commoner."
+	tutorial = "You are the Town Watch. Your duty is to enforce the will of the Base Commander and maintain order. You are not here to protect the innocent, but to ensure obedience and punish defiance."
 
 	outfit = /datum/outfit/job/roguetown/citywatch
 	give_bank_account = 16
-	min_pq = 1
+	min_pq = 0
 	max_pq = null
 	subclass_cat_rolls = list(CTAG_TOWNWATCH = 3)
 

@@ -8,11 +8,11 @@
 
 /datum/outfit/job/roguetown/towner/seamstress/pre_equip(mob/living/carbon/human/H)
 	..()
-	neck = /obj/item/storage/belt/rogue/pouch/coins/poor
-	cloak = /obj/item/clothing/cloak/raincloak
-	shirt = /obj/item/clothing/suit/roguetown/shirt/tunic/white
-	pants = /obj/item/clothing/under/roguetown/tights/random
-	shoes = /obj/item/clothing/shoes/roguetown/shortboots
+	neck = /obj/item/clothing/neck/roguetown/collar/leather/cursed
+	shirt = null
+	armor = null
+	shoes = null
+	pants = /obj/item/clothing/under/roguetown/tights/stockings/silk
 	beltr = /obj/item/rogueweapon/huntingknife/scissors/steel
 	backl = /obj/item/storage/backpack/rogue/satchel
 	backpack_contents = list(/obj/item/natural/cloth = 2, /obj/item/natural/bundle/fibers/full = 1, /obj/item/needle = 1)

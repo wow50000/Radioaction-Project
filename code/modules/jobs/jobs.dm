@@ -61,13 +61,7 @@ GLOBAL_LIST_INIT(nonhuman_positions, list(
 
 // FIRST POSITIONS SUCH AS DUKE OR HEAD BUTLER E.T.C. MUST ALWAYS STAY ON THE TOP OF THE LIST
 GLOBAL_LIST_INIT(noble_positions, list(
-	"King",
-	"Consort",
-	"Heir",
-	"Retinue Captain",
-	"Royal Marshal",
-	"Steward",
-	"Knight",
+	"Base Commander"
 ))
 
 GLOBAL_LIST_INIT(courtier_positions, list(
@@ -79,14 +73,7 @@ GLOBAL_LIST_INIT(courtier_positions, list(
 ))
 
 GLOBAL_LIST_INIT(garrison_positions, list(
-	"Town Sheriff",
-	"Town Watch",
-	"Bog Master",
-	"Gatemaster",
-	"Boggard",
-	"Veteran",
-	"Royal Guard",
-	"Dungeoneer",
+	"Town Watch"
 ))
 
 GLOBAL_LIST_INIT(church_positions, list(
@@ -119,22 +106,7 @@ GLOBAL_LIST_INIT(yeoman_positions, list(
 ))
 
 GLOBAL_LIST_INIT(peasant_positions, list(
-	"Soilson",
-	"Butcher",
-	"Cook",
-	"Miner",
-	"Hunter",
-	"Fisher",
-	"Lumberjack",
-	"Towner",
-	"Nightmaster",
-	"Henchman",
-	"Prostitute",
-	"Docker",
-	"Prisoner",
-	"Beggar",
-	"Lunatic",
-	"Town Seelie",
+	"Slave"
 ))
 
 GLOBAL_LIST_INIT(mercenary_positions, list(
