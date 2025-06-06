@@ -6,7 +6,7 @@
 	total_positions = 75
 	spawn_positions = 75
 	allowed_races = RACES_VERY_SHUNNED_UP
-	tutorial = "All town roles are property of their master; you have no rights."
+	tutorial = "Taken from your previous life, you now serve the fortress."
 	subclass_cat_rolls = list(CTAG_TOWNER = 20)
 	outfit = null
 	outfit_female = null

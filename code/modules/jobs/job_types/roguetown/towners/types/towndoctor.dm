@@ -47,8 +47,3 @@
 		H.change_stat("intelligence", 2)
 		H.change_stat("fortune", 2)
 		H.mind.AddSpell(new SPELL_DIAGNOSE_SECULAR)
-		H.mind.AddSpell(new SPELL_DOCHEAL)
-		H.mind.AddSpell(new SPELL_STABLE)
-		H.mind.AddSpell(new SPELL_PURGE)
-		H.mind.AddSpell(new SPELL_CURE_ROT)
-		H.mind.AddSpell(new SPELL_CPR)
