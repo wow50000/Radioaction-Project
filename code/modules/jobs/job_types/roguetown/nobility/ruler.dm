@@ -2,14 +2,14 @@ GLOBAL_VAR(lordsurname)
 GLOBAL_LIST_EMPTY(lord_titles)
 
 /datum/job/roguetown/ruler
-	title = "King"
+	title = "Base Commander"
 	flag = RULER
 	department_flag = NOBLEMEN
 	faction = "Station"
 	total_positions = 0
 	spawn_positions = 1
 	selection_color = JCOLOR_NOBLE
-	allowed_races = RACES_RESPECTED
+	allowed_races = list(/datum/species/lupian)
 	allowed_patrons = ALL_NON_INHUMEN_PATRONS
 	allowed_sexes = list(MALE)
 
@@ -24,15 +24,17 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	visuals_only_outfit = /datum/outfit/job/roguetown/lord/visuals
 
 	display_order = JDO_LORD
-	tutorial = "Elevated upon your throne through a web of intrigue and political upheaval, you are the absolute authority of these lands and at the center of every plot within it. Every man, woman and child is envious of your position and would replace you in less than a heartbeat: Show them the error in their ways."
+	tutorial = "You are the Base Commander, a sadistic overseer who rules the town with absolute authority. Your word is law, and you take pleasure in the suffering and obedience of your subjects. Show no mercy."
 	whitelist_req = FALSE
-	min_pq = 10
+	min_pq = 0
 	max_pq = null
 	give_bank_account = 1000
 	required = TRUE
 
 	family_blacklisted = TRUE
 	ruler_family = TRUE
+
+	always_show_on_latechoices = TRUE
 
 /datum/job/roguetown/exlord //just used to change the lords title
 	title = "King Emeritus"

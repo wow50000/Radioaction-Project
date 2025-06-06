@@ -1,4 +1,4 @@
-/* /datum/subclass/blacksmith
+/datum/subclass/blacksmith
 	name = "Village Blacksmith"
 	tutorial = "A skilled blacksmith, able to forge useful equipment and items out of metal, \
 	only after building or finding a forge."
@@ -11,20 +11,21 @@
 
 /datum/outfit/job/roguetown/towner/blacksmith/pre_equip(mob/living/carbon/human/H)
 	..()
-	neck = /obj/item/storage/belt/rogue/pouch/coins/poor
+	neck = /obj/item/clothing/neck/roguetown/collar/leather/cursed
+	shirt = null
+	armor = null
+	shoes = null
+	pants = /obj/item/clothing/under/roguetown/tights/stockings/silk
 	gloves = /obj/item/clothing/gloves/roguetown/leather
 	cloak = /obj/item/clothing/cloak/apron/blacksmith
 	belt = /obj/item/storage/belt/rogue/leather
 	beltr = /obj/item/rogueweapon/hammer/iron
 	beltl = /obj/item/rogueweapon/tongs
 	backl = /obj/item/storage/backpack/rogue/satchel
-	pants = /obj/item/clothing/under/roguetown/trou
 	backpack_contents = list(/obj/item/key/lowsmith = 1, /obj/item/rogueore/coal=1, /obj/item/rogueore/iron=1, /obj/item/rogueweapon/huntingknife = 1)
 	if(H.gender == MALE)
-		shirt = /obj/item/clothing/suit/roguetown/shirt/shortshirt
 		shoes = /obj/item/clothing/shoes/roguetown/armor/leather
 	else
-		armor = /obj/item/clothing/suit/roguetown/shirt/dress/gen/random
 		shoes = /obj/item/clothing/shoes/roguetown/shortboots
 
 	if(H.mind)
@@ -48,4 +49,3 @@
 			H.mind.adjust_skillrank(/datum/skill/craft/blacksmithing, 1, TRUE)
 		if(H.age == AGE_OLD)
 			H.mind.adjust_skillrank(/datum/skill/craft/blacksmithing, 2, TRUE)
- */

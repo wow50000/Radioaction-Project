@@ -52,7 +52,7 @@
 	/// The type of a key the resident will get
 	var/resident_key_type
 	/// The required role of the resident
-	var/resident_role
+	var/resident_role = /datum/job/roguetown/towner
 	/// The requied subclass of the resident
 	var/resident_subclass
 
@@ -879,7 +879,7 @@
 	user.visible_message(span_warning("[user] kicks [src]!"))
 	return
 
-/obj/structure/mineral_door/wood/towner
+/obj/structure/mineral_door/wood/slave
 	locked = TRUE
 	keylock = TRUE
 	grant_resident_key = TRUE
@@ -887,41 +887,34 @@
 	resident_role = /datum/job/roguetown/towner
 	lockid = null //Will be randomized
 
-/obj/structure/mineral_door/wood/towner/generic
+/obj/structure/mineral_door/wood/slave/generic
 
-/obj/structure/mineral_door/wood/towner/generic/two_keys
+/obj/structure/mineral_door/wood/slave/generic/two_keys
 	resident_key_amount = 2
 
-/obj/structure/mineral_door/wood/towner/blacksmith
-	lockid = "towner_blacksmith"
+/obj/structure/mineral_door/wood/slave/blacksmith
+	lockid = "slave_blacksmith"
 
-/obj/structure/mineral_door/wood/towner/cheesemaker
-	resident_subclass = /datum/subclass/cheesemaker
-	lockid = "towner_cheesemaker"
+/obj/structure/mineral_door/wood/slave/cheesemaker
+	lockid = "slave_cheesemaker"
 
-/obj/structure/mineral_door/wood/towner/hunter
-	resident_subclass = /datum/subclass/hunter
-	lockid = "towner_hunter"
+/obj/structure/mineral_door/wood/slave/hunter
+	lockid = "slave_hunter"
 
-/obj/structure/mineral_door/wood/towner/miner
-	resident_subclass = /datum/subclass/miner
-	lockid = "towner_miner"
+/obj/structure/mineral_door/wood/slave/miner
+	lockid = "slave_miner"
 
-/obj/structure/mineral_door/wood/towner/farmer
-	resident_subclass = /datum/subclass/farmer
-	lockid = "towner_farmer"
+/obj/structure/mineral_door/wood/slave/farmer
+	lockid = "slave_farmer"
 
-/obj/structure/mineral_door/wood/towner/towndoctor
-	resident_subclass = /datum/subclass/towndoctor
-	lockid = "towner_towndoctor"
+/obj/structure/mineral_door/wood/slave/towndoctor
+	lockid = "slave_towndoctor"
 
-/obj/structure/mineral_door/wood/towner/woodcutter
-	resident_subclass = /datum/subclass/woodcutter
-	lockid = "towner_woodcutter"
+/obj/structure/mineral_door/wood/slave/woodcutter
+	lockid = "slave_woodcutter"
 
-/obj/structure/mineral_door/wood/towner/fisher
-	resident_subclass = /datum/subclass/fisher
-	lockid = "towner_fisher"
+/obj/structure/mineral_door/wood/slave/fisher
+	lockid = "slave_fisher"
 
 /obj/structure/mineral_door/wood/deadbolt/shutter
 	name = "serving hatch"

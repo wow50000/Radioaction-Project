@@ -10,11 +10,11 @@
 
 /datum/outfit/job/roguetown/towner/hunter/pre_equip(mob/living/carbon/human/H)
 	..()
-	pants = /obj/item/clothing/under/roguetown/tights/random
-	shirt = /obj/item/clothing/suit/roguetown/shirt/shortshirt/random
-	shoes = /obj/item/clothing/shoes/roguetown/armor/leather
-	neck = /obj/item/storage/belt/rogue/pouch/coins/poor
-	cloak = /obj/item/clothing/cloak/raincloak/furcloak/brown
+	neck = /obj/item/clothing/neck/roguetown/collar/leather/cursed
+	shirt = null
+	armor = null
+	shoes = null
+	pants = /obj/item/clothing/under/roguetown/tights/stockings/silk
 	backr = /obj/item/storage/backpack/rogue/satchel
 	r_hand = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
 	belt = /obj/item/storage/belt/rogue/leather

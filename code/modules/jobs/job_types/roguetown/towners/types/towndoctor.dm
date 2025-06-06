@@ -12,21 +12,20 @@
 /datum/outfit/job/roguetown/towner/doctor/pre_equip(mob/living/carbon/human/H)
 	..()
 	mask = /obj/item/clothing/mask/rogue/spectacles
-	neck = /obj/item/clothing/neck/roguetown/psicross/pestra
+	neck = /obj/item/clothing/neck/roguetown/collar/leather/cursed
 	belt = /obj/item/storage/belt/rogue/leather
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 	beltr = /obj/item/rogueweapon/huntingknife/idagger
-	shoes = /obj/item/clothing/shoes/roguetown/simpleshoes
+	shoes = null
 	backl = /obj/item/storage/backpack/rogue/backpack
 	backpack_contents = list(/obj/item/storage/fancy/skit = 1, /obj/item/storage/fancy/ifak = 1, /obj/item/reagent_containers/glass/alembic = 1, /obj/item/key/lowdoctor = 1, /obj/item/thermometer = 1, )
+	armor = null
+	shirt = null
+	pants = /obj/item/clothing/under/roguetown/tights/stockings/silk
+
 	if(H.gender == MALE)
-		armor = /obj/item/clothing/suit/roguetown/armor/leather/vest
-		pants = /obj/item/clothing/under/roguetown/trou
-		shirt = /obj/item/clothing/suit/roguetown/shirt/grenzelhoft
 		head = /obj/item/clothing/head/roguetown/nightman
 	else
-		armor = /obj/item/clothing/suit/roguetown/shirt/dress/silkdress
-		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
 		head = /obj/item/clothing/head/roguetown/armingcap
 
 	if(H.mind)
@@ -48,8 +47,3 @@
 		H.change_stat("intelligence", 2)
 		H.change_stat("fortune", 2)
 		H.mind.AddSpell(new SPELL_DIAGNOSE_SECULAR)
-		H.mind.AddSpell(new SPELL_DOCHEAL)
-		H.mind.AddSpell(new SPELL_STABLE)
-		H.mind.AddSpell(new SPELL_PURGE)
-		H.mind.AddSpell(new SPELL_CURE_ROT)
-		H.mind.AddSpell(new SPELL_CPR)

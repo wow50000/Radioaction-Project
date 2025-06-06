@@ -10,10 +10,12 @@
 
 /datum/outfit/job/roguetown/towner/miner/pre_equip(mob/living/carbon/human/H)
 	..()
-	head = /obj/item/clothing/head/roguetown/armingcap
-	shoes = /obj/item/clothing/shoes/roguetown/armor/leather
+	neck = /obj/item/clothing/neck/roguetown/collar/leather/cursed
+	shirt = null
+	armor = null
+	shoes = null
+	pants = /obj/item/clothing/under/roguetown/tights/stockings/silk
 	belt = /obj/item/storage/belt/rogue/leather
-	neck = /obj/item/storage/belt/rogue/pouch/coins/poor
 	beltl = /obj/item/rogueweapon/pick
 	beltr = /obj/item/flashlight/flare/torch/lantern
 	backl = /obj/item/storage/backpack/rogue/backpack
