@@ -34,6 +34,8 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	family_blacklisted = TRUE
 	ruler_family = TRUE
 
+	always_show_on_latechoices = TRUE
+
 /datum/job/roguetown/exlord //just used to change the lords title
 	title = "King Emeritus"
 	f_title = "Queen Emeritus"

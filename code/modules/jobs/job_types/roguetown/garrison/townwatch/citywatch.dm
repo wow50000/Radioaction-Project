@@ -13,6 +13,7 @@
 	allowed_patrons = ALL_NON_INHUMEN_PATRONS
 	whitelist_req = TRUE
 	tutorial = "You are the Town Watch. Your duty is to enforce the will of the Base Commander and maintain order. You are not here to protect the innocent, but to ensure obedience and punish defiance."
+	always_show_on_latechoices = TRUE
 
 	outfit = /datum/outfit/job/roguetown/citywatch
 	give_bank_account = 16
