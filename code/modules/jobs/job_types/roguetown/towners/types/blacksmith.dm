@@ -1,4 +1,4 @@
-/* /datum/subclass/blacksmith
+/datum/subclass/blacksmith
 	name = "Village Blacksmith"
 	tutorial = "A skilled blacksmith, able to forge useful equipment and items out of metal, \
 	only after building or finding a forge."
@@ -49,4 +49,3 @@
 			H.mind.adjust_skillrank(/datum/skill/craft/blacksmithing, 1, TRUE)
 		if(H.age == AGE_OLD)
 			H.mind.adjust_skillrank(/datum/skill/craft/blacksmithing, 2, TRUE)
- */
