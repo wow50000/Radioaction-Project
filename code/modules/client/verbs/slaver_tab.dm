@@ -86,3 +86,4 @@
 	var/mob/dead/observer/S = usr.scry_ghost()
 	if(S)
 		S.ManualFollow(target)
+		addtimer(CALLBACK(S, TYPE_PROC_REF(/mob/dead/observer, reenter_corpse)), 300) // End scrying after 30 seconds

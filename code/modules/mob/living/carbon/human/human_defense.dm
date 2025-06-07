@@ -222,6 +222,33 @@
 	if(!I || !user)
 		return 0
 
+	// --- START DIAGNOSTIC PRINTS AND SHOCK CONDITION FOR ITEM ATTACKS ---
+	if (istype(user, /mob/living/carbon/human)) {
+		var/is_slave_attacker = HAS_TRAIT(user, TRAIT_SLAVE)
+		var/is_slaver_target = HAS_TRAIT(src, TRAIT_SLAVER)
+		var/is_commander_or_watch = (mind && mind.assigned_role in list("Base Commander", "Town Watch"))
+		var/is_non_harmful_intent = (user.used_intent.type in list(/datum/intent/unarmed/help, /datum/intent/unarmed/grab, /datum/intent/unarmed/shove, /datum/intent/use, /datum/intent/jump, /datum/intent/steal, /datum/intent/give, /datum/intent/spell))
+		var/is_harmful_intent = !is_non_harmful_intent
+
+		to_chat(src, "DEBUG (Item): Attacked by human. Attacker Slave Trait: [is_slave_attacker]")
+		to_chat(src, "DEBUG (Item): Target Slaver Trait: [is_slaver_target]")
+		to_chat(src, "DEBUG (Item): Target Slaver Role (Commander/Town Watch): [is_commander_or_watch]")
+		to_chat(src, "DEBUG (Item): Attacker Intent Type: [user.used_intent.type]")
+		to_chat(src, "DEBUG (Item): Is Harmful Intent: [is_harmful_intent]")
+
+		// Check if attacker is a slave and target is a commander/watch with harm intent
+		if(is_slave_attacker && (is_slaver_target || is_commander_or_watch) && is_harmful_intent) {
+			to_chat(src, "DEBUG (Item): Slave Shock Condition MET.")
+			// Shock the slave
+			user.electrocute_act(100, src, 1, SHOCK_ILLUSION)
+			to_chat(user, span_danger("The cursed collar shocks you for attacking your master!"))
+			return 0 // Stop the item attack if shocked
+		} else {
+			to_chat(src, "DEBUG (Item): Slave Shock Condition NOT MET.")
+		}
+	}
+	// --- END DIAGNOSTIC PRINTS AND SHOCK CONDITION FOR ITEM ATTACKS ---
+
 	var/obj/item/bodypart/affecting
 	var/useder = user.zone_selected
 	if(!lying_attack_check(user,I))
