@@ -202,7 +202,7 @@ SUBSYSTEM_DEF(ticker)
 				tipped = TRUE
 
 			if(timeLeft <= 0)
-				if(!checkreqroles()) // Unable to find a King.
+				if(!checkreqroles()) // Unable to find a Base Commander.
 					current_state = GAME_STATE_PREGAME
 					start_at = world.time + 60 SECONDS
 					timeLeft = null
@@ -238,7 +238,7 @@ SUBSYSTEM_DEF(ticker)
 
 /datum/controller/subsystem/ticker/proc/checkreqroles()
 	var/list/readied_jobs = list()
-	var/list/required_jobs = list("King", "Merchant")
+	var/list/required_jobs = list("Base Commander")
 
 	// Start now server button
 	if(start_immediately)
@@ -258,8 +258,8 @@ SUBSYSTEM_DEF(ticker)
 					readied_jobs.Add(V)
 
 #ifndef FASTLOAD
-	if(!("King" && "Merchant" in readied_jobs))
-		var/list/stuffy = list("Is there both a King and a Merchant?", "Make sure you have both a Merchant and a King.")
+	if(!("Base Commander" in readied_jobs))
+		var/list/stuffy = list("Is there a Base Commander?", "Make sure you have a Base Commander.")
 		to_chat(world, span_purple("[pick(stuffy)]"))
 		return FALSE
 #endif
