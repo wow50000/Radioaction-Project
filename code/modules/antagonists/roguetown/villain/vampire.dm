@@ -27,6 +27,7 @@
 	var/cache_skin
 	var/cache_eyes
 	var/cache_hair
+	var/cache_eye_color
 	var/obj/effect/proc_holder/spell/targeted/shapeshift/bat/batform //attached to the datum itself to avoid cloning memes, and other duplicates
 
 /datum/antagonist/vampire/examine_friendorfoe(datum/antagonist/examined_datum,mob/examiner,mob/examined)
@@ -75,19 +76,24 @@
 	/datum/rmb_intent/riposte,\
 	/datum/rmb_intent/weak)
 	owner.current.cmode_music = 'sound/music/combat_vamp2.ogg'
-	var/obj/item/organ/eyes/eyes = owner.current.getorganslot(ORGAN_SLOT_EYES)
-	if(eyes)
-		eyes.Remove(owner.current,1)
-		QDEL_NULL(eyes)
-	eyes = new /obj/item/organ/eyes/night_vision/zombie
-	eyes.Insert(owner.current)
+	
+	// Store original appearance
+	if(ishuman(owner.current))
+		var/mob/living/carbon/human/H = owner.current
+		cache_skin = H.skin_tone
+		cache_hair = H.hair_color
+		cache_eye_color = H.eye_color
+		var/obj/item/organ/eyes/eyes = H.getorganslot(ORGAN_SLOT_EYES)
+		if(eyes)
+			cache_eyes = eyes.type
+			eyes.Remove(H,1)
+			QDEL_NULL(eyes)
+		eyes = new /obj/item/organ/eyes/night_vision/zombie
+		eyes.Insert(H)
+	
 	if(increase_votepwr)
 		forge_vampire_objectives()
 	finalize_vampire()
-//	if(!is_lesser)
-//		if(isnull(batform))
-//			batform = new
-//			owner.current.AddSpell(batform)
 	owner.current.verbs |= /mob/living/carbon/human/proc/disguise_button
 	owner.current.AddSpell(new /obj/effect/proc_holder/spell/targeted/vamp_rejuv)
 	
@@ -195,7 +201,7 @@
 		VD.last_transform = world.time
 		vampire_disguise(VD)
 
-/mob/living/carbon/human/proc/vampire_disguise(datum/antagonist/vampirelord/VD)
+/mob/living/carbon/human/proc/vampire_disguise(datum/antagonist/vampire/VD)
 	if(!VD)
 		return
 	VD.disguised = TRUE
@@ -206,18 +212,20 @@
 	if(eyes)
 		eyes.Remove(src,1)
 		QDEL_NULL(eyes)
-	eyes = new VD.cache_eyes
-	eyes.Insert(src)
-	set_eye_color(src, VD.cache_eye_color, VD.cache_eye_color)
+	if(VD.cache_eyes)
+		eyes = new VD.cache_eyes
+		eyes.Insert(src)
+		set_eye_color(src, VD.cache_eye_color, VD.cache_eye_color)
 	update_body()
 	update_hair()
 	update_body_parts(redraw = TRUE)
-	eyes.update_accessory_colors()
+	if(eyes)
+		eyes.update_accessory_colors()
 	mob_biotypes &= ~MOB_UNDEAD
 	faction = list()
 	to_chat(src, span_notice("My true form is hidden."))
 
-/mob/living/carbon/human/proc/vampire_undisguise(datum/antagonist/vampirelord/VD)
+/mob/living/carbon/human/proc/vampire_undisguise(datum/antagonist/vampire/VD)
 	if(!VD)
 		return
 	VD.disguised = FALSE
