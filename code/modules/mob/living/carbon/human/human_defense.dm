@@ -248,7 +248,7 @@
 	return dna.species.spec_attacked_by(I, user, affecting, used_intent, src, useder)
 
 /mob/living/carbon/human/attack_hand(mob/user)
-	if(..())\t//to allow surgery to return properly.
+	if(..())
 		return
 	retaliate(user)
 	if(ishuman(user))
