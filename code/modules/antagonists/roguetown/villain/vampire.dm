@@ -176,7 +176,9 @@
 	set name = "Disguise"
 	set category = "VAMPIRE"
 
-	var/datum/antagonist/vampirelord/VD = mind.has_antag_datum(/datum/antagonist/vampirelord)
+	var/datum/antagonist/vampire/VD = mind.has_antag_datum(/datum/antagonist/vampire)
+	if(!VD)
+		VD = mind.has_antag_datum(/datum/antagonist/vampirelord)
 	if(!VD)
 		return
 	if(world.time < VD.last_transform + 30 SECONDS)
@@ -242,7 +244,9 @@
 	set name = "Night Muscles"
 	set category = "VAMPIRE"
 
-	var/datum/antagonist/vampirelord/VD = mind.has_antag_datum(/datum/antagonist/vampirelord)
+	var/datum/antagonist/vampire/VD = mind.has_antag_datum(/datum/antagonist/vampire)
+	if(!VD)
+		VD = mind.has_antag_datum(/datum/antagonist/vampirelord)
 	if(!VD)
 		return
 	if(VD.disguised)
@@ -274,7 +278,9 @@
 	set name = "Quickening"
 	set category = "VAMPIRE"
 
-	var/datum/antagonist/vampirelord/VD = mind.has_antag_datum(/datum/antagonist/vampirelord)
+	var/datum/antagonist/vampire/VD = mind.has_antag_datum(/datum/antagonist/vampire)
+	if(!VD)
+		VD = mind.has_antag_datum(/datum/antagonist/vampirelord)
 	if(!VD)
 		return
 	if(VD.disguised)
@@ -311,6 +317,8 @@
 
 	var/datum/antagonist/vampire/VD = mind.has_antag_datum(/datum/antagonist/vampire)
 	if(!VD)
+		VD = mind.has_antag_datum(/datum/antagonist/vampirelord)
+	if(!VD)
 		return
 	if(VD.disguised)
 		to_chat(src, span_warning("My curse is hidden."))
@@ -321,7 +329,7 @@
 	if(has_status_effect(/datum/status_effect/buff/fortitude))
 		to_chat(src, span_warning("Already active."))
 		return
-	VD.vitae -= 200
+	VD.handle_vitae(-200)
 	apply_status_effect(/datum/status_effect/buff/fortitude)
 	to_chat(src, span_greentext("! ARMOR OF DARKNESS !"))
 	src.playsound_local(get_turf(src), 'sound/misc/vampirespell.ogg', 100, FALSE, pressure_affected = FALSE)
@@ -410,3 +418,17 @@
 		client.screen += H
 		H.Fade()
 		addtimer(CALLBACK(H, TYPE_PROC_REF(/atom/movable/screen/gameover, Fade), TRUE), 100)
+
+/datum/antagonist/vampire/proc/handle_vitae(change)
+	vitae = CLAMP(vitae + change, 0, 1666)
+	if(vitae <= 20)
+		if(!starved)
+			to_chat(owner.current, span_userdanger("I starve, my power dwindles! I am so weak!"))
+			starved = TRUE
+			for(var/S in MOBSTATS)
+				owner.current.change_stat(S, -5)
+	else
+		if(starved)
+			starved = FALSE
+			for(var/S in MOBSTATS)
+				owner.current.change_stat(S, 5)

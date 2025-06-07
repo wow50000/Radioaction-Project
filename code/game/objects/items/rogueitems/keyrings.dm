@@ -112,6 +112,11 @@
 /obj/item/storage/keyring/councillor
 	keys = list(/obj/item/key/councillor_rooms, /obj/item/key/keep_barracks, /obj/item/key/keep_dungeon,  /obj/item/key/manor)
 
+/obj/item/storage/keyring/foreign_noble
+	name = "foreign noble keyring"
+	desc = "A keyring containing keys to various important locations."
+	keys = list(/obj/item/key/foreign_noble_rooms, /obj/item/key/keep_barracks, /obj/item/key/keep_dungeon, /obj/item/key/manor)
+
 /obj/item/storage/keyring/bog_guard
 	keys = list(/obj/item/key/bog_gatehouse, /obj/item/key/bog_barracks, /obj/item/key/bog_dungeon, /obj/item/key/bog_armory)
 

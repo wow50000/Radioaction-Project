@@ -1,30 +1,28 @@
-/datum/job/roguetown/councillor
-	title = "Councillor"
-	flag = COUNCILLOR
+/datum/job/roguetown/foreign_noble
+	title = "Foreign Noble"
+	flag = FOREIGN_NOBLE
 	department_flag = NOBLEMEN
 	faction = "Station"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 10
+	spawn_positions = 10
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
-	allowed_races = RACES_RESPECTED
 	allowed_sexes = list(MALE, FEMALE)
-	display_order = JDO_COUNCILLOR
+	display_order = JDO_FOREIGN_NOBLE
 	allowed_patrons = ALL_NON_INHUMEN_PATRONS
-	tutorial = "You may have inherited this role, bought your way into it, or were appointed by the Duke themselves; \
-			Regardless of origin, you now serve as an assistant, planner, and juror for the Duke. \
-			You help him oversee the taxation, construction, and planning of new laws. \
-			You only answer to the Duke, Duchess, Heir, or Heiress. However, your main focus is to assist the Duke with their duties and whatever you are assigned."
+	tutorial = "You've cruelly paid to come here to exploit the local slaves."
 	whitelist_req = FALSE
-	outfit = /datum/outfit/job/roguetown/councillor
+	outfit = /datum/outfit/job/roguetown/foreign_noble
 
 	give_bank_account = 40
-	min_pq = 2
+	min_pq = 0
 	max_pq = null
 
-/datum/job/roguetown/councillor/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
+/datum/job/roguetown/foreign_noble/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
 	..()
 	if(ishuman(L))
 		var/mob/living/carbon/human/H = L
+		to_chat(H, span_notice("Setting up your noble appearance..."))
+		
 		var/index = findtext(H.real_name, " ")
 		if(index)
 			index = copytext(H.real_name, 1,index)
@@ -37,8 +35,67 @@
 			honorary = "Lady"
 		H.real_name = "[honorary] [prev_real_name]"
 		H.name = "[honorary] [prev_name]"
+		
+		// Schedule the choices to happen after a short delay
+		addtimer(CALLBACK(src, PROC_REF(present_noble_choices), H), 1 SECONDS)
 
-/datum/outfit/job/roguetown/councillor/pre_equip(mob/living/carbon/human/H)
+/datum/job/roguetown/foreign_noble/proc/present_noble_choices(mob/living/carbon/human/H)
+	if(!H || !ishuman(H))
+		return
+		
+	// Let them choose a mask
+	to_chat(H, span_notice("Please choose your mask..."))
+	var/list/mask_choices = list(
+		"Steel Mask" = /obj/item/clothing/mask/rogue/facemask/steel,
+		"Gold Mask" = /obj/item/clothing/mask/rogue/facemask/goldmask,
+		"Psydonian Mask" = /obj/item/clothing/mask/rogue/facemask/psydonmask,
+		"Eoran Mask" = /obj/item/clothing/head/roguetown/eoramask,
+		"Death Mask" = /obj/item/clothing/head/roguetown/necramask
+	)
+	
+	var/mask_choice = input(H, "Choose your mask", "Mask Selection") as null|anything in mask_choices
+	if(mask_choice)
+		var/mask_path = mask_choices[mask_choice]
+		var/obj/item/clothing/mask/new_mask = new mask_path(H)
+		if(H.equip_to_slot_or_del(new_mask, SLOT_WEAR_MASK))
+			to_chat(H, span_notice("You equip the [mask_choice]."))
+		else
+			to_chat(H, span_warning("Failed to equip the [mask_choice]!"))
+	else
+		to_chat(H, span_warning("No mask was selected!"))
+	
+	// Let them choose between mortal and vampire
+	to_chat(H, span_notice("Now choose your nature..."))
+	var/moral_choice = alert(H, "Choose your nature", "Nature Selection", "Mortal", "Vampire")
+	if(moral_choice == "Vampire")
+		to_chat(H, span_notice("You have chosen to become a vampire..."))
+		var/datum/antagonist/vampire/new_antag = new /datum/antagonist/vampire()
+		if(H.mind)
+			H.mind.add_antag_datum(new_antag)
+			// Add vampire traits
+			ADD_TRAIT(H, TRAIT_STRONGBITE, TRAIT_GENERIC)
+			ADD_TRAIT(H, TRAIT_NOSTAMINA, TRAIT_GENERIC)
+			ADD_TRAIT(H, TRAIT_NOHUNGER, TRAIT_GENERIC)
+			ADD_TRAIT(H, TRAIT_NOBREATH, TRAIT_GENERIC)
+			ADD_TRAIT(H, TRAIT_NOPAIN, TRAIT_GENERIC)
+			ADD_TRAIT(H, TRAIT_TOXIMMUNE, TRAIT_GENERIC)
+			ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
+			ADD_TRAIT(H, TRAIT_LIMPDICK, TRAIT_GENERIC)
+			ADD_TRAIT(H, TRAIT_SPECIALUNDEAD, TRAIT_GENERIC)
+			// Give them night vision eyes
+			var/obj/item/organ/eyes/eyes = H.getorganslot(ORGAN_SLOT_EYES)
+			if(eyes)
+				eyes.Remove(H,1)
+				QDEL_NULL(eyes)
+			eyes = new /obj/item/organ/eyes/night_vision/zombie
+			eyes.Insert(H)
+			to_chat(H, span_notice("You are now a vampire!"))
+		else
+			to_chat(H, span_warning("Failed to make you a vampire - no mind found!"))
+	else
+		to_chat(H, span_notice("You remain mortal."))
+
+/datum/outfit/job/roguetown/foreign_noble/pre_equip(mob/living/carbon/human/H)
 	..()
 	armor = /obj/item/clothing/suit/roguetown/armor/councillor
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
@@ -48,7 +105,7 @@
 	belt = /obj/item/storage/belt/rogue/leather/black
 	beltl = /obj/item/storage/keyring/councillor
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/rich
-	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel = 1)
+	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel = 1, /obj/item/leash/leather = 1)
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)

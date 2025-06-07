@@ -1,4 +1,3 @@
-
 #define ENGSEC			(1<<0)
 
 #define CAPTAIN			(1<<0)
@@ -210,6 +209,8 @@
 #define BANDIT		(1<<2)
 #define BANDIT_VET		(1<<3)
 
+#define FOREIGN_NOBLE	(1<<4)
+
 #define JCOLOR_NOBLE "#aa83b9"
 #define JCOLOR_COURTIER "#81adc8"
 #define JCOLOR_CHURCH "#c0ba8d"
@@ -315,6 +316,7 @@
 #define JDO_BANDIT 42.3
 #define JDO_BANDIT_VET 42.4
 
+#define JDO_FOREIGN_NOBLE 4.1
 
 #define MANOR_ROLES \
 	/datum/job/roguetown/jester,\
@@ -399,3 +401,5 @@
 	/datum/job/roguetown/migrant,\
 	/datum/job/roguetown/bandit_vet,\
 	/datum/job/roguetown/bandit \
+
+#define CTAG_FOREIGN_NOBLE (1<<24)

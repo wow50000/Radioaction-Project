@@ -37,7 +37,7 @@
 	beltl = /obj/item/rogueweapon/mace/cudgel
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	backr = /obj/item/storage/backpack/rogue/satchel/black
-	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger = 1, /obj/item/rope/chain = 1, /obj/item/storage/keyring/town_watch = 1, /obj/item/reagent_containers/glass/bottle/rogue/lesserhealthpot = 1)
+	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger = 1, /obj/item/rope/chain = 1, /obj/item/storage/keyring/town_watch = 1, /obj/item/reagent_containers/glass/bottle/rogue/lesserhealthpot = 1, /obj/item/leash = 1)
 	if(H.mind)
 		assign_skills(H)
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
