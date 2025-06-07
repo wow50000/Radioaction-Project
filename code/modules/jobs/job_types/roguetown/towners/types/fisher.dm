@@ -1,12 +1,11 @@
 /datum/subclass/fisher
-	name = "Village Fisher"
+	name = "Fisher"
 	tutorial = "You are a fisherman, with your bag of bait and your fishing rod, you are one of few who can reliably get a stable source of meat around here."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_TOLERATED_UP
 	maximum_possible_slots = 2
 	outfit = /datum/outfit/job/roguetown/towner/fisher
 
-	category_tags = list(CTAG_TOWNER)
+	category_tags = list(CTAG_SLAVE)
 
 /datum/outfit/job/roguetown/towner/fisher/pre_equip(mob/living/carbon/human/H)
 	..()

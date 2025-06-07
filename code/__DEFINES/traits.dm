@@ -47,6 +47,8 @@
 #define TRAIT_COMICSANS "Annoying Face"
 #define TRAIT_WATERBREATHING "Water Breathing"
 #define TRAIT_DARKLING "Darkling"
+#define TRAIT_SLAVER "Slaver"
+#define TRAIT_SLAVE "Slave"
 
 ///trait determines if this mob can breed given by /datum/component/breeding
 #define TRAIT_MOB_BREEDER "mob_breeder"
@@ -183,6 +185,8 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_DEATHBYSNUSNU = "With strong intent, I can shatter pelvises.", // Ham change
 	TRAIT_POISONBITE = "My bites inject venom into my target.", // Ham change
 	TRAIT_WANTED = span_info("You are wanted in this kingdom, if someone sees your face they might run away or attack you."),
+	TRAIT_SLAVE = span_warning("I am a slave, bound by a cursed collar."),
+	TRAIT_SLAVER = span_warning("I am a slaver, able to control slaves."),
 ))
 
 // trait accessor defines

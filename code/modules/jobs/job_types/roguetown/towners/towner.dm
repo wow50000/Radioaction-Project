@@ -7,7 +7,7 @@
 	spawn_positions = 75
 	allowed_races = RACES_VERY_SHUNNED_UP
 	tutorial = "Taken from your previous life, you now serve the fortress."
-	subclass_cat_rolls = list(CTAG_TOWNER = 20)
+	subclass_cat_rolls = list(CTAG_SLAVE = 20)
 	outfit = null
 	outfit_female = null
 	bypass_lastclass = TRUE
@@ -30,3 +30,4 @@
 		H.advsetup = 1
 		H.invisibility = INVISIBILITY_MAXIMUM
 		H.become_blind("advsetup")
+		ADD_TRAIT(H, TRAIT_SLAVE, TRAIT_GENERIC)

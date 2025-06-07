@@ -416,7 +416,7 @@ Works together with spawning an observer, noted above.
 		ghost.ghostize_time = world.time
 		SStgui.on_transfer(src, ghost) // Transfer NanoUIs.
 		ghost.can_reenter_corpse = TRUE
-		ghost.key = key
+		ghost.key = key // Transfer key to ghost
 		return ghost
 
 /*

@@ -262,6 +262,7 @@
 	H.cmode_music = 'sound/music/combat_gronn.ogg'
 
 	ADD_TRAIT(H, TRAIT_GOODLOVER, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_SLAVE, TRAIT_GENERIC)
 
 	if(!H.has_language(/datum/language/orcish))
 		H.grant_language(/datum/language/orcish)

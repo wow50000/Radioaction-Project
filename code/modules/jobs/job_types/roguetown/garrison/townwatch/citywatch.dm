@@ -42,6 +42,7 @@
 		assign_skills(H)
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_BOGVULNERABLE, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_SLAVER, TRAIT_GENERIC)
 
 /datum/job/roguetown/citywatch/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
 	..()
