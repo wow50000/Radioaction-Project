@@ -258,7 +258,7 @@
 	if(has_status_effect(/datum/status_effect/buff/bloodstrength))
 		to_chat(src, span_warning("Already active."))
 		return
-	VD.handle_vitae(-500)
+	VD.vitae -= 500
 	apply_status_effect(/datum/status_effect/buff/bloodstrength)
 	to_chat(src, span_greentext("! NIGHT MUSCLES !"))
 	src.playsound_local(get_turf(src), 'sound/misc/vampirespell.ogg', 100, FALSE, pressure_affected = FALSE)
@@ -292,7 +292,7 @@
 	if(has_status_effect(/datum/status_effect/buff/celerity))
 		to_chat(src, span_warning("Already active."))
 		return
-	VD.handle_vitae(-500)
+	VD.vitae -= 500
 	apply_status_effect(/datum/status_effect/buff/celerity)
 	to_chat(src, span_greentext("! QUICKENING !"))
 	src.playsound_local(get_turf(src), 'sound/misc/vampirespell.ogg', 100, FALSE, pressure_affected = FALSE)
@@ -329,7 +329,7 @@
 	if(has_status_effect(/datum/status_effect/buff/fortitude))
 		to_chat(src, span_warning("Already active."))
 		return
-	VD.handle_vitae(-200)
+	VD.vitae -= 200
 	apply_status_effect(/datum/status_effect/buff/fortitude)
 	to_chat(src, span_greentext("! ARMOR OF DARKNESS !"))
 	src.playsound_local(get_turf(src), 'sound/misc/vampirespell.ogg', 100, FALSE, pressure_affected = FALSE)
@@ -422,13 +422,4 @@
 /datum/antagonist/vampire/proc/handle_vitae(change)
 	vitae = CLAMP(vitae + change, 0, 1666)
 	if(vitae <= 20)
-		if(!starved)
-			to_chat(owner.current, span_userdanger("I starve, my power dwindles! I am so weak!"))
-			starved = TRUE
-			for(var/S in MOBSTATS)
-				owner.current.change_stat(S, -5)
-	else
-		if(starved)
-			starved = FALSE
-			for(var/S in MOBSTATS)
-				owner.current.change_stat(S, 5)
+		to_chat(owner.current, span_userdanger("I starve, my power dwindles! I am so weak!"))
