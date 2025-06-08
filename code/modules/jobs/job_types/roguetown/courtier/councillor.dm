@@ -9,7 +9,7 @@
 	allowed_sexes = list(MALE, FEMALE)
 	display_order = JDO_FOREIGN_NOBLE
 	allowed_patrons = ALL_NON_INHUMEN_PATRONS
-	tutorial = "You've cruelly paid to come here to exploit the local slaves."
+	tutorial = "You've cruelly paid good money to use the services here."
 	whitelist_req = FALSE
 	outfit = /datum/outfit/job/roguetown/foreign_noble
 
