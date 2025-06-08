@@ -1,4 +1,3 @@
-
 GLOBAL_LIST_INIT(character_flaws, list(
 	"Alcoholic"=/datum/charflaw/addiction/alcoholic,
 	"Smoker"=/datum/charflaw/addiction/smoker,
@@ -13,8 +12,9 @@ GLOBAL_LIST_INIT(character_flaws, list(
 	"Wood Arm (R)"=/datum/charflaw/limbloss/arm_r,
 	"Wood Arm (L)"=/datum/charflaw/limbloss/arm_l,
 	"Hunted"=/datum/charflaw/dead_or_alive,
+	"Love-Fiend"=/datum/charflaw/addiction/lovefiend,
 	"Random or No Flaw"=/datum/charflaw/randflaw,
-	"No Flaw (3 TRIUMPHS)"=/datum/charflaw/noflaw
+	"No Flaw (3 TRIUMPHS)"=/datum/charflaw/noflaw,
 	))
 
 /datum/charflaw
