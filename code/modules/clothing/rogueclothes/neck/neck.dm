@@ -360,14 +360,19 @@
 	mob_overlay_icon = 'modular/icons/mob/collars_leashes.dmi'
 	icon_state = "leathercollar"
 	max_integrity = -1
+	RegisterSignal(src, "equipped", PROC_REF(on_cursed_collar_equipped))
+	RegisterSignal(src, "dropped", PROC_REF(on_cursed_collar_dropped))
 
-/obj/item/clothing/neck/roguetown/collar/leather/cursed/equipped(mob/user, slot)
-	. = ..()
+/obj/item/clothing/neck/roguetown/collar/leather/cursed/Destroy()
+	UnregisterSignal(src, "equipped")
+	UnregisterSignal(src, "dropped")
+	return ..()
+
+/obj/item/clothing/neck/roguetown/collar/leather/cursed/proc/on_cursed_collar_equipped(mob/user, slot)
 	if(user && ishuman(user))
 		ADD_TRAIT(user, TRAIT_SLAVE, TRAIT_GENERIC)
 
-/obj/item/clothing/neck/roguetown/collar/leather/cursed/dropped(mob/user)
-	. = ..()
+/obj/item/clothing/neck/roguetown/collar/leather/cursed/proc/on_cursed_collar_dropped(mob/user)
 	if(user && ishuman(user))
 		REMOVE_TRAIT(user, TRAIT_SLAVE, TRAIT_GENERIC)
 

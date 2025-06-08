@@ -289,21 +289,13 @@
 			var/is_non_harmful_intent = (H.used_intent.type in list(/datum/intent/unarmed/help, /datum/intent/unarmed/grab, /datum/intent/unarmed/shove, /datum/intent/use, /datum/intent/jump, /datum/intent/steal, /datum/intent/give, /datum/intent/spell))
 			var/is_harmful_intent = !is_non_harmful_intent
 
-			to_chat(src, "DEBUG (Unarmed): Attacked by human. Attacker Slave Trait: [is_slave_attacker]")
-			to_chat(src, "DEBUG (Unarmed): Target Slaver Trait: [is_slaver_target]")
-			to_chat(src, "DEBUG (Unarmed): Target Slaver Role (Commander/Town Watch): [is_commander_or_watch]")
-			to_chat(src, "DEBUG (Unarmed): Attacker Intent Type: [H.used_intent.type]")
-			to_chat(src, "DEBUG (Unarmed): Is Harmful Intent: [is_harmful_intent]")
-
 			// Check if attacker is a slave and target is a commander/watch with harm intent
 			if(is_slave_attacker && (is_slaver_target || is_commander_or_watch) && is_harmful_intent) {
-				to_chat(src, "DEBUG (Unarmed): Slave Shock Condition MET.")
 				// Shock the slave
 				H.electrocute_act(100, src, 1, SHOCK_ILLUSION)
 				to_chat(H, span_danger("The cursed collar shocks you for attacking your master!"))
 				return 0 // Stop the unarmed attack if shocked
 			} else {
-				to_chat(src, "DEBUG (Unarmed): Slave Shock Condition NOT MET.")
 			}
 		}
 		// --- END DIAGNOSTIC PRINTS AND SHOCK CONDITION FOR UNARMED ---
