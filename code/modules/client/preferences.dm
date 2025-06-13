@@ -789,8 +789,8 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 			if(!job.spawn_positions)
 				continue
 
-			// Only allow Base Commander, Town Watch, and Slave
-			if(!(job.title in list("Base Commander", "Town Watch", "Slave")))
+			// Only allow Base Commander, Foreign Noble, Town Watch, and Slave
+			if(!(job.title in list("Base Commander", "Foreign Noble", "Town Watch", "Slave")))
 				continue
 
 			index += 1

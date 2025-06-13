@@ -218,8 +218,8 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	name = "Royal Marshal"
 	icon_state = "arrow"
 
-/obj/effect/landmark/start/councillor
-	name = "Councillor"
+/obj/effect/landmark/start/foreign_noble
+	name = "Foreign Noble"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/veteran

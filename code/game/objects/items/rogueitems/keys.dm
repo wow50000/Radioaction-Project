@@ -1,4 +1,3 @@
-
 /obj/item/key
 	name = "key"
 	desc = "An unremarkable iron key."
@@ -142,6 +141,12 @@
 	desc = "This key opens the councillor's rooms."
 	icon_state = "cheesekey"
 	lockid = "councillor"
+
+/obj/item/key/foreign_noble_rooms
+	name = "foreign noble rooms key"
+	desc = "This key opens the foreign noble's rooms."
+	icon_state = "cheesekey"
+	lockid = "foreign_noble"
 
 /obj/item/key/noble_guest_rooms
 	name = "noble guest rooms key"

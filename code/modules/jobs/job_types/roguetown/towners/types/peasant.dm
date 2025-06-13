@@ -1,11 +1,8 @@
-/datum/subclass/farmer
-	name = "Village Farmer"
-	tutorial = "As a Peasent, you are a skilled farmer, able to grow a variety of berrys and apples. \
-	Join the local Soilsmen at their farm, or make your own little orchard."
+/datum/subclass/peasant
+	name = "Peasant"
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_TOLERATED_UP
 	outfit = /datum/outfit/job/roguetown/towner/farmer
-	category_tags = list(CTAG_TOWNER)
+	category_tags = list(CTAG_SLAVE)
 	maximum_possible_slots = 3
 
 /datum/outfit/job/roguetown/towner/farmer/pre_equip(mob/living/carbon/human/H)
@@ -32,10 +29,7 @@
 	beltr = /obj/item/flint
 	beltl = /obj/item/key/farm
 	backr = /obj/item/rogueweapon/hoe
-	if(H.gender == FEMALE)
-		armor = /obj/item/clothing/suit/roguetown/shirt/dress/gen/random
-		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
-		pants = null
+
 	backpack_contents = list(/obj/item/seeds/wheat=1,/obj/item/seeds/apple=1,/obj/item/ash=1)
 	H.change_stat("strength", 1)
 	H.change_stat("endurance", 1)

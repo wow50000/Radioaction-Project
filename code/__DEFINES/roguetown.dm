@@ -287,7 +287,7 @@ GLOBAL_LIST_EMPTY(job_respawn_delays)
 #define CTAG_CHALLENGE		"CAT_CHALLENGE"		// Challenge class - Meant to be free for everyone
 
 //City
-#define CTAG_TOWNER			"CAT_TOWNER"		// Villager class - Villagers can use it
+#define CTAG_SLAVE			"CAT_SLAVE"			// Slave and formerly Villager class - All races can use it
 #define CTAG_MERCENARY		"CAT_MERCENARY"		// Mercs
 #define CTAG_HENCH			"CAT_HENCH"			// Whitevein Guards
 

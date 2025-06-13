@@ -1,13 +1,10 @@
 /datum/subclass/blacksmith
-	name = "Village Blacksmith"
+	name = "Blacksmith"
 	tutorial = "A skilled blacksmith, able to forge useful equipment and items out of metal, \
 	only after building or finding a forge."
-	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_TOLERATED_UP
-	maximum_possible_slots = 1
 	outfit = /datum/outfit/job/roguetown/towner/blacksmith
 
-	category_tags = list(CTAG_TOWNER)
+	category_tags = list(CTAG_SLAVE)
 
 /datum/outfit/job/roguetown/towner/blacksmith/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -23,10 +20,6 @@
 	beltl = /obj/item/rogueweapon/tongs
 	backl = /obj/item/storage/backpack/rogue/satchel
 	backpack_contents = list(/obj/item/key/lowsmith = 1, /obj/item/rogueore/coal=1, /obj/item/rogueore/iron=1, /obj/item/rogueweapon/huntingknife = 1)
-	if(H.gender == MALE)
-		shoes = /obj/item/clothing/shoes/roguetown/armor/leather
-	else
-		shoes = /obj/item/clothing/shoes/roguetown/shortboots
 
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)

@@ -1,10 +1,9 @@
 /datum/subclass/cheesemaker
-	name = "Cheese maker"
+	name = "Cheesemaker"
 	tutorial = "As a cheesemaker you work alongside the local farm, purchasing milk to make batches of your infamous cheeses and cheese-full recipes. Beware of rouses."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_TOLERATED_UP
 	outfit = /datum/outfit/job/roguetown/towner/cheesemaker
-	category_tags = list(CTAG_TOWNER)
+	category_tags = list(CTAG_SLAVE)
 
 /datum/outfit/job/roguetown/towner/cheesemaker/pre_equip(mob/living/carbon/human/H)
 	..()

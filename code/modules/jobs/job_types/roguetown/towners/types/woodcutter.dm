@@ -3,9 +3,8 @@
 	tutorial = "You are a woodworker, physically capable of falling any tree yet knowledgeable \
 	in the ways of bending wood to your will. With enough time, your only limit is your imagination."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_TOLERATED_UP
 	outfit = /datum/outfit/job/roguetown/towner/woodcutter
-	category_tags = list(CTAG_TOWNER)
+	category_tags = list(CTAG_SLAVE)
 
 /datum/outfit/job/roguetown/towner/woodcutter/pre_equip(mob/living/carbon/human/H)
 	..()

@@ -1,10 +1,9 @@
 /datum/subclass/towndoctor
-	name = "Village Physician"
+	name = "Town Doctor"
 	tutorial = "You are a freelance physician, taking jobs patching thos up when you can for whatever they can or are willing to pay. its thankless and most of the time it ends up being for free with you swearing to yourself 'next one will appreciate it'"
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_TOLERATED_UP
 	outfit = /datum/outfit/job/roguetown/towner/doctor
-	category_tags = list(CTAG_TOWNER)
+	category_tags = list(CTAG_SLAVE)
 	traits_applied = list(TRAIT_EMPATH, TRAIT_NOSTINK)
 	maximum_possible_slots = 1
 	cmode_music = 'sound/music/combat_physician.ogg'
@@ -23,10 +22,6 @@
 	shirt = null
 	pants = /obj/item/clothing/under/roguetown/tights/stockings/silk
 
-	if(H.gender == MALE)
-		head = /obj/item/clothing/head/roguetown/nightman
-	else
-		head = /obj/item/clothing/head/roguetown/armingcap
 
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)

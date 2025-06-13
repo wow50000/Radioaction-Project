@@ -68,7 +68,7 @@ GLOBAL_LIST_INIT(courtier_positions, list(
 	"Head Butler",
 	"Court Magos",
 	"Court Physician",
-	"Councillor",
+	"Foreign Noble",
 	"Jester",
 ))
 
