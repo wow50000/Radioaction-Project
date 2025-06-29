@@ -2,7 +2,7 @@
 <p align="center">
  <img width="322px" src="https://i.postimg.cc/gJ3yV0Jv/ageofpsydon.png" align="center" alt="Ratwood Stats" />
  <h1 align="center">Lupine Pass</h1>
- <h2 align="center">Grim-Dark Medieval Roleplay<br>Anthro supremacy</h2>
+ <h2 align="center">Grim-Dark Medieval Roleplay<br>Anthro focused</h2>
 </p>
 
 <p align="center">
